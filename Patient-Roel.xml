@@ -1,0 +1,26 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <identifier>
+    <use value="official" />
+    <value value="f201" />
+  </identifier>
+  <active value="true" />
+  <name>
+    <given value="roel" />
+  </name>
+  <telecom>
+    <system value="phone" />
+    <value value="(03) 5555 6789" />
+    <use value="home" />
+  </telecom>
+  <gender value="male" />
+  <birthDate value="1999-01-01" />
+  <address>
+    <use value="home" />
+    <line value="3300 Washtenaw" />
+    <city value="Ann Harbor" />
+    <district value="Washtenaw" />
+    <state value="MI" />
+    <postalCode value="48104" />
+    <country value="US" />
+  </address>
+</Patient>

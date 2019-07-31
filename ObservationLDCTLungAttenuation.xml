@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <identifier>
+        <value value="LDCT_Lung1.formInstanceVersionURI.000047"/>
+    </identifier>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="https://radlex.org"/>
+            <code value="RID50151"/>
+            <display value="solid pulmonary nodule"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/f201"/>
+        <display value="Roel"/>
+    </subject>
+    <issued value="2019-04-04T14:34:00+01:00"/>
+    <performer>
+        <reference value="Practitioner/f202"/>
+        <display value="Luigi Maas"/>
+    </performer>
+    <valueString value="Solid"/>
+    <derivedFrom> 
+        <reference value="DocumentReference/LDCT_Lung1.formInstanceVersionURI"/>
+        <!-- referencing Document Reference to SDC Form -->
+    </derivedFrom>
+    <derivedFrom> 
+        <reference value="Observation/LDCT_Lung1.formInstanceVersionURI.000046"/>
+        <!-- referencing Nodule 2 for patient Roel -->
+    </derivedFrom>
+    <hasMember>
+        <reference value="Observation/LDCT_Lung1.formInstanceVersionURI.000048"/>
+        <!-- referencing the mean diameter observation of  --> 
+    </hasMember>
+</Observation>
+
