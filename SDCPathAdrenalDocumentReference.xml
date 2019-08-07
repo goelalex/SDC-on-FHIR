@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DocumentReference xmlns="http://hl7.org/fhir">
     <masterIdentifier>
-        <value value="LDCT_Lung1.FormInstanceVersionURI"/>
+        <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI"/>
     </masterIdentifier>
     <!-- ID for this resource appended FormID.FormInstanceVersionURI -->
     <identifier>
-        <value value="LDCT_Lung"/>
+        <value value="Adrenal.Bx.Res.129"/>
     </identifier>
     <!-- Matches SDC Lineage -->
     <identifier>
-        <value value="1.0.0"/>
+        <value value="3.002.011.RC1"/>
     </identifier>
-    <!-- Matches SDC Version -->
+    <!-- Matches SDC form Version -->
     <identifier>
-        <value value="LDCT_Lung1"/>
+        <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1"/>
     </identifier>
     <!-- Matches SDC FormID; should be unique to this Form -->
     <identifier>
-        <value value="FormInstanceURI"/>
+        <value value="1223456"/>
     </identifier>
     <!-- Matches SDC FormInstanceURI -->
     <status value="current"/>
     <docStatus value="final"/>
     <!-- Must us FHIR statuses for docStatus -->
     <subject>
-        <reference value="Patient/f201"/>
-        <display value="Roel"/>
+        <reference value="Patient/bibata.amidou@chudequebec.ca"/>
+        <display value="Bibata Amidou"/>
     </subject>
-    <date value="2005-12-24T09:43:41+11:00"/>
+    <date value="2018-12-24T09:43:41+11:00"/>
     <author>
         <reference value="Practitioner/f202"/>
         <display value="Luigi Maas"/>
@@ -35,19 +35,20 @@
     <content>
         <attachment>
             <contentType value="application/xml"/>
-            <language value="en-CA"/>
-            <url value="http://somehospital.on.ca/LDCT_Lung1.FormInstanceVersionURI"/>
+            <language value="en-US"/>
+            <!-- likely en-US or en-CA --> 
+            <url value="https://devsdt.cap.org/SDCApp/GetXml.aspx?PackageId=PKG_Adrenal"/>
         </attachment>
     </content>
     <context>
         <related>
-            <reference value="LDCT_Lung1.formInstanceVersionURI.000046"/>
+            <reference value=""/>
         </related>
         <related>
-            <reference value="LDCT_Lung1.formInstanceVersionURI.000047"/>
+            <reference value=""/>
         </related>
         <related>
-            <reference value="LDCT_Lung1.formInstanceVersionURI.000048"/>
+            <reference value=""/>
         </related>
     </context>
 </DocumentReference>

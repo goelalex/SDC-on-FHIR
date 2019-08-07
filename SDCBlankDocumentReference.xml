@@ -1,53 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DocumentReference xmlns="http://hl7.org/fhir">
     <masterIdentifier>
-        <value value="LDCT_Lung1.FormInstanceVersionURI"/>
+        <value value="BlankSDC.DocumentReference"/>
     </masterIdentifier>
     <!-- ID for this resource appended FormID.FormInstanceVersionURI -->
     <identifier>
-        <value value="LDCT_Lung"/>
+        <value value=""/>
     </identifier>
     <!-- Matches SDC Lineage -->
     <identifier>
-        <value value="1.0.0"/>
+        <value value=""/>
     </identifier>
     <!-- Matches SDC Version -->
     <identifier>
-        <value value="LDCT_Lung1"/>
+        <value value=""/>
     </identifier>
     <!-- Matches SDC FormID; should be unique to this Form -->
     <identifier>
-        <value value="FormInstanceURI"/>
+        <value value=""/>
     </identifier>
     <!-- Matches SDC FormInstanceURI -->
     <status value="current"/>
     <docStatus value="final"/>
     <!-- Must us FHIR statuses for docStatus -->
     <subject>
-        <reference value="Patient/f201"/>
-        <display value="Roel"/>
+        <reference value=""/>
+        <display value=""/>
     </subject>
-    <date value="2005-12-24T09:43:41+11:00"/>
+    <date value=""/>
     <author>
-        <reference value="Practitioner/f202"/>
-        <display value="Luigi Maas"/>
+        <reference value=""/>
+        <display value=""/>
     </author>
     <content>
         <attachment>
             <contentType value="application/xml"/>
             <language value="en-CA"/>
-            <url value="http://somehospital.on.ca/LDCT_Lung1.FormInstanceVersionURI"/>
+            <!-- likely en-US or en-CA --> 
+            <url value=""/>
         </attachment>
     </content>
     <context>
         <related>
-            <reference value="LDCT_Lung1.formInstanceVersionURI.000046"/>
+            <reference value=""/>
         </related>
         <related>
-            <reference value="LDCT_Lung1.formInstanceVersionURI.000047"/>
+            <reference value=""/>
         </related>
         <related>
-            <reference value="LDCT_Lung1.formInstanceVersionURI.000048"/>
+            <reference value=""/>
         </related>
     </context>
 </DocumentReference>

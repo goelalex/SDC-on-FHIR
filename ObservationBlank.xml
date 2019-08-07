@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <identifier>
+        <value value="BlankSDC.Observation"/>
+    </identifier>
+    <status value=""/>
+    <code>
+        <coding>
+            <system value=""/>
+            <code value=""/>
+            <display value=""/>
+        </coding>
+    </code>
+    <subject>
+        <reference value=""/>
+        <display value=""/>
+    </subject>
+    <issued value=""/>
+    <performer>
+        <reference value=""/>
+        <display value=""/>
+    </performer>
+    <valueString value=""/>
+    <derivedFrom>
+        <reference
+            value=""/>
+        <!-- referencing Document Reference to SDC Form -->
+    </derivedFrom>
+    <hasMember>
+        <reference
+            value=""/>
+        <!-- referencing the mean diameter observation of  -->
+    </hasMember>
+</Observation>

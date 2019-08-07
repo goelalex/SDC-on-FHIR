@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DocumentReference xmlns="http://hl7.org/fhir">
     <masterIdentifier>
-        <value value="LDCT_Lung1.FormInstanceVersionURI"/>
+        <value value="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI"/>
     </masterIdentifier>
     <!-- ID for this resource appended FormID.FormInstanceVersionURI -->
     <identifier>
-        <value value="LDCT_Lung"/>
+        <value value="LungSurgCCO.357"/>
     </identifier>
     <!-- Matches SDC Lineage -->
     <identifier>
-        <value value="1.0.0"/>
+        <value value="1.0.0DRAFT"/>
     </identifier>
-    <!-- Matches SDC Version -->
+    <!-- Matches SDC form Version -->
     <identifier>
-        <value value="LDCT_Lung1"/>
+        <value value="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1"/>
     </identifier>
     <!-- Matches SDC FormID; should be unique to this Form -->
     <identifier>
@@ -36,18 +36,15 @@
         <attachment>
             <contentType value="application/xml"/>
             <language value="en-CA"/>
-            <url value="http://somehospital.on.ca/LDCT_Lung1.FormInstanceVersionURI"/>
+            <url value="https://devsdt.cap.org/SDCApp/GetXml.aspx?PackageId=PKG_Lung_Surgery"/>
         </attachment>
     </content>
     <context>
         <related>
-            <reference value="LDCT_Lung1.formInstanceVersionURI.000046"/>
+            <reference value="Observation/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI.77350"/>
         </related>
         <related>
-            <reference value="LDCT_Lung1.formInstanceVersionURI.000047"/>
-        </related>
-        <related>
-            <reference value="LDCT_Lung1.formInstanceVersionURI.000048"/>
+            <reference value="Observation/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI.77334"/>
         </related>
     </context>
 </DocumentReference>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
     <identifier>
-        <value value="LDCT_Lung1.formInstanceVersionURI.000047"/>
+        <value value="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI.77334"/>
     </identifier>
     <status value="final"/>
     <code>
         <coding>
-            <system value="https://radlex.org"/>
-            <code value="RID50151"/>
-            <display value="solid pulmonary nodule"/>
+            <system value="http://www.snomed.org/"/>
+            <code value="263922001"/>
+            <display value="Unstable"/>
         </coding>
     </code>
     <subject>
@@ -20,17 +20,15 @@
         <reference value="Practitioner/f202"/>
         <display value="Luigi Maas"/>
     </performer>
-    <valueString value="Solid"/>
+    <valueString value="Unstable"/>
     <derivedFrom>
-        <reference value="DocumentReference/LDCT_Lung1.formInstanceVersionURI"/>
+        <reference
+            value="DocumentReference/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI"/>
         <!-- referencing Document Reference to SDC Form -->
     </derivedFrom>
-    <derivedFrom>
-        <reference value="Observation/LDCT_Lung1.formInstanceVersionURI.000046"/>
-        <!-- referencing Nodule 2 for patient Roel -->
-    </derivedFrom>
     <hasMember>
-        <reference value="Observation/LDCT_Lung1.formInstanceVersionURI.000048"/>
+        <reference
+            value="Observation/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI.77350"/>
         <!-- referencing the mean diameter observation of  -->
     </hasMember>
 </Observation>
