@@ -3,7 +3,10 @@
     <masterIdentifier>
         <value value="BlankSDC.DocumentReference"/>
     </masterIdentifier>
-    <!-- ID for this resource appended FormID.FormInstanceVersionURI -->
+    <!-- ID for this resource appended FormID.FormInstanceVersionURI - 
+        we can potentially use just the FormInstanceVersionURI here without the FormID inaddition - 
+        confirm this in SDC technical reference Guide-->
+    <!-- Can we create a short valueset of SDC identifier types to be referenced in the identifiers?--> 
     <identifier>
         <value value=""/>
     </identifier>

@@ -2,6 +2,7 @@
 <Observation xmlns="http://hl7.org/fhir">
     <identifier>
         <value value="BlankSDC.Observation"/>
+        <!-- FormID.FormInstanceVersionURI.QuestionID should be included here. What if we only put the questionID in, e.g. if the QuestionID had a URL -->
     </identifier>
     <status value=""/>
     <code>
@@ -11,6 +12,7 @@
             <display value=""/>
         </coding>
     </code>
+    <!--Should the code be the SDC ID for the question? Does that require a valueset?--> 
     <subject>
         <reference value=""/>
         <display value=""/>
@@ -21,14 +23,16 @@
         <display value=""/>
     </performer>
     <valueString value=""/>
+    <!-- Value should be reflective of whatever the user input was (i.e. the answer to the question) -->
     <derivedFrom>
         <reference
             value=""/>
         <!-- referencing Document Reference to SDC Form -->
     </derivedFrom>
+    <!-- can we use Component for a multi-select question with several answers?--> 
     <hasMember>
         <reference
             value=""/>
-        <!-- referencing the mean diameter observation of  -->
+        <!-- referencing any child questions of this observations - creating members to parents can be optional due to complexity -->
     </hasMember>
 </Observation>

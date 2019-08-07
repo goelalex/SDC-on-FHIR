@@ -21,6 +21,7 @@
         <display value="Luigi Maas"/>
     </performer>
     <valueString value="Unstable"/>
+    <!-- Make this a boolean for Unstable True/False --> 
     <derivedFrom>
         <reference
             value="DocumentReference/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI"/>
@@ -29,6 +30,6 @@
     <hasMember>
         <reference
             value="Observation/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI.77350"/>
-        <!-- referencing the mean diameter observation of  -->
+        <!-- referencing the child answer  -->
     </hasMember>
 </Observation>

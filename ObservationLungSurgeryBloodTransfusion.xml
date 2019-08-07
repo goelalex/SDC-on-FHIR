@@ -21,6 +21,7 @@
         <display value="Luigi Maas"/>
     </performer>
     <valueString value="Blood transfusion in surgery"/>
+    <!-- Make this a boolean for Blood Transfusion True/False --> 
     <derivedFrom>
         <reference
             value="DocumentReference/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI"/>

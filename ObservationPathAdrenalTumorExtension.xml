@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <identifier>
+        <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI.51265"/>
+        <!-- FormID.FormInstanceVersionURI.QuestionID should be included here -->
+    </identifier>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="IHESDC"/>
+            <!-- Should we specify that this is a question code? -->
+            <code value="51265"/>
+            <display value="Tumour Extension"/>
+        </coding>
+    </code>
+    <!--Should the code be the SDC ID for the question? Does that require a valueset?--> 
+    <subject>
+        <reference value="Patient/bibata.amidou@chudequebec.ca"/>
+        <display value="Bibata Amidou"/>
+    </subject>
+    <issued value="2018-12-24T09:43:41+11:00"/>
+    <performer>
+        <reference value="Practitioner/f202"/>
+        <display value="Luigi Maas"/>
+    </performer>
+    <component> 
+        <code>
+            <coding>
+                <system value="IHESDC"/>
+                <!-- Should we specify that this is a answer code? -->
+                <code value="52315"/>
+                <display value="Tumor invades into extra-adrenal structures (specify)"/>
+            </coding>
+        </code>
+        <valueString value="Tumor invades into extra-adrenal structures (specify)"/>
+        <!-- Value should be reflective of whatever the user input was (i.e. the answer to the question) -->
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="IHESDC"/>
+                <!-- Should we specify that this is a answer code? -->
+                <code value="56271 "/>
+                <display value="Tumor invades into other adjacent organ(s)"/>
+            </coding>
+        </code>
+        <valueString value="Tumor invades into other adjacent organ(s)"/>
+    </component>
+    <derivedFrom>
+        <reference
+            value="DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI"/>
+        <!-- referencing Document Reference to SDC Form -->
+    </derivedFrom>
+    <!-- can we use Component for a multi-select question with several answers?--> 
+    <hasMember>
+        <reference
+            value="Observation/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI.51265"/>
+        <!-- referencing any child questions of this observations - creating members to parents can be optional due to complexity -->
+    </hasMember>
+</Observation>
+
