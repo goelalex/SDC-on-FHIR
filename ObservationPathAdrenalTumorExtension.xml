@@ -54,7 +54,7 @@
     <!-- can we use Component for a multi-select question with several answers?--> 
     <hasMember>
         <reference
-            value="Observation/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI.51265"/>
+            value="Observation/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI.56271"/>
         <!-- referencing any child questions of this observations - creating members to parents can be optional due to complexity -->
     </hasMember>
 </Observation>
