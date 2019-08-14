@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
+    <id value="94c82e53-4165-42d7-af2b-97c7e350e2"/>
     <identifier>
-        <value value="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI.77334"/>
+        <value value="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI.76614"/>
     </identifier>
     <status value="final"/>
     <code>
         <coding>
             <system value="http://www.snomed.org/"/>
             <code value="263922001"/>
+            <display value="Unstable"/>
+        </coding>
+        <coding>
+            <system value="http://cancercare.on.ca/LungSurgery"/>
+            <code value="77334"/>
             <display value="Unstable"/>
         </coding>
     </code>
@@ -22,14 +28,13 @@
     </performer>
     <valueString value="Unstable"/>
     <!-- Make this a boolean for Unstable True/False --> 
+    <hasMember>
+        <reference value="Observation/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI.77350"/>      
+        <!-- referencing the child answer  -->
+    </hasMember>
     <derivedFrom>
         <reference
             value="DocumentReference/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI"/>
         <!-- referencing Document Reference to SDC Form -->
     </derivedFrom>
-    <hasMember>
-        <reference
-            value="Observation/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI.77350"/>
-        <!-- referencing the child answer  -->
-    </hasMember>
 </Observation>

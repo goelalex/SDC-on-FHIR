@@ -8,7 +8,7 @@
     <code>
         <coding>
             <system value="IHESDC"/>
-            <!-- Should we specify that this is a question code? -->
+            <!-- For multiselect questions include the QuestionID-->
             <code value="51265"/>
             <display value="Tumour Extension"/>
         </coding>
@@ -51,7 +51,6 @@
             value="DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI"/>
         <!-- referencing Document Reference to SDC Form -->
     </derivedFrom>
-    <!-- can we use Component for a multi-select question with several answers?--> 
     <hasMember>
         <reference
             value="Observation/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI.56271"/>

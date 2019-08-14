@@ -2,18 +2,16 @@
 <Observation xmlns="http://hl7.org/fhir">
     <identifier>
         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI.56271"/>
-        <!-- FormID.FormInstanceVersionURI.QuestionID should be included here. What if we only put the questionID in, e.g. if the QuestionID had a URL -->
     </identifier>
     <status value="final"/>
     <code>
         <coding>
             <system value="IHESDC"/>
-            <!--why repeat the code here if it's in the identifier? why not use Loinc/SNOMED?--> 
             <code value="56271"/>
             <display value="Tumor invades into other adjacent organ(s)"/>
         </coding>
     </code>
-    <!--Should the code be the SDC ID for the question? Does that require a valueset?--> 
+    <!-- For multiselect questions include the QuestionID in the code-->
     <subject>
         <reference value="Patient/bibata.amidou@chudequebec.ca"/>
         <display value="Bibata Amidou"/>
@@ -27,10 +25,11 @@
         <code>
             <coding>
                 <system value="IHESDC"/>
-                <!-- Should we specify that this is a answer code? -->
+                <!-- Valuesets will belong to project context or organization e.g. CAP/CCO/Infoway/CDC would have to take ownership and host them -->
                 <code value="56752"/>
                 <display value="Kidney"/>
             </coding>
+            <!-- add SNOMED-CT code for both components --> 
         </code>
         <valueString value="Kidney"/>
         <!-- Value should be reflective of whatever the user input was (i.e. the answer to the question) -->

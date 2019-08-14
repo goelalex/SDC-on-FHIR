@@ -2,17 +2,23 @@
 <Observation xmlns="http://hl7.org/fhir">
     <identifier>
         <value value="BlankSDC.Observation"/>
-        <!-- FormID.FormInstanceVersionURI.QuestionID should be included here. What if we only put the questionID in, e.g. if the QuestionID had a URL -->
+        <!-- FormID.FormInstanceVersionURI.QuestionID should be included here. to uniquely identify this answered question-->
     </identifier>
     <status value=""/>
     <code>
         <coding>
             <system value=""/>
+            <!-- This ideally should be a SNOMED-CT or other standard terminology -->
+            <code value=""/>
+            <display value=""/>
+        </coding>
+        <coding>
+            <system value=""/>
+            <!-- This code system should referencing the AnswerID from the SDC form - may need to create a valueset for that form-->
             <code value=""/>
             <display value=""/>
         </coding>
     </code>
-    <!--Should the code be the SDC ID for the question? Does that require a valueset?--> 
     <subject>
         <reference value=""/>
         <display value=""/>
@@ -29,7 +35,7 @@
             value=""/>
         <!-- referencing Document Reference to SDC Form -->
     </derivedFrom>
-    <!-- can we use Component for a multi-select question with several answers?--> 
+    <!-- Use <component/> for any multiselect questions so that multiple answers are included with their unique IDs and codes--> 
     <hasMember>
         <reference
             value=""/>

@@ -23,7 +23,7 @@
     <valueQuantity>
         <value value="6"/>
         <unit value="mm"/>
-        <system value="UCUM"/>
+        <system value="https://unitsofmeasure.org/"/>
     </valueQuantity>
     <derivedFrom>
         <reference value="DocumentReference/LDCT_Lung1.formInstanceVersionURI"/>
