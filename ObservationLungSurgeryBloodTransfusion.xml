@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
     <identifier>
-        <value value="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI.77350"/>
+        <value value="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI.76618"/>
     </identifier>
     <status value="final"/>
     <code>
         <coding>
             <system value="http://www.snomed.org/"/>
             <code value="116859006"/>
+            <display value="Blood transfusion"/>
+        </coding>
+        <coding>
+            <system value="http://cancercare.on.ca/LungSurgery"/>
+            <code value="77350"/>
             <display value="Blood transfusion"/>
         </coding>
     </code>
