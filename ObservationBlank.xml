@@ -30,15 +30,13 @@
     </performer>
     <valueString value=""/>
     <!-- Value should be reflective of whatever the user input was (i.e. the answer to the question) -->
+    <hasMember>
+        <reference value=""/>
+        <!-- referencing any child questions of this observations-->
+    </hasMember>
     <derivedFrom>
-        <reference
-            value=""/>
-        <!-- referencing Document Reference to SDC Form -->
+        <reference value=""/>
+        <!-- referencing Document Reference to SDC Form and any parent questions -->
     </derivedFrom>
     <!-- Use <component/> for any multiselect questions so that multiple answers are included with their unique IDs and codes--> 
-    <hasMember>
-        <reference
-            value=""/>
-        <!-- referencing any child questions of this observations - creating members to parents can be optional due to complexity -->
-    </hasMember>
 </Observation>
