@@ -12,8 +12,10 @@
             <display value="Unstable"/>
         </coding>
         <coding>
-            <system value="http://cancercare.on.ca/LungSurgery"/>
+            <system value="http://cancercare.on.ca/SDC/LungSurgery"/>
+            <!-- we need to create a standard on how to do this -->
             <code value="77334"/>
+            <!--can we use the form as the valueset?--> 
             <display value="Unstable"/>
         </coding>
     </code>
