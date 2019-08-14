@@ -283,10 +283,10 @@
 										<ChildItems>
 											<!--AG: not sure how to do this question since it should be in line with the section title. Could it be automatically numbered based on the nodule number (e.g. auotmatically enter Nodule [1], Nodule [2], etc.?-->
 											<!--AG: Ideally nodules should be numbered automatically without user input, for now users will have to enter the nodule number (e.g. Nodule [1], Nodule [2]-->
-											<Question title="Nodule Number:" ID="592375972">
+											<Question title="Nodule Number:" ID="592375972" >
 												<ResponseField>
 													<Response>
-														<positiveInteger xsi:nil="true" />
+														<positiveInteger xsi:nil="true" val="2"/>
 													</Response>
 												</ResponseField>
 											</Question>
