@@ -1,0 +1,30 @@
+{
+  "resourceType": "Observation",
+  "identifier": [
+    {
+      "system": "https://CAP.org",
+      "value": "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF.f96d3fea-62b3-47e9-8443-f199c2f946f0.ver1.52756.100004300"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "https://CAP.org",
+        "code": "52756.100004300",
+        "display": "Specimen Laterality"
+      },
+      {
+        "system": "https://CAP.org",
+        "code": "2126.100004300",
+        "display": "Right"
+      }
+    ]
+  },
+  "valueString": "Right",
+  "derivedFrom": [
+    {
+      "reference": "DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF.f96d3fea-62b3-47e9-8443-f199c2f946f0.ver1"
+    }
+  ]
+}

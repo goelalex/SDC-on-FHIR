@@ -1,0 +1,29 @@
+{
+  "resourceType": "Observation",
+  "identifier": [
+    {
+      "system": "https://CAP.org",
+      "value": "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF.f96d3fea-62b3-47e9-8443-f199c2f946f0.ver1.2118.100004300"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "https://CAP.org",
+        "code": "2118.100004300"
+      },
+      {
+        "system": "https://CAP.org",
+        "code": "2119.100004300",
+        "display": "Adrenal gland"
+      }
+    ]
+  },
+  "valueString": "Adrenal gland",
+  "derivedFrom": [
+    {
+      "reference": "DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF.f96d3fea-62b3-47e9-8443-f199c2f946f0.ver1"
+    }
+  ]
+}

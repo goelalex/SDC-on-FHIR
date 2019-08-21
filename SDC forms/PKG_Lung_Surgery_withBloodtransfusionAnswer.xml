@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="sdctemplate.xslt"?>
 <SDCPackage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:ihe:qrph:sdc:2016" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="urn:ihe:qrph:sdc:2016 ../Schemas/RFD+SDCRetrieveForm.xsd" packageID="PKG_Lung_Surgery" version="1.0.0.DRAFT" lineage="LungSurgCCO.357" fullURI="_baseURI=cap.org&amp;_lineage=LungSurgCCO.357&amp;_version=1.0.0.DRAFT&amp;_docType=sdcPKG" >
 	<XMLPackage>
-		<FormDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF" baseURI="cap.org" fullURI="_baseURI=cap.org&amp;_lineage=LungSurgCCO.357&amp;_version=1.0.0.DRAFT&amp;_docType=sdcFDF" formTitle="Lung Surgery CCO" lineage="LungSurgCCO.357" filename="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF.xml" version="1.0.0.DRAFT" xmlns="urn:ihe:qrph:sdc:2016">
+		<FormDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF" baseURI="cap.org" fullURI="_baseURI=cap.org&amp;_lineage=LungSurgCCO.357&amp;_version=1.0.0.DRAFT&amp;_docType=sdcFDF" formTitle="Lung Surgery CCO" lineage="LungSurgCCO.357" filename="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF.xml" version="1.0.0.DRAFT" xmlns="urn:ihe:qrph:sdc:2016" formInstanceURI="f96d3fea-62b3-47e9-8443-f199c2f946f1" formInstanceVersionURI="f96d3fea-62b3-47e9-8443-f199c2f946f1/ver1">
 			<Property name="Copyright" type="CAPeCC_static_text" styleClass="copyright" propName="Copyright" val="(c) 2018 Cancer Care Ontario.  All rights reserved.  License required for use." />
 			<Property name="GenericHeaderText" type="CAPeCC_static_text" propName="GenericHeaderText" val="CCO Surgical Synoptic Template" />
 			<Property name="Category" type="CAPeCC_meta" propName="Category" val="Lung" />
@@ -2432,7 +2432,7 @@
 														</Question>
 													</ChildItems>
 												</ListItem>
-												<ListItem name="LI_77338" ID="77338.100004300" title="Bleeding requiring transfusion">
+												<ListItem name="LI_77338" ID="77338.100004300" title="Bleeding requiring transfusion" selected="true">
 													<ChildItems name="ch_77338_1">
 														<Question name="Q_76618" ID="76618.100004300" title="Blood transfusion used to treat blood loss">
 															<ListField name="lf_76618_1">

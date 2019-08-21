@@ -1,0 +1,30 @@
+{
+  "resourceType": "Observation",
+  "identifier": [
+    {
+      "system": "https://CAP.org",
+      "value": "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF.f96d3fea-62b3-47e9-8443-f199c2f946f0.ver1.59852.100004300"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "https://CAP.org",
+        "code": "59852.100004300",
+        "display": "Histologic Type (Notes C through E)"
+      },
+      {
+        "system": "https://CAP.org",
+        "code": "2117.100004300",
+        "display": "Adrenal cortical carcinoma"
+      }
+    ]
+  },
+  "valueString": "Adrenal cortical carcinoma",
+  "derivedFrom": [
+    {
+      "reference": "DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF.f96d3fea-62b3-47e9-8443-f199c2f946f0.ver1"
+    }
+  ]
+}
