@@ -21,6 +21,16 @@
       }
     ]
   },
+  "subject": {
+    "reference": "Patient/bibata.amidou@chudequebec.ca",
+    "display": "Bibata Amidou"
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/f202",
+      "display": "Luigi Maas"
+    }
+  ],
   "valueString": "Low grade (<= 20 mitoses / 50 high-power fields)",
   "derivedFrom": [
     {
