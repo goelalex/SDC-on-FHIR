@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://example.org/fhir/StructureDefinition/SDCDocumentReference" />
+  <name value="SDCDocumentReference" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="DocumentReference" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="DocumentReference.masterIdentifier">
+      <path value="DocumentReference.masterIdentifier" />
+      <definition value="The masterIdentifier should be derived from the SDC formID and formInstanceVersionURI in the format of formID.formInstanceVersionURI" />
+      <comment value="Maps to SDC InstanceVersionURI" />
+      <requirements value="The structure and format of this Id shall be consistent with the specification corresponding to the InstanceVersionURI specified in the SDC Technical Reference Guide" />
+    </element>
+    <element id="DocumentReference.identifier">
+      <path value="DocumentReference.identifier" />
+      <definition value="Other identifiers associated with the document, including version independent identifiers. Map other SDC Identifiers here including: Lineage, FormID, Version, BaseURI, InstanceURI, FullURI" />
+      <comment value="Map other SDC Identifiers here including: Lineage, FormID, Version, BaseURI, InstanceURI, FullURI" />
+    </element>
+    <element id="DocumentReference.relatesTo">
+      <path value="DocumentReference.relatesTo" />
+      <definition value="Relationships that this document has with other DocumentReferences and Observations. Needs to map to DocumentReference masterIdentifier, and must map to any Observations Identifiers that are derived from this DocumentReference" />
+    </element>
+    <element id="DocumentReference.content">
+      <path value="DocumentReference.content" />
+      <definition value="The document and format referenced. There may be multiple content element repetitions, each with a different format. " />
+      <comment value="Should provide access to the Binary Resource of the SDC Form" />
+    </element>
+  </differential>
+</StructureDefinition>

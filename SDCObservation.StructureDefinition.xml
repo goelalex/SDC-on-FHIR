@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://example.org/fhir/StructureDefinition/SDCObservation" />
+  <name value="SDCObservation" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.identifier">
+      <path value="Observation.identifier" />
+      <definition value="A unique identifier assigned to this observation. This should map to the identifier for the document reference it was derived from that contains an SDC form and appended with the QuestionID e.g. formID.formInstanceVersionURI.QuestionID " />
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <definition value="Observation code should be defined based on the SDC QuestionID &#xD;&#xA;Describes what was observed. Sometimes this is called the observation &quot;name&quot;." />
+    </element>
+    <element id="Observation.hasMember">
+      <path value="Observation.hasMember" />
+      <definition value="Observation has child questions and answers that are referenced via this element&#xD;&#xA;&#xD;&#xA;This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group." />
+    </element>
+    <element id="Observation.derivedFrom">
+      <path value="Observation.derivedFrom" />
+      <definition value="Observation has parent questions and answers that are referenced via this element&#xD;&#xA;&#xD;&#xA;The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image." />
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <definition value="SDC Obvservations should contain component codes with the the answers. Multiple components must be used for multiple answers to a single question (e.g. a multiselect question)&#xD;&#xA;&#xD;&#xA;Some observations have multiple component observations.  These component observations are expressed as separate code value pairs that share the same attributes.  Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations." />
+    </element>
+  </differential>
+</StructureDefinition>
