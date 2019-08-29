@@ -7,7 +7,7 @@
     <status value="final"/>
     <code>
         <coding>
-            <system value="IHESDC"/>
+            <system value="https://CAP.org"/>
             <code value="56271"/>
             <display value="Tumor invades into other adjacent organ(s)"/>
         </coding>
@@ -23,29 +23,26 @@
         <display value="Luigi Maas"/>
     </performer>
     <component>
+        <!-- can we have multiple body sites in the codings for bodysite -->
         <code>
             <coding>
-                <system value="IHESDC"/>
-                <!-- Valuesets will belong to project context or organization e.g. CAP/CCO/Infoway/CDC would have to take ownership and host them -->
-                <code value="56752"/>
-                <display value="Kidney"/>
-            </coding>
-            <!-- add SNOMED-CT code for both components --> 
-        </code>
-        <valueString value="Kidney"/>
-        <!-- Value should be reflective of whatever the user input was (i.e. the answer to the question) -->
-    </component>
-    <component>
-        <code>
-            <coding>
-                <system value="IHESDC"/>
+                <system value="https://CAP.org"/>
                 <!-- Should we specify that this is a answer code? -->
                 <code value="41409"/>
                 <display value="Liver"/>
             </coding>
         </code>
-        <valueString value="Liver"/>
-        <!-- Value should be reflective of whatever the user input was (i.e. the answer to the question) -->
+    </component>
+    <component>
+        <!-- can we have multiple body sites in the codings for bodysite -->
+        <code>
+            <coding>
+                <system value="https://CAP.org"/>
+                <!-- Should we specify that this is a answer code? -->
+                <code value="41409"/>
+                <display value="Liver"/>
+            </coding>
+        </code>
     </component>
     <derivedFrom>
         <reference

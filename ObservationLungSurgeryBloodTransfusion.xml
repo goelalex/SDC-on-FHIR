@@ -6,15 +6,17 @@
     <status value="final"/>
     <code>
         <coding>
+            <system value="http://cancercare.on.ca/LungSurgery"/>
+            <code value="76618"/>
+            <display value="Blood transfusion"/>
+        </coding>
+        <coding>
             <system value="http://www.snomed.org/"/>
             <code value="116859006"/>
             <display value="Blood transfusion"/>
         </coding>
-        <coding>
-            <system value="http://cancercare.on.ca/LungSurgery"/>
-            <code value="77350"/>
-            <display value="Blood transfusion"/>
-        </coding>
+        <!-- example of including a semantically same SNOMED code in observation. Could be referenced via valueset to CCO code -->
+        <!-- this question was a "yes/no" not sure on best way to represent this question answer pair within an observation and component -->
     </code>
     <subject>
         <reference value="Patient/f201"/>
@@ -25,8 +27,16 @@
         <reference value="Practitioner/f202"/>
         <display value="Luigi Maas"/>
     </performer>
-    <valueString value="Blood transfusion in surgery"/>
-    <!-- Make this a boolean for Blood Transfusion True/False --> 
+    <component>
+        <code>
+            <coding>
+                <system value="http://cancercare.on.ca/LungSurgery"/>
+                <code value="77350"/>
+                <display value="Blood transfusion"/>
+            </coding>
+        </code>
+        <valueString value="Blood transfusion in surgery"/>
+    </component>
     <derivedFrom>
         <reference
             value="DocumentReference/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI"/>

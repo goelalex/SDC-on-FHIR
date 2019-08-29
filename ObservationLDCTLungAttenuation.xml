@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
     <identifier>
-        <value value="LDCT_Lung1.formInstanceVersionURI.000047"/>
+        <value value="LDCT_Lung1.formInstanceVersionURI.000046"/>
     </identifier>
     <status value="final"/>
     <code>
         <coding>
-            <system value="https://radlex.org"/>
-            <code value="RID50151"/>
-            <display value="solid pulmonary nodule"/>
+            <system value="http://cancercare.on.ca/SDC/LDCTlungScreening"/>
+            <code value="000046"/>
+            <display value="solid"/>
+        </coding>
+        <coding>
+            <system value="http://radlex.org"/>
+            <code value="RID6037"/>
+            <display value="attenuation characteristic"/>
         </coding>
     </code>
     <subject>
@@ -20,17 +25,33 @@
         <reference value="Practitioner/f202"/>
         <display value="Luigi Maas"/>
     </performer>
+    <component>
+        <code>
+            <coding>
+                <system value="http://cancercare.on.ca/SDC/LDCTlungScreening"/>
+                <code value="000047"/>
+                <display value="solid"/>
+            </coding>
+            <coding>
+                <system value="http://radlex.org"/>
+                <code value="RID50151"/>
+                <display value="solid pulmonary nodule"/>
+            </coding>
+        </code>
+        <valueString value="Solid"/>
+    </component>
     <valueString value="Solid"/>
+    <hasMember>
+        <reference value="Observation/LDCT_Lung1.formInstanceVersionURI.000048"/>
+        <!-- referencing the mean diameter observation of  -->
+    </hasMember>
     <derivedFrom>
         <reference value="DocumentReference/LDCT_Lung1.formInstanceVersionURI"/>
         <!-- referencing Document Reference to SDC Form -->
     </derivedFrom>
     <derivedFrom>
-        <reference value="Observation/LDCT_Lung1.formInstanceVersionURI.000046"/>
+        <reference value="Observation/LDCT_Lung1.formInstanceVersionURI.592375972"/>
         <!-- referencing Nodule 2 for patient Roel -->
     </derivedFrom>
-    <hasMember>
-        <reference value="Observation/LDCT_Lung1.formInstanceVersionURI.000048"/>
-        <!-- referencing the mean diameter observation of  -->
-    </hasMember>
+   
 </Observation>

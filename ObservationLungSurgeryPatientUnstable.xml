@@ -6,17 +6,11 @@
     </identifier>
     <status value="final"/>
     <code>
-        <coding>
-            <system value="http://www.snomed.org/"/>
-            <code value="263922001"/>
-            <display value="Unstable"/>
-        </coding>
+        <!-- question as a code -->
         <coding>
             <system value="http://cancercare.on.ca/SDC/LungSurgery"/>
-            <!-- we need to create a standard on how to do this -->
-            <code value="77334"/>
-            <!--can we use the form as the valueset?--> 
-            <display value="Unstable"/>
+            <code value="76614"/>
+            <display value="Patient stability throughout case in OR"/>
         </coding>
     </code>
     <subject>
@@ -28,12 +22,23 @@
         <reference value="Practitioner/f202"/>
         <display value="Luigi Maas"/>
     </performer>
-    <valueString value="Unstable"/>
-    <!-- Make this a boolean for Unstable True/False --> 
     <hasMember>
         <reference value="Observation/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI.77350"/>      
         <!-- referencing the child answer  -->
     </hasMember>
+    <component>
+        <!-- answer in the component--> 
+        <code>
+            <coding>
+                <system value="http://cancercare.on.ca/SDC/LungSurgery"/>
+                <!-- we need to create a standard on how to do this -->
+                <code value="77334"/>
+                <!--can we use the form as the valueset?--> 
+                <display value="Unstable"/>
+            </coding>
+        </code>
+        <valueString value="Unstable"/>
+    </component>
     <derivedFrom>
         <reference
             value="DocumentReference/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI"/>

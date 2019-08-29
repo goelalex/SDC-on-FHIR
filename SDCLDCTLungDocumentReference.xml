@@ -41,10 +41,10 @@
     </content>
     <context>
         <related>
-            <reference value="LDCT_Lung1.formInstanceVersionURI.000046"/>
+            <reference value="LDCT_Lung1.formInstanceVersionURI.592375972"/>
         </related>
         <related>
-            <reference value="LDCT_Lung1.formInstanceVersionURI.000047"/>
+            <reference value="LDCT_Lung1.formInstanceVersionURI.000046"/>
         </related>
         <related>
             <reference value="LDCT_Lung1.formInstanceVersionURI.000048"/>

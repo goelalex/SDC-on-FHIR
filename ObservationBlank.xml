@@ -12,12 +12,6 @@
             <code value=""/>
             <display value=""/>
         </coding>
-        <coding>
-            <system value=""/>
-            <!-- This code system should referencing the AnswerID from the SDC form - may need to create a valueset for that form-->
-            <code value=""/>
-            <display value=""/>
-        </coding>
     </code>
     <subject>
         <reference value=""/>
@@ -28,8 +22,19 @@
         <reference value=""/>
         <display value=""/>
     </performer>
-    <valueString value=""/>
-    <!-- Value should be reflective of whatever the user input was (i.e. the answer to the question) -->
+    <component>
+        <code>
+            <coding>
+                <system value=""/>
+                <!-- This code system should referencing the AnswerID from the SDC form - may need to create a valueset for that form-->
+                <code value=""/>
+                <display value=""/>
+            </coding>
+        </code>
+        <valueString value=""/>
+        <!-- Value should be reflective of whatever the user input was (i.e. the answer to the question) -->
+    </component>
+   
     <hasMember>
         <reference value=""/>
         <!-- referencing any child questions of this observations-->

@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
     <identifier>
-        <value value="LDCT_Lung1.formInstanceVersionURI.000046"/>
+        <value value="LDCT_Lung1.formInstanceVersionURI.592375972"/>
     </identifier>
     <status value="final"/>
     <code>
+        <coding>
+            <system value="https://radlex.org"/>
+            <code value="592375972"/>
+            <display value="nodule"/>
+        </coding>
         <coding>
             <system value="https://radlex.org"/>
             <code value="RID50149"/>
@@ -20,17 +25,20 @@
         <reference value="Practitioner/f202"/>
         <display value="Luigi Maas"/>
     </performer>
-    <valueString value="Nodule 2"/>
-    <derivedFrom>
-        <reference value="DocumentReference/LDCT_Lung1.formInstanceVersionURI"/>
-        <!-- references original DocumentReference to SDC Form -->
-    </derivedFrom>
+    <component>
+        <!-- form did not have ID for this value, is unnecessary to use component here-->
+        <valueString value="Nodule 2"/>
+    </component>
     <hasMember>
-        <reference value="Observation/LDCT_Lung1.formInstanceVersionURI.000047"/>
+        <reference value="Observation/LDCT_Lung1.formInstanceVersionURI.000046"/>
         <!-- has member of the nodule attenuation -->
     </hasMember>
     <hasMember>
         <reference value="Observation/LDCT_Lung1.formInstanceVersionURI.000048"/>
         <!-- has member of the nodule measurement -->
     </hasMember>
+    <derivedFrom>
+        <reference value="DocumentReference/LDCT_Lung1.formInstanceVersionURI"/>
+        <!-- references original DocumentReference to SDC Form -->
+    </derivedFrom>
 </Observation>
