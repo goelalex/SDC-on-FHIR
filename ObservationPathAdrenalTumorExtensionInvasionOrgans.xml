@@ -39,8 +39,8 @@
             <coding>
                 <system value="https://CAP.org"/>
                 <!-- Should we specify that this is a answer code? -->
-                <code value="41409"/>
-                <display value="Liver"/>
+                <code value="56752"/>
+                <display value="Kidney"/>
             </coding>
         </code>
     </component>
