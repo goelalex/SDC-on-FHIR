@@ -46,13 +46,13 @@
     </component>
     <derivedFrom>
         <reference
-            value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI"/>
+            value="DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI"/>
         <!-- referencing Document Reference to SDC Form -->
     </derivedFrom>
     <!-- can we use Component for a multi-select question with several answers?--> 
     <derivedFrom>
         <reference
-            value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI.51265"/>
+            value="Observation/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI.51265"/>
         <!-- referencing any child questions of this observations - creating members to parents can be optional due to complexity -->
     </derivedFrom>
 </Observation>
