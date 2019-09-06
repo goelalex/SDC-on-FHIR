@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
     <identifier>
-        <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI.51265"/>
+        <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI.43324"/>
         <!-- FormID.FormInstanceVersionURI.QuestionID should be included here -->
     </identifier>
     <status value="final"/>
@@ -9,7 +9,7 @@
         <coding>
             <system value="IHESDC"/>
             <!-- For multiselect questions include the QuestionID-->
-            <code value="51265"/>
+            <code value="43324"/>
             <display value="Tumour Extension"/>
         </coding>
     </code>
@@ -23,18 +23,6 @@
         <reference value="Practitioner/f202"/>
         <display value="Luigi Maas"/>
     </performer>
-    <component> 
-        <code>
-            <coding>
-                <system value="IHESDC"/>
-                <!-- Should we specify that this is a answer code? -->
-                <code value="52315"/>
-                <display value="Tumor invades into extra-adrenal structures (specify)"/>
-            </coding>
-        </code>
-        <valueString value="Tumor invades into extra-adrenal structures (specify)"/>
-        <!-- Value should be reflective of whatever the user input was (i.e. the answer to the question) -->
-    </component>
     <component>
         <code>
             <coding>

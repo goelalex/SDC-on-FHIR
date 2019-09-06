@@ -42,13 +42,10 @@
     </content>
     <context>
         <related>
-            <reference value=""/>
+            <reference value="DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI.43324"/>
         </related>
         <related>
-            <reference value=""/>
-        </related>
-        <related>
-            <reference value=""/>
+            <reference value="DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI.56271"/>
         </related>
     </context>
 </DocumentReference>
