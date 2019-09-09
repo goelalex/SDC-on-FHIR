@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocumentReference xmlns="http://hl7.org/fhir">
+    <masterIdentifier>
+        <value value="Lung.Res.119_3.005.001.REL_sdcFDF.9867324059yhefjklhg9239814.ver1"/>
+    </masterIdentifier>
+    <!-- ID for this resource appended FormID.FormInstanceVersionURI -->
+    <identifier>
+        <value value="Lung.Res.119"/>
+    </identifier>
+    <!-- Matches SDC Lineage -->
+    <identifier>
+        <value value="_3.005.001.REL"/>
+    </identifier>
+    <!-- Matches SDC Version -->
+    <identifier>
+        <value value="Lung.Res.119_3.005.001.REL_sdcFDF"/>
+    </identifier>
+    <!-- Matches SDC FormID; should be unique to this Form -->
+    <identifier>
+        <value value="9867324059yhefjklhg9239814"/>
+    </identifier>
+    <!-- Matches SDC FormInstanceURI -->
+    <status value="current"/>
+    <docStatus value="final"/>
+    <!-- Must us FHIR statuses for docStatus -->
+    <subject>
+        <reference value="Patient/f201"/>
+        <display value="Roel"/>
+    </subject>
+    <date value="2019-09-01T09:43:41+11:00"/>
+    <author>
+        <reference value="Practitioner/f202"/>
+        <display value="Luigi Maas"/>
+    </author>
+    <content>
+        <attachment>
+            <contentType value="application/xml"/>
+            <language value="en-CA"/>
+            <url value="http://somehospital.on.ca/Lung.Res.119_3.005.001.REL_sdcFDF.9867324059yhefjklhg9239814.ver1"/>
+        </attachment>
+    </content>
+    <context>
+        <related>
+            <reference value=""/>
+        </related>
+        <related>
+            <reference value=""/>
+        </related>
+        <related>
+            <reference value=""/>
+        </related>
+    </context>
+</DocumentReference>
