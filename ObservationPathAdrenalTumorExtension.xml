@@ -7,7 +7,7 @@
     <status value="final"/>
     <code>
         <coding>
-            <system value="IHESDC"/>
+            <system value="https://cap.org"/>
             <!-- For multiselect questions include the QuestionID-->
             <code value="43324"/>
             <display value="Tumour Extension"/>
@@ -26,7 +26,7 @@
     <component>
         <code>
             <coding>
-                <system value="IHESDC"/>
+                <system value="https://cap.org"/>
                 <!-- Should we specify that this is a answer code? -->
                 <code value="56271 "/>
                 <display value="Tumor invades into other adjacent organ(s)"/>

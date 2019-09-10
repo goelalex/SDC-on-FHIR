@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <identifier>
+        <value value="Lung.Res.119_3.005.001.REL_sdcFDF.9867324059yhefjklhg9239814.ver1.42713"/>
+        <!-- FormID.FormInstanceVersionURI.QuestionID should be included here. to uniquely identify this answered question-->
+    </identifier>
+    <status value="current"/>
+    <code>
+        <coding>
+            <system value="https://cap.org"/>
+            <!-- This ideally should be a SNOMED-CT or other standard terminology -->
+            <code value="42713"/>
+            <display value="Primary Tumor (pT)"/>
+        </coding>
+        <!-- mCODE: fix to LOINC 21889-0 --> 
+    </code>
+    <subject>
+        <reference value="Patient/f201"/>
+        <display value="Roel"/>
+        <!-- HSPC sandbox may not have patient available. May not do relative reference --> 
+    </subject>
+    <issued value="2019-09-01T09:43:41+13:00"/>
+    <performer>
+        <reference value="Practitioner/f202"/>
+        <display value="Luigi Maas"/>
+    </performer>
+    <component>
+        <!--mCODE no component use; using valueCodeableConcept--> 
+        <code>
+            <coding>
+                <system value="https://cap.org"/>
+                <!-- This code system should referencing the AnswerID from the SDC form - may need to create a valueset for that form-->
+                <code value="46349"/>
+                <display value="pT2b: Tumor less than 4 cm, but greater than or equal to 5 cm in greatest dimension"/>
+            </coding>
+            <!-- mCODE put in additional coding for cancer stage  -->
+        </code>
+        <valueString value="pT2b: Tumor less than 4 cm, but greater than or equal to 5 cm in greatest dimension"/>
+        <!-- Value should be reflective of whatever the user input was (i.e. the answer to the question) -->
+    <!-- mCODE: Add method for AJCC --> 
+    </component>
+    <derivedFrom>
+        <reference value="DocumentReference/Lung.Res.119_3.005.001.REL_sdcFDF.9867324059yhefjklhg9239814.ver1"/>
+        <!-- referencing Document Reference to SDC Form and any parent questions -->
+    </derivedFrom>
+    <!-- Use <component/> for any multiselect questions so that multiple answers are included with their unique IDs and codes--> 
+</Observation>
