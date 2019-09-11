@@ -9,8 +9,8 @@
         <coding>
             <system value="https://cap.org"/>
             <!-- This ideally should be a SNOMED-CT or other standard terminology -->
-            <code value=""/>
-            <display value=""/>
+            <code value="47348"/>
+            <display value="Distant Metastases (pM)"/>
         </coding>
     </code>
     <subject>
@@ -27,19 +27,15 @@
             <coding>
                 <system value="https://cap.org"/>
                 <!-- This code system should referencing the AnswerID from the SDC form - may need to create a valueset for that form-->
-                <code value=""/>
-                <display value=""/>
+                <code value="47746"/>
+                <display value="pM1a: Separate tumor nodule(s) in contralateral lobe; tumor with pleural or pericardial nodules or malignant pleural (or pericardial) effusion"/>
             </coding>
         </code>
-        <valueString value=""/>
+        <valueString value="pM1a: Separate tumor nodule(s) in contralateral lobe; tumor with pleural or pericardial nodules or malignant pleural (or pericardial) effusion"/>
         <!-- Value should be reflective of whatever the user input was (i.e. the answer to the question) -->
     </component>
-    <hasMember>
-        <reference value=""/>
-        <!-- referencing any child questions of this observations-->
-    </hasMember>
     <derivedFrom>
-        <reference value=""/>
+        <reference value="DocumentReference/Lung.Res.119_3.005.001.REL_sdcFDF.9867324059yhefjklhg9239814.ver1"/>
         <!-- referencing Document Reference to SDC Form and any parent questions -->
     </derivedFrom>
     <!-- Use <component/> for any multiselect questions so that multiple answers are included with their unique IDs and codes--> 

@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
     <identifier>
-        <value value="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1.76618"/>
+        <value value="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1.76617"/>
     </identifier>
     <status value="final"/>
     <code>
         <coding>
             <system value="http://cancercare.on.ca/LungSurgery"/>
-            <code value="76618"/>
+            <code value="76617"/>
             <display value="Blood transfusion"/>
         </coding>
-        <coding>
-            <system value="http://www.snomed.org/"/>
-            <code value="116859006"/>
-            <display value="Blood transfusion"/>
-        </coding>
-        <!-- example of including a semantically same SNOMED code in observation. Could be referenced via valueset to CCO code -->
-        <!-- this question was a "yes/no" not sure on best way to represent this question answer pair within an observation and component -->
     </code>
     <subject>
         <reference value="Patient/f201"/>
@@ -31,20 +24,16 @@
         <code>
             <coding>
                 <system value="http://cancercare.on.ca/LungSurgery"/>
-                <code value="77350"/>
-                <display value="Blood transfusion"/>
+                <code value="77338"/>
+                <display value="Bleeding requiring transfusion"/>
             </coding>
         </code>
-        <valueString value="Blood transfusion in surgery"/>
+        <valueString value="Bleeding requiring transfusion"/>
     </component>
+    <!-- potential for this question to include multiple components to support multiple answers--> 
     <derivedFrom>
         <reference
             value="DocumentReference/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1"/>
-        <!-- referencing Document Reference to SDC Form -->
-    </derivedFrom>
-    <derivedFrom>
-        <reference
-            value="Observation/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1.76617"/>
         <!-- referencing Document Reference to SDC Form -->
     </derivedFrom>
 </Observation>

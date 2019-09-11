@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="sdctemplate.xslt"?>
 <SDCPackage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:ihe:qrph:sdc:2016" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="urn:ihe:qrph:sdc:2016 ../Schemas/RFD+SDCRetrieveForm.xsd" packageID="PKG_Lung_Surgery" version="1.0.0.DRAFT" lineage="LungSurgCCO.357" fullURI="_baseURI=cap.org&amp;_lineage=LungSurgCCO.357&amp;_version=1.0.0.DRAFT&amp;_docType=sdcPKG" >
 	<XMLPackage>
-		<FormDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF" baseURI="cap.org" fullURI="_baseURI=cap.org&amp;_lineage=LungSurgCCO.357&amp;_version=1.0.0.DRAFT&amp;_docType=sdcFDF" formTitle="Lung Surgery CCO" lineage="LungSurgCCO.357" filename="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF.xml" version="1.0.0.DRAFT" xmlns="urn:ihe:qrph:sdc:2016" formInstanceURI="f96d3fea-62b3-47e9-8443-f199c2f946f1" formInstanceVersionURI="f96d3fea-62b3-47e9-8443-f199c2f946f2.ver1">
+		<FormDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF" baseURI="cap.org" fullURI="_baseURI=cap.org&amp;_lineage=LungSurgCCO.357&amp;_version=1.0.0.DRAFT&amp;_docType=sdcFDF" formTitle="Lung Surgery CCO" lineage="LungSurgCCO.357" filename="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF.xml" version="1.0.0.DRAFT" xmlns="urn:ihe:qrph:sdc:2016" formInstanceURI="0542f5b8-31e0-43c1-b7d2-eb24fd14da6a" formInstanceVersionURI="0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1">
 			<Property name="Copyright" type="CAPeCC_static_text" styleClass="copyright" propName="Copyright" val="(c) 2018 Cancer Care Ontario.  All rights reserved.  License required for use." />
 			<Property name="GenericHeaderText" type="CAPeCC_static_text" propName="GenericHeaderText" val="CCO Surgical Synoptic Template" />
 			<Property name="Category" type="CAPeCC_meta" propName="Category" val="Lung" />
@@ -890,7 +890,7 @@
 												<ListItem name="LI_76808" ID="76808.100004300" title="T1b  Tumor more than 2 cm&#xA;but 3 cm or less in  greatest&#xA;dimension&#xA;" />
 												<ListItem name="LI_76809" ID="76809.100004300" title="T2  Tumor with more&#xA;than 3 cm but 7 cm or&#xA;less or tumor with any  of&#xA;the following features (T2&#xA;tumors with these features&#xA;are classified T2a if 5 cm&#xA;or less); Involves main&#xA;bronchus, 2cm o  more&#xA;distal to the carina;  invades&#xA;visceral pleura (PL1 or PL2);&#xA;associated  the atelectasis&#xA;or  obstructive pneumonitis&#xA;that extends to the hilar&#xA;region but does not  involve&#xA;the entire lung" />
 												<ListItem name="LI_76810" ID="76810.100004300" title="T2a  Tumor more than 3cm&#xA;but 5 cm or less in  greatest&#xA;dimension" />
-												<ListItem name="LI_76811" ID="76811.100004300" title="T2b  Tumor more than&#xA;5 cm but 7 cm or less  in&#xA;greatest dimension" />
+												<ListItem name="LI_76811" ID="76811.100004300" title="T2b  Tumor more than&#xA;5 cm but 7 cm or less  in&#xA;greatest dimension" selected="true"/>
 												<ListItem name="LI_76812" ID="76812.100004300" title="T3  Tumor more than 7 cm or one that directly invades any of the following: parietal pleura (PL3), chest wall (including superior sulcus tumors), diaphragm, phrenic nerve, mediastinal pleura, parietal pericardium; or tumor in the main bronchus less than 2 cm distal  to&#xA;the carina but without involvement  of  the  carina; or associated atelectasis or obstructive pneumonitis of the entire lung or a separate tumor nodule(s) in the same lobe&#xA;" />
 												<ListItem name="LI_76813" ID="76813.100004300" title="T4  Tumor of any size that invades any of the following: mediastinum, heart, great vessels, trachea, recurrent laryngeal nerve, esophagus, vertebral body, carina, separate tumor nodule(s) in a different ipsilateral  lobe" />
 											</List>
@@ -902,7 +902,7 @@
 												<ListItem name="LI_76814" ID="76814.100004300" title="Nx  Regional lymph nodes cannot be assessed" />
 												<ListItem name="LI_76815" ID="76815.100004300" title="N0  No regional lymph node metastases" />
 												<ListItem name="LI_76816" ID="76816.100004300" title="N1  Metastasis in ipsilateral peribronchial and/or ipsilateral hilar nodes and intrapulmonary nodes including involvement by direct extension" />
-												<ListItem name="LI_76817" ID="76817.100004300" title="N2  Metastasis in ipsilateral mediastinal and/or subcarinal lymph node(s)" />
+												<ListItem name="LI_76817" ID="76817.100004300" title="N2  Metastasis in ipsilateral mediastinal and/or subcarinal lymph node(s)" selected="true"/>
 												<ListItem name="LI_76818" ID="76818.100004300" title="N3  Metastasis in contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene, or supraclavicular lymph node(s)" />
 											</List>
 										</ListField>
@@ -911,7 +911,7 @@
 										<ListField name="lf_76630_1">
 											<List name="lst_76630_2">
 												<ListItem name="LI_76819" ID="76819.100004300" title="M0  No distant metastasis" />
-												<ListItem name="LI_76820" ID="76820.100004300" title="M1  Distant  metastasis" />
+												<ListItem name="LI_76820" ID="76820.100004300" title="M1  Distant  metastasis" selected="true"/>
 												<ListItem name="LI_76821" ID="76821.100004300" title="M1a  Separate tumor nodule(s) in a contralateral lobe, tumor with pleural nodules or malignant pleural (or pericardial) effusion" />
 												<ListItem name="LI_76822" ID="76822.100004300" title="M1b  Distant metastasis (in extrathoracic organs)" />
 											</List>
@@ -2403,7 +2403,7 @@
 									<Question name="Q_76612" ID="76612.100004300" title="Patient condition when leaving OR">
 										<ListField name="lf_76612_1">
 											<List name="lst_76612_2">
-												<ListItem name="LI_77335" ID="77335.100004300" title="Stable" />
+												<ListItem name="LI_77335" ID="77335.100004300" title="Stable" selected="true"/>
 												<ListItem name="LI_77336" ID="77336.100004300" title="Unstable">
 													<ChildItems name="ch_77336_1">
 														<Question name="Q_77399" ID="77399.100004300" title="Unstable patient details (leaving OR):">

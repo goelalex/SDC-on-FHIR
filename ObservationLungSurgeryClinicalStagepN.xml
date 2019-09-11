@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
     <identifier>
-        <value value="Lung.Res.119_3.005.001.REL_sdcFDF.9867324059yhefjklhg9239814.ver1.1748"/>
+        <value value="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1.76629"/>
         <!-- FormID.FormInstanceVersionURI.QuestionID should be included here. to uniquely identify this answered question-->
     </identifier>
     <status value="current"/>
     <code>
         <coding>
-            <system value="https://cap.org"/>
+            <system value="http://cancercare.on.ca/LungSurgery"/>
             <!-- This ideally should be a SNOMED-CT or other standard terminology -->
-            <code value="1748"/>
-            <display value="Regional Lymph Nodes (pN)
-                "/>
+            <code value="76629"/>
+            <display value="N Stage"/>
         </coding>
     </code>
     <subject>
         <reference value="Patient/f201"/>
         <display value="Roel"/>
     </subject>
-    <issued value="2019-09-01T09:43:41+13:00"/>
+    <issued value="2019-09-03T09:43:41+13:00"/>
     <performer>
         <reference value="Practitioner/f202"/>
         <display value="Luigi Maas"/>
@@ -26,17 +25,17 @@
     <component>
         <code>
             <coding>
-                <system value="https://cap.org"/>
+                <system value="http://cancercare.on.ca/LungSurgery"/>
                 <!-- This code system should referencing the AnswerID from the SDC form - may need to create a valueset for that form-->
-                <code value="1752 "/>
-                <display value="pN2: Metastasis in ipsilateral mediastinal and / or subcarinal lymph node(s)"/>
+                <code value="76817"/>
+                <display value="N2  Metastasis in ipsilateral mediastinal and/or subcarinal lymph node(s)"/>
             </coding>
         </code>
-        <valueString value="pN2: Metastasis in ipsilateral mediastinal and / or subcarinal lymph node(s)"/>
+        <valueString value="N2  Metastasis in ipsilateral mediastinal and/or subcarinal lymph node(s)"/>
         <!-- Value should be reflective of whatever the user input was (i.e. the answer to the question) -->
     </component>
     <derivedFrom>
-        <reference value="DocumentReference/Lung.Res.119_3.005.001.REL_sdcFDF.9867324059yhefjklhg9239814.ver1"/>
+        <reference value="DocumentReference/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1"/>
         <!-- referencing Document Reference to SDC Form and any parent questions -->
     </derivedFrom>
     <!-- Use <component/> for any multiselect questions so that multiple answers are included with their unique IDs and codes--> 

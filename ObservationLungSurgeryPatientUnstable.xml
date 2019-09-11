@@ -2,7 +2,7 @@
 <Observation xmlns="http://hl7.org/fhir">
     <id value="94c82e53-4165-42d7-af2b-97c7e350e2"/>
     <identifier>
-        <value value="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI.76614"/>
+        <value value="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1.76614"/>
     </identifier>
     <status value="final"/>
     <code>
@@ -41,7 +41,7 @@
     </component>
     <derivedFrom>
         <reference
-            value="DocumentReference/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.FormInstanceVersionURI"/>
+            value="DocumentReference/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1"/>
         <!-- referencing Document Reference to SDC Form -->
     </derivedFrom>
 </Observation>
