@@ -24,8 +24,8 @@
     <docStatus value="final"/>
     <!-- Must us FHIR statuses for docStatus -->
     <subject>
-        <reference value="Patient/f201"/>
-        <display value="Roel"/>
+		<reference value="Patient/m123"/>
+        <display value="John B. Anyperson"/>
     </subject>
     <date value="2019-09-03T09:43:41+13:00"/>
     <author>

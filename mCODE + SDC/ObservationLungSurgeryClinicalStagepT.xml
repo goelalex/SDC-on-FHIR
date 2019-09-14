@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
     <identifier>
-        <value value="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1.76629"/>
+        <value value="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1.76628"/>
         <!-- FormID.FormInstanceVersionURI.QuestionID should be included here. to uniquely identify this answered question-->
     </identifier>
     <status value="current"/>
@@ -9,13 +9,13 @@
         <coding>
             <system value="http://cancercare.on.ca/LungSurgery"/>
             <!-- This ideally should be a SNOMED-CT or other standard terminology -->
-            <code value="76629"/>
-            <display value="N Stage"/>
+            <code value="76628"/>
+            <display value="T Stage"/>
         </coding>
     </code>
     <subject>
-        <reference value="Patient/m123"/>
-        <display value="John B. Anyperson"/>
+        <reference value="Patient/f201"/>
+        <display value="Roel"/>
     </subject>
     <issued value="2019-09-03T09:43:41+13:00"/>
     <performer>
@@ -27,11 +27,11 @@
             <coding>
                 <system value="http://cancercare.on.ca/LungSurgery"/>
                 <!-- This code system should referencing the AnswerID from the SDC form - may need to create a valueset for that form-->
-                <code value="76817"/>
-                <display value="N2  Metastasis in ipsilateral mediastinal and/or subcarinal lymph node(s)"/>
+                <code value="76811"/>
+                <display value="T2b  Tumor more than 5 cm but 7 cm or less  in greatest dimension"/>
             </coding>
         </code>
-        <valueString value="N2  Metastasis in ipsilateral mediastinal and/or subcarinal lymph node(s)"/>
+        <valueString value="T2b  Tumor more than 5 cm but 7 cm or less  in greatest dimension"/>
         <!-- Value should be reflective of whatever the user input was (i.e. the answer to the question) -->
     </component>
     <derivedFrom>
