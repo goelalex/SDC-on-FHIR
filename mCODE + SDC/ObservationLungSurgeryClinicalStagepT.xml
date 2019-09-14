@@ -4,39 +4,58 @@
         <value value="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1.76628"/>
         <!-- FormID.FormInstanceVersionURI.QuestionID should be included here. to uniquely identify this answered question-->
     </identifier>
-    <status value="current"/>
+    <status value="final"/>
     <code>
         <coding>
             <system value="http://cancercare.on.ca/LungSurgery"/>
-            <!-- This ideally should be a SNOMED-CT or other standard terminology -->
             <code value="76628"/>
             <display value="T Stage"/>
         </coding>
+        <coding>
+            <system value="http://standardhealthrecord.org/guides/mcode-r4/ValueSet-onco-core-TNMPrimaryTumorCategoryVS.xml.html"/>
+            <code value="cTX"/>
+            <display value="cTX"/>
+        </coding>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="371508000"/>
+            <display value="Tumor stage (observable entity)"/>
+        </coding>
     </code>
     <subject>
-        <reference value="Patient/f201"/>
-        <display value="Roel"/>
+		<reference value="Patient/m123"/>
+        <display value="John B. Anyperson"/>
     </subject>
     <issued value="2019-09-03T09:43:41+13:00"/>
     <performer>
         <reference value="Practitioner/f202"/>
         <display value="Luigi Maas"/>
     </performer>
+    <derivedFrom>
+        <reference value="DocumentReference/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1"/>
+        <!-- referencing Document Reference to SDC Form and any parent questions -->
+    </derivedFrom>
     <component>
         <code>
             <coding>
                 <system value="http://cancercare.on.ca/LungSurgery"/>
                 <!-- This code system should referencing the AnswerID from the SDC form - may need to create a valueset for that form-->
-                <code value="76811"/>
-                <display value="T2b  Tumor more than 5 cm but 7 cm or less  in greatest dimension"/>
+                <code value="76812"/>
+                <display value="T3 Tumor more than 7 cm or one that directly invades any of the following: parietal pleura (PL3), chest wall (including superior sulcus tumors), diaphragm, phrenic nerve, mediastinal pleura, parietal pericardium; or tumor in the main bronchus less than 2 cm distal to the carina but without involvement of the carina; or associated atelectasis or obstructive pneumonitis of the entire lung or a separate tumor nodule(s) in the same lobe"/>
             </coding>
+            <coding>
+            	<system value="http://standardhealthrecord.org/guides/mcode-r4/ValueSet-onco-core-TNMPrimaryTumorCategoryVS.xml.html"/>
+            	<code value="cT3"/>
+            	<display value="cT3"/>
+        	</coding>
+        	<coding>
+            	<system value="http://snomed.info/sct"/>
+            	<code value="14410001"/>
+            	<display value="T3 category (finding)"/>
+        	</coding>
         </code>
-        <valueString value="T2b  Tumor more than 5 cm but 7 cm or less  in greatest dimension"/>
+        <valueString value="T3 Tumor more than 7 cm or one that directly invades any of the following: parietal pleura (PL3), chest wall (including superior sulcus tumors), diaphragm, phrenic nerve, mediastinal pleura, parietal pericardium; or tumor in the main bronchus less than 2 cm distal to the carina but without involvement of the carina; or associated atelectasis or obstructive pneumonitis of the entire lung or a separate tumor nodule(s) in the same lobe"/>
         <!-- Value should be reflective of whatever the user input was (i.e. the answer to the question) -->
     </component>
-    <derivedFrom>
-        <reference value="DocumentReference/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1"/>
-        <!-- referencing Document Reference to SDC Form and any parent questions -->
-    </derivedFrom>
     <!-- Use <component/> for any multiselect questions so that multiple answers are included with their unique IDs and codes--> 
 </Observation>

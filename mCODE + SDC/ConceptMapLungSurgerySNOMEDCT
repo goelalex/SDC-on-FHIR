@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <url value="https://cancercare.on.ca/fhir/ConceptMap/LungSurgery"/> 
+  <identifier> 
+    <system value="urn:ietf:rfc:3986"/> 
+    <value value="CCOConceptMapLungSurgery"/> 
+  </identifier> 
+  <version value="0.0.1"/> 
+  <name value="CCOLungSurgeryConceptMap"/> 
+  <title value="CCO Lung Surgery Concept Map"/> 
+  <status value="draft"/> 
+  <experimental value="true"/> 
+  <date value="2019-09-14"/> 
+  <publisher value="Cancer Care Ontario (CCO)"/>
+  <contact> 
+    <name value="Integrated Synoptic Reporting"/> 
+    <telecom> 
+      <system value="url"/> 
+      <value value="https://cancercare.on.ca/en/integrated-synoptic-reporting"/> 
+    </telecom> 
+  </contact> 
+  <description value="A mapping from CCO Lung Surgery Form to and mCODE"/> 
+  <purpose value="To help implementers map from CCO SDC Lung Surgery Form to mCODE"/> 
+  <copyright value="Creative Commons 0"/> 
+  <sourceUri value="https://cancercare.on.ca/fhir/ValueSet/LungSurgery"/> 
+  <targetUri value="http://snomed.info/id?fhir_vs"/> 
+  <group> 
+    <source value="https://cancercare.on.ca/fhir/ValueSet/LungSurgery"/>
+    <!-- Need to decide on how to do mappings to LungSurgery form - considering 1 ValueSet per SDC Form-->
+    <target value="http://snomed.info/sct"/>
+    <!-- Tot be valid mapping for codes. PoC only for Connectathon-->
+    <element> 
+        <code value="76628"/> 
+        <display value="T Stage"/>  
+      <target> 
+        <code value="78873005"/> 
+        <display value="T category (observable entity)"/> 
+        <equivalence value="equivalent"/> 
+      </target> 
+    </element>
+        <element> 
+        <code value="76812"/> 
+        <display value="T3 Tumor more than 7 cm or one that directly invades any of the following: parietal pleura (PL3), chest wall (including superior sulcus tumors), diaphragm, phrenic nerve, mediastinal pleura, parietal pericardium; or tumor in the main bronchus less than 2 cm distal to the carina but without involvement of the carina; or associated atelectasis or obstructive pneumonitis of the entire lung or a separate tumor nodule(s) in the same lobe"/>  
+      <target> 
+        <code value="14410001"/> 
+        <display value="T3 category (finding)"/> 
+        <equivalence value="equivalent"/> 
+      </target> 
+    </element>
+    <!-- saving for any unmapped codes
+    <unmapped> 
+      <mode value=""/> 
+      <code value=""/> 
+      <display value=""/> 
+    </unmapped> -->  
+    </group>
+</ConceptMap> 

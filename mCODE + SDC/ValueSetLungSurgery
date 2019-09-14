@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="https://cancercare.on.ca/fhir/ValueSets/LungSurgery"/> 
+  <identifier> 
+    <system value="https://cancercare.on.ca/fhir/ValueSets"/> 
+    <value value="cco-lungsurgery"/> 
+  </identifier> 
+  <version value="0.0.1"/> 
+  <name value="CCO Codes for Lung Surgery SDC Form"/> 
+  <status value="draft"/> 
+  <experimental value="true"/> 
+  <date value="2019-09-14"/> 
+  <publisher value="Cancer Care Ontario (CCO)"/> 
+  <contact> 
+    <name value="Integrated Synoptic Reporting"/> 
+    <telecom> 
+      <system value="url"/> 
+      <value value="https://cancercare.on.ca/en/integrated-synoptic-reporting"/> 
+    </telecom> 
+  </contact> 
+  <description value="This is an example value set that could be created from an SDC form; in this case CCO's Lung Surgery form"/>
+  <jurisdiction> 
+    <coding> 
+      <system value="urn:iso:std:iso:3166"/> 
+      <code value="CA"/> 
+    </coding>   
+  </jurisdiction> 
+  <purpose value="This value set was published by CCO to maintain a referenceable and mappable list of identifiers for the CCO Lung Surgery Form"/> 
+  <copyright value="Creative Commons 0"/> 
+  <compose> 
+    <include> 
+      <system value="https://cancercare.on.ca"/> 
+      <version value="0.0.1"/> 
+      <concept> 
+        <code value="76628"/> 
+        <display value="T Stage"/> 
+      </concept> 
+      <concept> 
+        <code value="76803"/> 
+        <display value="Tx Primary tumor cannot be assessed, or tumor proven by the presence of malignant cells in sputum or bronchial washings but not visualized by imaging or bronchoscopy"/> 
+      </concept> 
+      <concept> 
+        <code value="76804"/> 
+        <display value="T0 No evidence of primary tumor"/> 
+      </concept>
+      <concept> 
+        <code value="76805"/> 
+        <display value="Tis Carcinoma in situ"/> 
+      </concept>
+      <concept> 
+        <code value="76806"/> 
+        <display value="T1 Tumor 3 cm or less in greatest dimension, surrounded by lung of visceral pleura, without bronchoscopic evidence of invasion more proximal than the lobar bronchus (for example, not in the main bronchus)"/> 
+      </concept>
+      <concept> 
+        <code value="76807"/> 
+        <display value="T1a Tumor 2 cm or less in greatest dimension"/> 
+      </concept>
+      <concept> 
+        <code value="76808"/> 
+        <display value="T1b Tumor more than 2 cm but 3 cm or less in greatest dimension"/> 
+      </concept>
+      <concept> 
+        <code value="76809"/> 
+        <display value="T2 Tumor with more than 3 cm but 7 cm or less or tumor with any of the following features (T2 tumors with these features are classified T2a if 5 cm or less); Involves main bronchus, 2cm o more distal to the carina; invades visceral pleura (PL1 or PL2); associated the atelectasis or obstructive pneumonitis that extends to the hilar region but does not involve the entire lung"/> 
+      </concept>
+      <concept> 
+        <code value="76810"/> 
+        <display value="T2a Tumor more than 3cm but 5 cm or less in greatest dimension"/> 
+      </concept>
+      <concept> 
+        <code value="76811"/> 
+        <display value="T2b Tumor more than 5 cm but 7 cm or less in greatest dimension"/> 
+      </concept>
+      <concept> 
+        <code value="76812"/> 
+        <display value="T3 Tumor more than 7 cm or one that directly invades any of the following: parietal pleura (PL3), chest wall (including superior sulcus tumors), diaphragm, phrenic nerve, mediastinal pleura, parietal pericardium; or tumor in the main bronchus less than 2 cm distal to the carina but without involvement of the carina; or associated atelectasis or obstructive pneumonitis of the entire lung or a separate tumor nodule(s) in the same lobe "/> 
+      </concept>
+      <concept> 
+        <code value="76813"/> 
+        <display value="T4 Tumor of any size that invades any of the following: mediastinum, heart, great vessels, trachea, recurrent laryngeal nerve, esophagus, vertebral body, carina, separate tumor nodule(s) in a different ipsilateral lobe"/> 
+      </concept>
+      <!--add MN staging information later
+      <concept> 
+        <code value=""/> 
+        <display value=""/> 
+      </concept>
+      <concept> 
+        <code value=""/> 
+        <display value=""/> 
+      </concept>
+      <concept> 
+        <code value=""/> 
+        <display value=""/> 
+      </concept>
+      <concept> 
+        <code value=""/> 
+        <display value=""/> 
+      </concept>
+      <concept> 
+        <code value=""/> 
+        <display value=""/> 
+      </concept>
+      <concept> 
+        <code value=""/> 
+        <display value=""/> 
+      </concept>
+      <concept> 
+        <code value=""/> 
+        <display value=""/> 
+      </concept> 
+      -->
+    </include> 
+  </compose> 
+</ValueSet> 
