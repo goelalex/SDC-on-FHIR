@@ -4,7 +4,7 @@
         <value value="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1.76630"/>
         <!-- FormID.FormInstanceVersionURI.QuestionID should be included here. to uniquely identify this answered question-->
     </identifier>
-    <status value="current"/>
+    <status value="final"/>
     <code>
         <coding>
             <system value="http://cancercare.on.ca/LungSurgery"/>

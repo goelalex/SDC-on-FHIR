@@ -4,7 +4,7 @@
         <value value="Lung.Res.119_3.005.001.REL_sdcFDF.9867324059yhefjklhg9239814.ver1.42713"/>
         <!-- FormID.FormInstanceVersionURI.QuestionID should be included here. to uniquely identify this answered question-->
     </identifier>
-    <status value="current"/>
+    <status value="final"/>
     <code>
         <coding>
             <system value="https://cap.org"/>

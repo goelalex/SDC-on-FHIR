@@ -1,0 +1,100 @@
+{
+  "resourceType": "Practitioner",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2019-09-14T18:24:44.000+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : f202</p> <p> <b> identifier</b> : UZI-nummer = 12345678902 (OFFICIAL), BIG-nummer = 12345678902 (OFFICIAL)</p> <p> <b> active</b> : true</p> <p> <b> name</b> : Luigi Maas(OFFICIAL)</p> <p> <b> telecom</b> : ph: +31715269111(WORK)</p> <p> <b> address</b> : Walvisbaai 3 C4 - Automatisering Den helder 2333ZA NLD (WORK)</p> <p> <b> gender</b> : male</p> <p> <b> birthDate</b> : 12/06/1960</p> </div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "_use": {
+        "fhir_comments": [
+          "   The identifier for the person as this practitioner (fictive)   "
+        ]
+      },
+      "type": {
+        "text": "UZI-nummer"
+      },
+      "system": "urn:oid:2.16.528.1.1007.3.1",
+      "value": "12345678902"
+    },
+    {
+      "use": "official",
+      "_use": {
+        "fhir_comments": [
+          "   The identifier for this individual   "
+        ]
+      },
+      "type": {
+        "text": "BIG-nummer"
+      },
+      "system": "https://www.bigregister.nl/",
+      "value": "12345678902"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "_use": {
+        "fhir_comments": [
+          "   The name of the practitioner   "
+        ]
+      },
+      "text": "Luigi Maas",
+      "family": "Maas",
+      "given": [
+        "Luigi"
+      ],
+      "prefix": [
+        "Dr."
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "_system": {
+        "fhir_comments": [
+          "   A contact detail for the individual   "
+        ]
+      },
+      "value": "+31715269111",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "_use": {
+        "fhir_comments": [
+          "   Work address for the individual   "
+        ]
+      },
+      "line": [
+        "Walvisbaai 3",
+        "C4 - Automatisering"
+      ],
+      "city": "Den helder",
+      "postalCode": "2333ZA",
+      "country": "NLD",
+      "_country": {
+        "fhir_comments": [
+          "   ISO 3166 3 letter code   "
+        ]
+      }
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1960-06-12",
+  "_birthDate": {
+    "fhir_comments": [
+      "   The practitioner's administrative gender   ",
+      "       <photo>    \n        <reference value=\"Media/LM-203.bmp\"/>\n        <display value=\"Picture_Luigi_Maas\"/>\n    </photo>   "
+    ]
+  }
+}
