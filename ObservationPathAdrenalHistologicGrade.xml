@@ -21,15 +21,13 @@
         <reference value="Practitioner/f202"/>
         <display value="Luigi Maas"/>
     </performer>
-    <component>
-        <code>
+    <valueCodeableConcept>
             <coding>
                 <system value="https://CAP.org"/>
                 <code value="53603.100004300"/>
                 <display value="Low grade (less than 20 mitoses/50 high-power fields)"/>
             </coding>
-        </code>
-    </component>
+    </valueCodeableConcept>
     <derivedFrom>
         <reference
             value="DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF.f96d3fea-62b3-47e9-8443-f199c2f946f0.ver1I"/>

@@ -22,7 +22,7 @@
     <!-- Matches SDC FormInstanceURI -->
     <status value="current"/>
     <docStatus value="final"/>
-    <!-- Must us FHIR statuses for docStatus -->
+    <!-- Must use FHIR statuses for docStatus -->
     <subject>
         <reference value="Patient/bibata.amidou@chudequebec.ca"/>
         <display value="Bibata Amidou"/>
@@ -37,15 +37,15 @@
             <contentType value="application/xml"/>
             <language value="en-US"/>
             <!-- likely en-US or en-CA --> 
-            <url value="https://devsdt.cap.org/SDCApp/GetXml.aspx?PackageId=PKG_Adrenal"/>
+            <url value="https://devsdt.cap.org/SDCApp/submissiongethtml.aspx?transaction_id=1228"/>
         </attachment>
     </content>
     <context>
         <related>
-            <reference value="DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI.43324"/>
+            <reference value="Observation/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI.43324"/>
         </related>
         <related>
-            <reference value="DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI.56271"/>
+            <reference value="Observation/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI.56271"/>
         </related>
     </context>
 </DocumentReference>

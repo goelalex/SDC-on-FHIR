@@ -27,16 +27,13 @@
         <reference value="Practitioner/f202"/>
         <display value="Luigi Maas"/>
     </performer>
-    <component>
-        <code>
+    <valueCodeableConcept>
             <coding>
                 <system value="http://cancercare.on.ca/LungSurgery"/>
                 <code value="77350"/>
                 <display value="Blood transfusion"/>
             </coding>
-        </code>
-        <valueString value="Blood transfusion in surgery"/>
-    </component>
+        </valueCodeableConcept>
     <derivedFrom>
         <reference
             value="DocumentReference/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1"/>

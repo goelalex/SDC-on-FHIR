@@ -35,9 +35,8 @@
         <reference value="DocumentReference/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF1.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1"/>
         <!-- referencing Document Reference to SDC Form and any parent questions -->
     </derivedFrom>
-    <component>
-        <code>
-            <coding>
+    <valueCodeableConcept>
+       <coding>
                 <system value="http://cancercare.on.ca/LungSurgery"/>
                 <!-- This code system should referencing the AnswerID from the SDC form - may need to create a valueset for that form-->
                 <code value="76812"/>
@@ -53,9 +52,5 @@
             	<code value="14410001"/>
             	<display value="T3 category (finding)"/>
         	</coding>
-        </code>
-        <valueString value="T3 Tumor more than 7 cm or one that directly invades any of the following: parietal pleura (PL3), chest wall (including superior sulcus tumors), diaphragm, phrenic nerve, mediastinal pleura, parietal pericardium; or tumor in the main bronchus less than 2 cm distal to the carina but without involvement of the carina; or associated atelectasis or obstructive pneumonitis of the entire lung or a separate tumor nodule(s) in the same lobe"/>
-        <!-- Value should be reflective of whatever the user input was (i.e. the answer to the question) -->
-    </component>
-    <!-- Use <component/> for any multiselect questions so that multiple answers are included with their unique IDs and codes--> 
+    </valueCodeableConcept>
 </Observation>
