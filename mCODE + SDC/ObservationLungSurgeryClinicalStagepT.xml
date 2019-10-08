@@ -12,7 +12,7 @@
             <display value="T Stage"/>
         </coding>
         <coding>
-            <system value="http://standardhealthrecord.org/guides/mcode-r4/ValueSet-onco-core-TNMPrimaryTumorCategoryVS.xml.html"/>
+            <system value="http://standardhealthrecord.org/"/>
             <code value="cTX"/>
             <display value="cTX"/>
         </coding>
@@ -44,7 +44,7 @@
                 <display value="T3 Tumor more than 7 cm or one that directly invades any of the following: parietal pleura (PL3), chest wall (including superior sulcus tumors), diaphragm, phrenic nerve, mediastinal pleura, parietal pericardium; or tumor in the main bronchus less than 2 cm distal to the carina but without involvement of the carina; or associated atelectasis or obstructive pneumonitis of the entire lung or a separate tumor nodule(s) in the same lobe"/>
             </coding>
             <coding>
-            	<system value="http://standardhealthrecord.org/guides/mcode-r4/ValueSet-onco-core-TNMPrimaryTumorCategoryVS.xml.html"/>
+            	<system value="http://standardhealthrecord.org/"/>
             	<code value="cT3"/>
             	<display value="cT3"/>
         	</coding>

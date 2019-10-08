@@ -23,7 +23,7 @@
   <purpose value="To help implementers map from CCO SDC Lung Surgery Form to mCODE"/> 
   <copyright value="Creative Commons 0"/> 
   <sourceUri value="https://cancercare.on.ca/fhir/ValueSet/LungSurgery"/> 
-  <targetUri value="http://snomed.info/id?fhir_vs"/> 
+  <targetUri value="http://snomed.info/id?fhir_vs"/>
   <group> 
     <source value="https://cancercare.on.ca/fhir/ValueSet/LungSurgery"/>
     <!-- Need to decide on how to do mappings to LungSurgery form - considering 1 ValueSet per SDC Form-->
