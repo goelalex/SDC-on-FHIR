@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+    <identifier>
+        <system value="urn:system"></system>
+        <value value="6754"></value>
+    </identifier>
+    <name>
+        <family value="Rodriguez"></family>
+        <given value="Jose"></given>
+    </name>
+    <gender value="male"></gender>
+</Patient>
+

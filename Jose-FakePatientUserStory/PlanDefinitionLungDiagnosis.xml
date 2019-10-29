@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlanDefinition xmlns="http://hl7.org/fhir">
+    <identifier>
+        <system value="http://someIdentifier.com"></system>
+        <value value="planDef1"></value>
+    </identifier>
+    <name value="LungCancerDiagnosis"></name>
+    <title value="Lung Cancer Diagnosis"></title>
+    <type>
+        <coding>
+            <code value="workflow-definition"></code>
+        </coding>
+    </type>
+    <status value="active"></status>
+    <action>
+        <title value="LDCT Lung"></title>
+        <trigger>
+            <type value="data-added"></type>
+            <data>
+                <type value="Coding"></type>
+                <codeFilter>
+                    <code>
+                        <system value="http://www.radlex.org"></system>
+                        <code value="RID50140"></code>
+                        <display value="Lung-RADS 4B"></display>
+                    </code>
+                </codeFilter>
+            </data>
+        </trigger>
+        <definition>
+            <definitionCanonical value="ActivityDefintion/LungSurgery1"></definitionCanonical>
+        </definition>
+    </action>
+</PlanDefinition>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practitioner xmlns="http://hl7.org/fhir">
+    <identifier>
+        <system value="http://someIdentifier.com"></system>
+        <value value="pathpract1"></value>
+    </identifier>
+    <name>
+        <family value="Bit"></family>
+        <given value="Rex"></given>
+    </name>
+</Practitioner>
