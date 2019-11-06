@@ -1,0 +1,469 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+<Patient xmlns="http://hl7.org/fhir">
+   <identifier>
+      <system value="urn:system"></system>
+      <value value="6754"></value>
+   </identifier>
+   <name>
+      <family value="Rodriguez"></family>
+      <given value="Jose"></given>
+   </name>
+   <gender value="male"></gender>
+</Patient>
+*******************************************************************
+<BodyStructure xmlns="http://hl7.org/fhir">
+   <identifier>
+      <system value="http://someIdentifier.com"></system>
+      <value value="bs1"></value>
+   </identifier>
+   <active value="true"></active>
+   <location>
+      <coding>
+         <system value="http://snomed.org"></system>
+         <code value="39607008"></code>
+         <display value="Lung"></display>
+      </coding>
+   </location>
+   <patient>
+      <reference value="Patient/6754"></reference>
+   </patient>
+</BodyStructure>
+*******************************************************************
+<Practitioner xmlns="http://hl7.org/fhir">
+   <identifier>
+      <system value="http://someIdentifier.com"></system>
+      <value value="radpract1"></value>
+   </identifier>
+   <name>
+      <family value="Wu"></family>
+      <given value="Manny"></given>
+   </name>
+</Practitioner>
+*******************************************************************
+Root: SDCPackage
+Form ID: FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1
+Root: SDCPackage
+# of children in Body: 1
+# of questions: 47
+QUESTION.ID: 000004
+LISTITEM.ID: 000005
+LISTITEM.TITLE: Baseline scan
+*******************************************************************
+<Observation xmlns="http://hl7.org/fhir">
+   <identifier>
+      <system value="https://CAP.org"></system>
+      <value value="FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1.000004"></value>
+   </identifier>
+   <status value="final"></status>
+   <code>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000004"></code>
+         <display value="Reason for exam:"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/6754"></reference>
+   </subject>
+   <performer>
+      <reference value="Practitioner/radpract1"></reference>
+   </performer>
+   <valueCodeableConcept>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000005"></code>
+         <display value="Baseline scan"></display>
+      </coding>
+   </valueCodeableConcept>
+   <derivedFrom>
+      <reference value="DocumentReference/FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1"></reference>
+   </derivedFrom>
+</Observation>
+*******************************************************************
+QUESTION.ID: 000011
+LISTITEM.ID: 000012
+LISTITEM.TITLE: None Available
+*******************************************************************
+<Observation xmlns="http://hl7.org/fhir">
+   <identifier>
+      <system value="https://CAP.org"></system>
+      <value value="FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1.000011"></value>
+   </identifier>
+   <status value="final"></status>
+   <code>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000011"></code>
+         <display value="Comparison Study:"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/6754"></reference>
+   </subject>
+   <performer>
+      <reference value="Practitioner/radpract1"></reference>
+   </performer>
+   <valueCodeableConcept>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000012"></code>
+         <display value="None Available"></display>
+      </coding>
+   </valueCodeableConcept>
+   <derivedFrom>
+      <reference value="DocumentReference/FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1"></reference>
+   </derivedFrom>
+</Observation>
+*******************************************************************
+QUESTION.ID: 000017
+LISTITEM.ID: 000018
+LISTITEM.TITLE: Adequate
+*******************************************************************
+<Observation xmlns="http://hl7.org/fhir">
+   <identifier>
+      <system value="https://CAP.org"></system>
+      <value value="FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1.000017"></value>
+   </identifier>
+   <status value="final"></status>
+   <code>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000017"></code>
+         <display value="Overall Image Quality:"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/6754"></reference>
+   </subject>
+   <performer>
+      <reference value="Practitioner/radpract1"></reference>
+   </performer>
+   <valueCodeableConcept>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000018"></code>
+         <display value="Adequate"></display>
+      </coding>
+   </valueCodeableConcept>
+   <derivedFrom>
+      <reference value="DocumentReference/FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1"></reference>
+   </derivedFrom>
+</Observation>
+*******************************************************************
+QUESTION.ID: 000021
+LISTITEM.ID: 000022
+LISTITEM.TITLE: LDCT Study Protocol
+*******************************************************************
+<Observation xmlns="http://hl7.org/fhir">
+   <identifier>
+      <system value="https://CAP.org"></system>
+      <value value="FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1.000021"></value>
+   </identifier>
+   <status value="final"></status>
+   <code>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000021"></code>
+         <display value="Procedure protocol:"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/6754"></reference>
+   </subject>
+   <performer>
+      <reference value="Practitioner/radpract1"></reference>
+   </performer>
+   <valueCodeableConcept>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000022"></code>
+         <display value="LDCT Study Protocol"></display>
+      </coding>
+   </valueCodeableConcept>
+   <derivedFrom>
+      <reference value="DocumentReference/FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1"></reference>
+   </derivedFrom>
+</Observation>
+*******************************************************************
+QUESTION.ID: 000035
+LISTITEM.ID: 000036
+LISTITEM.TITLE: RUL
+*******************************************************************
+<Observation xmlns="http://hl7.org/fhir">
+   <identifier>
+      <system value="https://CAP.org"></system>
+      <value value="FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1.000035"></value>
+   </identifier>
+   <status value="final"></status>
+   <code>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000035"></code>
+         <display value="Lobe:"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/6754"></reference>
+   </subject>
+   <performer>
+      <reference value="Practitioner/radpract1"></reference>
+   </performer>
+   <valueCodeableConcept>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000036"></code>
+         <display value="RUL"></display>
+      </coding>
+   </valueCodeableConcept>
+   <derivedFrom>
+      <reference value="DocumentReference/FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1"></reference>
+   </derivedFrom>
+</Observation>
+*******************************************************************
+QUESTION.ID: 000042
+LISTITEM.ID: 000044
+LISTITEM.TITLE: Subpleural
+*******************************************************************
+<Observation xmlns="http://hl7.org/fhir">
+   <identifier>
+      <system value="https://CAP.org"></system>
+      <value value="FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1.000042"></value>
+   </identifier>
+   <status value="final"></status>
+   <code>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000042"></code>
+         <display value="Location:"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/6754"></reference>
+   </subject>
+   <performer>
+      <reference value="Practitioner/radpract1"></reference>
+   </performer>
+   <valueCodeableConcept>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000044"></code>
+         <display value="Subpleural"></display>
+      </coding>
+   </valueCodeableConcept>
+   <derivedFrom>
+      <reference value="DocumentReference/FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1"></reference>
+   </derivedFrom>
+</Observation>
+*******************************************************************
+QUESTION.ID: 000046
+LISTITEM.ID: 000047
+LISTITEM.TITLE: Solid
+*******************************************************************
+<Observation xmlns="http://hl7.org/fhir">
+   <identifier>
+      <system value="https://CAP.org"></system>
+      <value value="FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1.000046"></value>
+   </identifier>
+   <status value="final"></status>
+   <code>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000046"></code>
+         <display value="Attenuation:"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/6754"></reference>
+   </subject>
+   <performer>
+      <reference value="Practitioner/radpract1"></reference>
+   </performer>
+   <valueCodeableConcept>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000047"></code>
+         <display value="Solid"></display>
+      </coding>
+   </valueCodeableConcept>
+   <derivedFrom>
+      <reference value="DocumentReference/FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1"></reference>
+   </derivedFrom>
+</Observation>
+*******************************************************************
+QUESTION.ID: 000064
+LISTITEM.ID: 000065
+LISTITEM.TITLE: None
+*******************************************************************
+<Observation xmlns="http://hl7.org/fhir">
+   <identifier>
+      <system value="https://CAP.org"></system>
+      <value value="FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1.000064"></value>
+   </identifier>
+   <status value="final"></status>
+   <code>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000064"></code>
+         <display value="Comparison:"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/6754"></reference>
+   </subject>
+   <performer>
+      <reference value="Practitioner/radpract1"></reference>
+   </performer>
+   <valueCodeableConcept>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000065"></code>
+         <display value="None"></display>
+      </coding>
+   </valueCodeableConcept>
+   <derivedFrom>
+      <reference value="DocumentReference/FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1"></reference>
+   </derivedFrom>
+</Observation>
+*******************************************************************
+QUESTION.ID: 000077
+LISTITEM.ID: 000079
+LISTITEM.TITLE: Smooth
+*******************************************************************
+<Observation xmlns="http://hl7.org/fhir">
+   <identifier>
+      <system value="https://CAP.org"></system>
+      <value value="FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1.000077"></value>
+   </identifier>
+   <status value="final"></status>
+   <code>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000077"></code>
+         <display value="Margins:"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/6754"></reference>
+   </subject>
+   <performer>
+      <reference value="Practitioner/radpract1"></reference>
+   </performer>
+   <valueCodeableConcept>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000079"></code>
+         <display value="Smooth"></display>
+      </coding>
+   </valueCodeableConcept>
+   <derivedFrom>
+      <reference value="DocumentReference/FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1"></reference>
+   </derivedFrom>
+</Observation>
+*******************************************************************
+QUESTION.ID: 000084
+LISTITEM.ID: 000085
+LISTITEM.TITLE: None
+*******************************************************************
+<Observation xmlns="http://hl7.org/fhir">
+   <identifier>
+      <system value="https://CAP.org"></system>
+      <value value="FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1.000084"></value>
+   </identifier>
+   <status value="final"></status>
+   <code>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000084"></code>
+         <display value="Calcification:"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/6754"></reference>
+   </subject>
+   <performer>
+      <reference value="Practitioner/radpract1"></reference>
+   </performer>
+   <valueCodeableConcept>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000085"></code>
+         <display value="None"></display>
+      </coding>
+   </valueCodeableConcept>
+   <derivedFrom>
+      <reference value="DocumentReference/FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1"></reference>
+   </derivedFrom>
+</Observation>
+*******************************************************************
+QUESTION.ID: 000088
+LISTITEM.ID: 000089
+LISTITEM.TITLE: None
+*******************************************************************
+<Observation xmlns="http://hl7.org/fhir">
+   <identifier>
+      <system value="https://CAP.org"></system>
+      <value value="FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1.000088"></value>
+   </identifier>
+   <status value="final"></status>
+   <code>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000088"></code>
+         <display value="Other characteristics:"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/6754"></reference>
+   </subject>
+   <performer>
+      <reference value="Practitioner/radpract1"></reference>
+   </performer>
+   <valueCodeableConcept>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000089"></code>
+         <display value="None"></display>
+      </coding>
+   </valueCodeableConcept>
+   <derivedFrom>
+      <reference value="DocumentReference/FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1"></reference>
+   </derivedFrom>
+</Observation>
+*******************************************************************
+QUESTION.ID: 000115
+LISTITEM.ID: 000121
+LISTITEM.TITLE: 4B - chest CT with or without contrast, PET/CT and/or tissue sampling depending on the *probability of malignancy and comorbidities. PET/CT may be used when there is a = 8 mm solid component
+*******************************************************************
+<Observation xmlns="http://hl7.org/fhir">
+   <identifier>
+      <system value="https://CAP.org"></system>
+      <value value="FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1.000115"></value>
+   </identifier>
+   <status value="final"></status>
+   <code>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000115"></code>
+         <display value="Lung-Rads Version 1.0 Assessment Category:"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/6754"></reference>
+   </subject>
+   <performer>
+      <reference value="Practitioner/radpract1"></reference>
+   </performer>
+   <valueCodeableConcept>
+      <coding>
+         <system value="https://CAP.org"></system>
+         <code value="000121"></code>
+         <display value="4B - chest CT with or without contrast, PET/CT and/or tissue sampling depending on the *probability of malignancy and comorbidities. PET/CT may be used when there is a = 8 mm solid component"></display>
+      </coding>
+   </valueCodeableConcept>
+   <derivedFrom>
+      <reference value="DocumentReference/FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1"></reference>
+   </derivedFrom>
+</Observation>
+*******************************************************************

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <identifier>
+        <system value="https://CAP.org"></system>
+        <value value="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1.76618.100004300"></value>
+    </identifier>
+    <status value="final"></status>
+    <code>
+        <coding>
+            <system value="https://CAP.org"></system>
+            <code value="76618.100004300"></code>
+            <display value="Blood transfusion used to treat blood loss"></display>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/6754"></reference>
+    </subject>
+    <performer>
+        <reference value="Practitioner/surgpract1"></reference>
+    </performer>
+    <valueCodeableConcept>
+        <coding>
+            <system value="https://CAP.org"></system>
+            <code value="77350.100004300"></code>
+            <display value="Yes"></display>
+        </coding>
+    </valueCodeableConcept>
+    <derivedFrom>
+        <reference value="DocumentReference/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1"></reference>
+    </derivedFrom>
+</Observation>

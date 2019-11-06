@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <identifier>
+        <system value="https://CAP.org"></system>
+        <value value="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1.76503.100004300"></value>
+    </identifier>
+    <status value="final"></status>
+    <code>
+        <coding>
+            <system value="https://CAP.org"></system>
+            <code value="76503.100004300"></code>
+            <display value="Anatomic segment resected"></display>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/6754"></reference>
+    </subject>
+    <performer>
+        <reference value="Practitioner/surgpract1"></reference>
+    </performer>
+    <derivedFrom>
+        <reference value="DocumentReference/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF.0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1"></reference>
+    </derivedFrom>
+    <component>
+        <code>
+            <coding>
+                <system value="https://CAP.org"></system>
+                <code value="76969.100004300"></code>
+                <display value="Right - Posterior "></display>
+            </coding>
+        </code>
+    </component>
+</Observation>

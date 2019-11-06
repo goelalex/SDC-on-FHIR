@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <identifier>
+        <system value="https://CAP.org"></system>
+        <value value="Lung.Res.119_3.005.001.REL_sdcFDF.9867324059yhefjklhg9239814.ver1.55856.100004300"></value>
+    </identifier>
+    <status value="final"></status>
+    <code>
+        <coding>
+            <system value="https://CAP.org"></system>
+            <code value="55856.100004300"></code>
+            <display value="Procedure"></display>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/6754"></reference>
+    </subject>
+    <performer>
+        <reference value="Practitioner/pathpract1"></reference>
+    </performer>
+    <derivedFrom>
+        <reference value="DocumentReference/Lung.Res.119_3.005.001.REL_sdcFDF.9867324059yhefjklhg9239814.ver1"></reference>
+    </derivedFrom>
+    <component>
+        <code>
+            <coding>
+                <system value="https://CAP.org"></system>
+                <code value="1688.100004300"></code>
+                <display value="Segmentectomy"></display>
+            </coding>
+        </code>
+    </component>
+</Observation>

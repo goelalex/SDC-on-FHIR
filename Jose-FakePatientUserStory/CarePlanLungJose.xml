@@ -4,7 +4,7 @@
         <system value="http://someIdentifier.com"></system>
         <value value="cplung1"></value>
     </identifier>
-    <instantiatesUri value="PlanDefinition/planDef1"></instantiatesUri>
+    <instantiatesCanonical value="PlanDefinition/planDef1"></instantiatesCanonical>
     <status value="active"></status>
     <intent value="plan"></intent>
     <subject>

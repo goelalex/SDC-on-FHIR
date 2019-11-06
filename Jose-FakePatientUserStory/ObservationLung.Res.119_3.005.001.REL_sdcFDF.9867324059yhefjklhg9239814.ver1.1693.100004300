@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <identifier>
+        <system value="https://CAP.org"></system>
+        <value value="Lung.Res.119_3.005.001.REL_sdcFDF.9867324059yhefjklhg9239814.ver1.1693.100004300"></value>
+    </identifier>
+    <status value="final"></status>
+    <code>
+        <coding>
+            <system value="https://CAP.org"></system>
+            <code value="1693.100004300"></code>
+            <display value="Specimen Laterality"></display>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/6754"></reference>
+    </subject>
+    <performer>
+        <reference value="Practitioner/pathpract1"></reference>
+    </performer>
+    <valueCodeableConcept>
+        <coding>
+            <system value="https://CAP.org"></system>
+            <code value="1694.100004300"></code>
+            <display value="Right"></display>
+        </coding>
+    </valueCodeableConcept>
+    <derivedFrom>
+        <reference value="DocumentReference/Lung.Res.119_3.005.001.REL_sdcFDF.9867324059yhefjklhg9239814.ver1"></reference>
+    </derivedFrom>
+</Observation>

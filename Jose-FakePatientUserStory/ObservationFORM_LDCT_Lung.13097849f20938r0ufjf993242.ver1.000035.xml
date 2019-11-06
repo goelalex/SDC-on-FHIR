@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <identifier>
+        <system value="https://CAP.org"></system>
+        <value value="FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1.000035"></value>
+    </identifier>
+    <status value="final"></status>
+    <code>
+        <coding>
+            <system value="https://CAP.org"></system>
+            <code value="000035"></code>
+            <display value="Lobe:"></display>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/6754"></reference>
+    </subject>
+    <performer>
+        <reference value="Practitioner/radpract1"></reference>
+    </performer>
+    <valueCodeableConcept>
+        <coding>
+            <system value="https://CAP.org"></system>
+            <code value="000036"></code>
+            <display value="RUL"></display>
+        </coding>
+    </valueCodeableConcept>
+    <derivedFrom>
+        <reference value="DocumentReference/FORM_LDCT_Lung.13097849f20938r0ufjf993242.ver1"></reference>
+    </derivedFrom>
+</Observation>
