@@ -12,23 +12,24 @@
   <differential>
     <element id="DocumentReference.masterIdentifier">
       <path value="DocumentReference.masterIdentifier" />
-      <definition value="The masterIdentifier should be derived from the SDC formID and formInstanceVersionURI in the format of formID.formInstanceVersionURI" />
-      <comment value="Maps to SDC InstanceVersionURI" />
+      <comment value="The masterIdentifier should be derived from the SDC formID and formInstanceVersionURI in the format of formID.formInstanceVersionURI" />
       <requirements value="The structure and format of this Id shall be consistent with the specification corresponding to the InstanceVersionURI specified in the SDC Technical Reference Guide" />
     </element>
     <element id="DocumentReference.identifier">
       <path value="DocumentReference.identifier" />
-      <definition value="Other identifiers associated with the document, including version independent identifiers. Map other SDC Identifiers here including: Lineage, FormID, Version, BaseURI, InstanceURI, FullURI" />
-      <comment value="Map other SDC Identifiers here including: Lineage, FormID, Version, BaseURI, InstanceURI, FullURI" />
+      <comment value="Other identifiers associated with the document, including version independent identifiers. Map other SDC Identifiers here including: Lineage, FormID, Version, BaseURI, InstanceURI, FullURI" />
     </element>
     <element id="DocumentReference.relatesTo">
       <path value="DocumentReference.relatesTo" />
-      <definition value="Relationships that this document has with other DocumentReferences and Observations. Needs to map to DocumentReference masterIdentifier, and must map to any Observations Identifiers that are derived from this DocumentReference" />
+      <comment value="Relationships that this document has with other DocumentReferences and Observations. Needs to map to DocumentReference masterIdentifier, and must map to any Observations Identifiers that are derived from this DocumentReference" />
     </element>
     <element id="DocumentReference.content">
       <path value="DocumentReference.content" />
-      <definition value="The document and format referenced. There may be multiple content element repetitions, each with a different format. " />
-      <comment value="Should provide access to the Binary Resource of the SDC Form" />
+      <comment value="Should provide access to the form as either data or url. " />
+    </element>
+    <element id="DocumentReference.context">
+      <path value="DocumentReference.context" />
+      <comment value="Should reference created observations from this form. " />
     </element>
   </differential>
 </StructureDefinition>
