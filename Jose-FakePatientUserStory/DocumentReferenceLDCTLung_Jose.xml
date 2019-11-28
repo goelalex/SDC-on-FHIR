@@ -37,6 +37,7 @@
             <contentType value="application/xml"/>
             <language value="en-CA"/>
             <url value="https://somehospital.on.ca/SDC/LDCT_Lung1.13097849f20938r0ufjf993242.ver1"/>
+            <!-- Add Base64 Encoded form -->
         </attachment>
     </content>
     <context>

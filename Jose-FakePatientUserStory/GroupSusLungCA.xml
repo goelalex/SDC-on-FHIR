@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Group xmlns="http://hl7.org/fhir">
+    <text> 
+        <status value="additional"/> 
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <p> Patients with suspicion of lung cancer</p> 
+        </div> 
+    </text> 
+    <identifier> 
+        <system value="http://ontario.ca"/> 
+        <value value="groupsuslung1"/> 
+    </identifier> 
+    <type value="person"/> 
+    <actual value="true"/> 
+    <name value="Suspicion of Lung Cancer"/> 
+    <characteristic> 
+        <code> 
+            <coding>
+                <system value="https://http://www.snomed.org/"/>
+                <!-- This ideally should be a SNOMED-CT or other standard terminology -->
+                <code value=""/>
+                <display value=""/>
+            </coding> 
+            <!--GroupCharacteristicKind: need to find appropriate valueset for here--> 
+        </code> 
+        <valueCodeableConcept> 
+            <coding value="">
+                <system value="https://http://www.snomed.org/"/>
+                <code value="162573006"/>
+                <display value="Suspected lung cancer (situation)"/>
+            </coding>
+        </valueCodeableConcept> 
+    </characteristic> 
+    <member> 
+        <entity> 
+            <reference value="Patient/pat1"/> 
+        </entity>  
+    </member> 
+</Group> 

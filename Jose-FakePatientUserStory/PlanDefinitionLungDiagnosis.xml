@@ -36,6 +36,7 @@
         </trigger>
         <definition>
             <definitionCanonical value="ActivityDefintion/LungSurgery1"></definitionCanonical>
+            <!-- GET [base]/ActivityDefinition/citalopramPrescription/$apply?subject=Patient/124 Where do we use this? https://www.hl7.org/fhir/activitydefinition-operation-apply.html--> 
         </definition>
     </action>
 </PlanDefinition>
