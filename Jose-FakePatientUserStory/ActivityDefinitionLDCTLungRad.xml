@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ActivityDefinition xmlns="http://hl7.org/fhir">
+<ActivityDefinition>
     <identifier>
-        <system value="http://someIdentifier.com"></system>
-        <value value="LDCTLungActDef1"></value>
+        <system value="http://someIdentifier.com" />
+        <value value="LDCTLungActDef1" />
     </identifier>
-    <status value="active"></status>
+    <status value="active" />
+    <relatedArtifact>
+        <type value="composed-of" />
+        <display value="CCO LDCT Lung Radiology Reporting Template" />
+        <url value="https://somehospital.on.ca/SDC/LDCT_Lung1" />
+    </relatedArtifact>
+    <kind value="ServiceRequest"/>
     <code>
         <coding>
-            <system value="http://snomed.org/"></system>
-            <code value="16334891000119106"></code>
-            <display value=" Low dose computed tomography of chest without contrast (procedure)"></display>
+            <system value="http://snomed.org/" />
+            <code value="16334891000119106" />
+            <display value="Low dose computed tomography of chest without contrast (procedure)" />
         </coding>
     </code>
-    <relatedArtifact>
-        <type value="composed-of"></type>
-        <!-- the blank template is referenced here  to be triggered for use-->
-        <display value="CCO LDCT Lung Radiology Reporting Template"></display>
-        <url value="https://somehospital.on.ca/SDC/LDCT_Lung1"></url>
-    </relatedArtifact>
 </ActivityDefinition>

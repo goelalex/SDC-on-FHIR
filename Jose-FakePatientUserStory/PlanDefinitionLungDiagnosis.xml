@@ -40,10 +40,8 @@
                 <expression value="https://[base]/Observartion?subject:[Patient]/?valueCodeableConcept:11528-7"/>
             </expression>
         </condition>
-        <definition>
-            <definitionCanonical value="ActivityDefintion/LungSurgery1"></definitionCanonical>
+        <definitionCanonical value="ActivityDefintion/LungSurgery1"/>
             <!-- GET [base]/ActivityDefinition/citalopramPrescription/$apply?subject=Patient/124 Where do we use this? https://www.hl7.org/fhir/activitydefinition-operation-apply.html--> 
-        </definition>
     </action>
     <!-- add future actions -->
 </PlanDefinition>
