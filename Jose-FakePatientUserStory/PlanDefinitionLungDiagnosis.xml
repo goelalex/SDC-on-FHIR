@@ -19,6 +19,8 @@
             <data>
                 <type value="Coding"></type>
                 <codeFilter>
+                    <searchParam value="Lung-RADS"/>
+                    <!-- check that this is correct searchParam. A token parameter that refers to a search parameter defined on the specified type of the DataRequirement, and which searches on elements of type code, Coding, or CodeableConcept. -->
                     <code>
                         <system value="http://www.radlex.org"></system>
                         <code value="RID50140"></code>
@@ -27,16 +29,21 @@
                 </codeFilter>
             </data>
             <condition>
-                <expression>
                     <language value="application/x-fhir-query"/>
                     <expression value="https://[base]/Observartion?subject:[Patient]/?valueCodeableConcept:RID50140"/>
-                    <!-- need some way to get the context of this resource - CarePlan has all the necessary context  -->
-                </expression>
             </condition>
         </trigger>
+        <condition>
+            <kind value="start"/>
+            <expression>
+                <language value="application/x-fhir-query"/>
+                <expression value="https://[base]/Observartion?subject:[Patient]/?valueCodeableConcept:11528-7"/>
+            </expression>
+        </condition>
         <definition>
             <definitionCanonical value="ActivityDefintion/LungSurgery1"></definitionCanonical>
             <!-- GET [base]/ActivityDefinition/citalopramPrescription/$apply?subject=Patient/124 Where do we use this? https://www.hl7.org/fhir/activitydefinition-operation-apply.html--> 
         </definition>
     </action>
+    <!-- add future actions -->
 </PlanDefinition>
