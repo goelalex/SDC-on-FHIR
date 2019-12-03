@@ -27,11 +27,11 @@
                 </codeFilter>
             </data>
             <condition>
-                <Expression>
+                <expression>
                     <language value="application/x-fhir-query"/>
                     <expression value="https://[base]/Observartion?subject:[Patient]/?valueCodeableConcept:RID50140"/>
                     <!-- need some way to get the context of this resource - CarePlan has all the necessary context  -->
-                </Expression>
+                </expression>
             </condition>
         </trigger>
         <definition>
