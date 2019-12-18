@@ -22,15 +22,16 @@
                     <searchParam value="Lung-RADS"/>
                     <!-- check that this is correct searchParam. A token parameter that refers to a search parameter defined on the specified type of the DataRequirement, and which searches on elements of type code, Coding, or CodeableConcept. -->
                     <code>
-                        <system value="http://www.radlex.org"></system>
-                        <code value="RID50140"></code>
-                        <display value="Lung-RADS 4B"></display>
+                        <system value="http://snomed.org"></system>
+                        <code value="66857006"></code>
+                        <display value="Hemoptysis"></display>
                     </code>
                 </codeFilter>
             </data>
             <condition>
                     <language value="application/x-fhir-query"/>
-                    <expression value="https://[base]/Observartion?subject:[Patient]/?valueCodeableConcept:RID50140"/>
+                <expression value="https://[base]/Observartion?subject:[Patient]/?valueCodeableConcept:66857006"/>
+                <!-- Is this right format for the valueCodeableConcept? -->
             </condition>
         </trigger>
         <condition>
