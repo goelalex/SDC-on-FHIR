@@ -30,7 +30,7 @@
             </data>
             <condition>
                     <language value="application/x-fhir-query"/>
-                    <expression value="/Observartion?subject:[Patient/id]/&value-concept=http://snomed.org|66857006"/>
+                    <expression value="/Observartion?subject:Patient/{id}/&value-concept=http://snomed.org|66857006"/>
                 <!-- Is this right format for the valueCodeableConcept? -->
             </condition>
         </trigger>
@@ -38,7 +38,7 @@
             <kind value="start"/>
             <expression>
                 <language value="application/x-fhir-query"/>
-                <expression value="/Observartion?subject:[Patient/id]/&value-concept=http://loinc.org|11528-7"/>
+                <expression value="/Observartion?subject:Patient/{id}/&value-concept=http://loinc.org|11528-7"/>
             </expression>
         </condition>
         <definitionCanonical value="ActivityDefintion/LDCTLungActDef1"/>
