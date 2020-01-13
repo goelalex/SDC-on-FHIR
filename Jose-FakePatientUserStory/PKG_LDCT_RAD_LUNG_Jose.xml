@@ -18,6 +18,72 @@
 			<Property propName="EffectiveDate" propClass="meta" val="2017-02-24" styleClass="right" />
 			<Body title="LDCT Lung Screening Template" ID="root" styleClass="title">
 				<ChildItems>
+					<Section name="S_76218" ID="76218.100004300" title="Patient Information">
+						<ChildItems name="ch_76218_1">
+							<Question name="Q_76428" ID="76428.100004300" title="Patient's Last Name">
+								<ResponseField name="rf_76428_1">
+									<Response name="rsp_76428_2">
+										<string name="str_76428_3" val="Rodriguez"/>
+									</Response>
+								</ResponseField>
+							</Question>
+							<Question name="Q_76432" ID="76432.100004300" title="Patient's First Name">
+								<ResponseField name="rf_76432_1">
+									<Response name="rsp_76432_2">
+										<string name="str_76432_3" val="Jose"/>
+									</Response>
+								</ResponseField>
+							</Question>
+							<Question name="Q_76433" ID="76433.100004300" title="Patient's Middle Name" minCard="0">
+								<ResponseField name="rf_76433_1">
+									<Response name="rsp_76433_2">
+										<string name="str_76433_3" />
+									</Response>
+								</ResponseField>
+							</Question>
+							<Question name="Q_76434" ID="76434.100004300" title="Patient's Date of Birth">
+								<ResponseField name="rf_76434_1">
+									<Response name="rsp_76434_2">
+										<date name="date_76434_3" val="1954-06-15"/>
+									</Response>
+								</ResponseField>
+							</Question>
+							<Question name="Q_76435" ID="76435.100004300" title="Patient ID">
+								<ResponseField name="rf_76435_1">
+									<Response name="rsp_76435_2">
+										<string name="str_76435_3" val="2222222222"/>
+									</Response>
+								</ResponseField>
+							</Question>
+							<Question name="Q_76436" ID="76436.100004300" title="Patient ID Type">
+								<ListField name="lf_76436_1">
+									<List name="lst_76436_2">
+										<ListItem name="LI_76634" ID="76634.100004300" title="OHIP" selected="true"/>
+										<ListItem name="LI_76635" ID="76635.100004300" title="Military/RCMP" />
+										<ListItem name="LI_76636" ID="76636.100004300" title="Indigenous " />
+										<ListItem name="LI_76633" ID="76633.100004300" title="Other ">
+											<ChildItems name="ch_76633_1">
+												<Question name="Q_77560" ID="77560.100004300" title="Specify">
+													<ResponseField name="rf_77560_1">
+														<Response name="rsp_77560_2">
+															<string name="str_77560_3" />
+														</Response>
+													</ResponseField>
+												</Question>
+											</ChildItems>
+										</ListItem>
+									</List>
+								</ListField>
+							</Question>
+							<Question name="Q_76427" ID="76427.100004300" title="Patient Hospital Number">
+								<ResponseField name="rf_76427_1">
+									<Response name="rsp_76427_2">
+										<string name="str_76427_3" val="6754"/>
+									</Response>
+								</ResponseField>
+							</Question>
+						</ChildItems>
+					</Section>
 					<Section title="CLINICAL INFORMATION" type="level1" ID="000001">
 						<CodedValue>
 							<Code val="55752-0" />

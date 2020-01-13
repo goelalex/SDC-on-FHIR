@@ -65,14 +65,14 @@
 									<Question name="Q_76428" ID="76428.100004300" title="Patient's Last Name">
 										<ResponseField name="rf_76428_1">
 											<Response name="rsp_76428_2">
-												<string name="str_76428_3" />
+												<string name="str_76428_3" val="Rodriguez"/>
 											</Response>
 										</ResponseField>
 									</Question>
 									<Question name="Q_76432" ID="76432.100004300" title="Patient's First Name">
 										<ResponseField name="rf_76432_1">
 											<Response name="rsp_76432_2">
-												<string name="str_76432_3" />
+												<string name="str_76432_3" val="Jose"/>
 											</Response>
 										</ResponseField>
 									</Question>
@@ -86,21 +86,21 @@
 									<Question name="Q_76434" ID="76434.100004300" title="Patient's Date of Birth">
 										<ResponseField name="rf_76434_1">
 											<Response name="rsp_76434_2">
-												<date name="date_76434_3" />
+												<date name="date_76434_3" val="1954-06-15"/>
 											</Response>
 										</ResponseField>
 									</Question>
 									<Question name="Q_76435" ID="76435.100004300" title="Patient ID">
 										<ResponseField name="rf_76435_1">
 											<Response name="rsp_76435_2">
-												<string name="str_76435_3" />
+												<string name="str_76435_3" val="123123123"/>
 											</Response>
 										</ResponseField>
 									</Question>
 									<Question name="Q_76436" ID="76436.100004300" title="Patient ID Type">
 										<ListField name="lf_76436_1">
 											<List name="lst_76436_2">
-												<ListItem name="LI_76634" ID="76634.100004300" title="OHIP" />
+												<ListItem name="LI_76634" ID="76634.100004300" title="OHIP" selected="true"/>
 												<ListItem name="LI_76635" ID="76635.100004300" title="Military/RCMP" />
 												<ListItem name="LI_76636" ID="76636.100004300" title="Indigenous " />
 												<ListItem name="LI_76633" ID="76633.100004300" title="Other ">
@@ -120,71 +120,9 @@
 									<Question name="Q_76427" ID="76427.100004300" title="Patient Hospital Number">
 										<ResponseField name="rf_76427_1">
 											<Response name="rsp_76427_2">
-												<string name="str_76427_3" />
+												<string name="str_76427_3" val="6754"/>
 											</Response>
 										</ResponseField>
-									</Question>
-									<Question name="Q_76426" ID="76426.100004300" title="Patient Gender">
-										<ListField name="lf_76426_1">
-											<List name="lst_76426_2">
-												<ListItem name="LI_76639" ID="76639.100004300" title="Male" />
-												<ListItem name="LI_76637" ID="76637.100004300" title="Female" />
-												<ListItem name="LI_76638" ID="76638.100004300" title="Specify ">
-													<ChildItems name="ch_76638_1">
-														<Question name="Q_77561" ID="77561.100004300" title="Specify">
-															<ResponseField name="rf_77561_1">
-																<Response name="rsp_77561_2">
-																	<string name="str_77561_3" />
-																</Response>
-															</ResponseField>
-														</Question>
-													</ChildItems>
-												</ListItem>
-											</List>
-										</ListField>
-									</Question>
-									<Question name="Q_76437" ID="76437.100004300" title="Date of Admission">
-										<ResponseField name="rf_76437_1">
-											<Response name="rsp_76437_2">
-												<date name="date_76437_3" />
-											</Response>
-										</ResponseField>
-									</Question>
-									<Question name="Q_76438" ID="76438.100004300" title="Patient Street Address" minCard="0">
-										<ResponseField name="rf_76438_1">
-											<Response name="rsp_76438_2">
-												<string name="str_76438_3" />
-											</Response>
-										</ResponseField>
-									</Question>
-									<Question name="Q_76439" ID="76439.100004300" title="Date of Referral">
-										<ResponseField name="rf_76439_1">
-											<Response name="rsp_76439_2">
-												<date name="date_76439_3" />
-											</Response>
-										</ResponseField>
-									</Question>
-									<Question name="Q_76431" ID="76431.100004300" title="Date of Consult">
-										<ResponseField name="rf_76431_1">
-											<Response name="rsp_76431_2">
-												<date name="date_76431_3" />
-											</Response>
-										</ResponseField>
-									</Question>
-									<Question name="Q_76430" ID="76430.100004300" title="Date of Decision to Treat">
-										<ResponseField name="rf_76430_1">
-											<Response name="rsp_76430_2">
-												<date name="date_76430_3" />
-											</Response>
-										</ResponseField>
-									</Question>
-									<Question name="Q_76429" ID="76429.100004300" title="Is patient a trial participant" minCard="0">
-										<ListField name="lf_76429_1">
-											<List name="lst_76429_2">
-												<ListItem name="LI_76641" ID="76641.100004300" title="Yes" />
-												<ListItem name="LI_76640" ID="76640.100004300" title="No" />
-											</List>
-										</ListField>
 									</Question>
 								</ChildItems>
 							</Section>
