@@ -19,8 +19,6 @@
             <data>
                 <type value="Coding"></type>
                 <codeFilter>
-                    <searchParam value="Lung-RADS"/>
-                    <!-- check that this is correct searchParam. A token parameter that refers to a search parameter defined on the specified type of the DataRequirement, and which searches on elements of type code, Coding, or CodeableConcept. -->
                     <code>
                         <system value="http://snomed.org"></system>
                         <code value="66857006"></code>
@@ -30,19 +28,16 @@
             </data>
             <condition>
                     <language value="application/x-fhir-query"/>
-                    <expression value="/Observartion?subject:Patient/{id}/&value-concept=http://snomed.org|66857006"/>
-                <!-- Is this right format for the valueCodeableConcept? -->
+                    <expression value="/Observation?subject:Patient/{id}/&value-concept=http://snomed.org|66857006"/>
             </condition>
         </trigger>
         <condition>
             <kind value="start"/>
             <expression>
                 <language value="application/x-fhir-query"/>
-                <expression value="/Observartion?subject:Patient/{id}/&value-concept=http://loinc.org|11528-7"/>
+                <expression value="/Observation?subject:Patient/{id}/&value-concept=http://loinc.org|11528-7"/>
             </expression>
         </condition>
         <definitionCanonical value="ActivityDefintion/LDCTLungActDef1"/>
-            <!-- GET [base]/ActivityDefinition/citalopramPrescription/$apply?subject=Patient/124 Where do we use this? https://www.hl7.org/fhir/activitydefinition-operation-apply.html--> 
     </action>
-    <!-- add future actions -->
 </PlanDefinition>
