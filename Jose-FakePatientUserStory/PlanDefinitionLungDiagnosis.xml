@@ -17,7 +17,7 @@
         <trigger>
             <type value="data-added"></type>
             <data>
-                <type value="Coding"></type>
+                <type value="Observation"></type>
                 <codeFilter>
                     <code>
                         <system value="http://snomed.org"></system>
@@ -32,10 +32,10 @@
             </condition>
         </trigger>
         <condition>
-            <kind value="start"/>
+            <kind value="applicability"/>
             <expression>
                 <language value="application/x-fhir-query"/>
-                <expression value="/Observation?subject:Patient/{id}/&value-concept=http://snomed.org|16334891000119106"/>
+                <expression value="/Procedure?subject:Patient/{id}/&value-concept=http://snomed.org|16334891000119106"/>
             </expression>
         </condition>
         <definitionCanonical value="ActivityDefintion/LDCTLungActDef1"/>
@@ -45,7 +45,7 @@
         <trigger>
             <type value="data-added"></type>
             <data>
-                <type value="Coding"></type>
+                <type value="Observation"></type>
                 <codeFilter>
                     <code>
                         <system value="http://radlex.org"></system>
@@ -60,10 +60,38 @@
             </condition>
         </trigger>
         <condition>
-            <kind value="start"/>
+            <kind value="applicability"/>
             <expression>
                 <language value="application/x-fhir-query"/>
-                <expression value="/Observation?subject:Patient/{id}/&value-concept=http://snomed.org|82918005"/>
+                <expression value="/Procedure?subject:Patient/{id}/&value-concept=http://snomed.org|82918005"/>
+            </expression>
+        </condition>
+        <definitionCanonical value="ActivityDefintion/PETCT"/>
+    </action>
+    <action>
+    	<title value="LungDiagnosticSurgery"></title>
+        <trigger>
+            <type value="data-added"></type>
+            <data>
+                <type value="Observation"></type>
+                <codeFilter>
+                    <code>
+                        <system value="http://snomed.org"></system>
+                        <code value="162573006"></code>
+                        <display value="Suspected lung cancer (situation)"></display>
+                    </code>
+                </codeFilter>
+            </data>
+            <condition>
+                    <language value="application/x-fhir-query"/>
+                    <expression value="/Observation?subject:Patient/{id}/&value-concept=http://snomed.org|162573006"/>
+            </condition>
+        </trigger>
+        <condition>
+            <kind value="applicability"/>
+            <expression>
+                <language value="application/x-fhir-query"/>
+                <expression value="/Procedure?subject:Patient/{id}/&value-concept=http://snomed.org|408456005"/>
             </expression>
         </condition>
         <definitionCanonical value="ActivityDefintion/PETCT"/>

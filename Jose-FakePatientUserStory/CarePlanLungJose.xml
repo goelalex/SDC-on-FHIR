@@ -14,6 +14,7 @@
         <detail>
             <reasonReference>
                 <reference value="DocumentReference/LDCT_Lung1.13097849f20938r0ufjf993242.ver1"></reference>
+                <!--Replace with reference for the activity - not the form - this is where we track the procedure--> 
             </reasonReference>
             <status value="completed"></status>
             <performer>
