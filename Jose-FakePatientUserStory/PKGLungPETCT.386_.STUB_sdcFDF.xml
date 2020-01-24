@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="sdctemplate.xslt"?>
+<FormDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID=".386_.STUB_sdcFDF" baseURI="www.cap.org/eCC" fullURI="_baseURI=www.cap.org/eCC&amp;_lineage=.386&amp;_version=.STUB&amp;_docType=sdcFDF" formTitle="StubX" lineage=".386" filename=".386_.STUB_sdcFDF.xml" version=".STUB" xmlns="urn:ihe:qrph:sdc:2016">
+ <Property name="Copyright" type="CAPeCC_static_text" styleClass="copyright" order="1" propName="Copyright" val="(c) 2020 College of American Pathologists.  All rights reserved.  License required for use." />
+ <Property name="GenericHeaderText" type="CAPeCC_static_text" order="2" propName="GenericHeaderText" val="Enter Header Text" />
+ <Property name="Category" type="CAPeCC_meta" order="3" propName="Category" val="Genitourinary" />
+ <Property name="OfficialName" type="CAPeCC_meta" order="4" propName="OfficialName" val="StubX" />
+ <Property name="CAP_ProtocolName" type="CAPeCC_meta" order="5" propName="CAP_ProtocolName" />
+ <Property name="CAP_ProtocolShortName" type="CAPeCC_meta" order="6" propName="CAP_ProtocolShortName" val="UreterRenalPelvis" />
+ <Property name="CAP_ProtocolVersion" type="CAPeCC_meta" order="7" propName="CAP_ProtocolVersion" />
+ <Property name="TemplateID" type="CAPeCC_meta" order="8" propName="TemplateID" val="386.100004300" />
+ <Property name="Restrictions" type="CAPeCC_meta" order="9" propName="Restrictions" />
+ <Property name="CAP_Required" type="CAPeCC_meta" order="10" propName="CAP_Required" val="false" />
+ <Property name="ApprovalStatus" type="CAPeCC_meta" order="11" propName="ReleaseStatus" val="STUB" />
+ <Body name="Body" order="12" ID=".386_.STUB_sdcFDF_Body">
+  <ChildItems name="ch_Body" order="13">
+   <Section name="S_51203" order="14" ID="51203.100004300" title="IMPRESSION">
+    <ChildItems name="ch_51203_1" order="15">
+     <Question name="Q_51209" order="16" ID="51209.100004300" title="Impression / Summary">
+      <ListField name="lf_51209_1" order="17">
+       <List name="lst_51209_2" order="18">
+        <ListItem name="LI_50845" order="19" ID="50845.100004300" title="Suspected lung cancer" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_50837" order="20" ID="50837.100004300" title="Radiologic Staging (TNM Version - 8th edition)">
+      <Property name="p_rptTxt_50837_1" order="21" propName="reportText" val="Radiologic Staging" />
+      <ResponseField name="rf_50837_2" order="22">
+       <Response name="rsp_50837_3" order="23">
+        <string name="str_50837_4" order="24" />
+       </Response>
+      </ResponseField>
+     </Question>
+    </ChildItems>
+   </Section>
+   <Section name="S_51026" order="25" ID="51026.100004300" title="RADIOLOGIC STAGE CLASSIFICATION (rTNM, AJCC 8th Edition)">
+    <ChildItems name="ch_51026_1" order="26">
+     <Question name="Q_50880" order="27" ID="50880.100004300" title="Primary Tumor (rT)">
+      <ListField name="lf_50880_1" order="28">
+       <List name="lst_50880_2" order="29">
+        <ListItem name="LI_51066" order="30" ID="51066.100004300" title="rT1 (subgroup cannot be determined)">
+         <Property name="p_rptTxt_51066_1" order="31" propName="reportText" val="T1" />
+        </ListItem>
+        <ListItem name="LI_50911" order="32" ID="50911.100004300" title="rT1a">
+         <Property name="p_rptTxt_50911_1" order="33" propName="reportText" val="T1a" />
+        </ListItem>
+        <ListItem name="LI_51212" order="34" ID="51212.100004300" title="rT1b">
+         <Property name="p_rptTxt_51212_1" order="35" propName="reportText" val="T1b" />
+        </ListItem>
+        <ListItem name="LI_51060" order="36" ID="51060.100004300" title="rT1c">
+         <Property name="p_rptTxt_51060_1" order="37" propName="reportText" val="T1c" />
+        </ListItem>
+        <ListItem name="LI_51077" order="38" ID="51077.100004300" title="rT2a">
+         <Property name="p_rptTxt_51077_1" order="39" propName="reportText" val="T2a" />
+        </ListItem>
+        <ListItem name="LI_50914" order="40" ID="50914.100004300" title="rT2b">
+         <Property name="p_rptTxt_50914_1" order="41" propName="reportText" val="T2b" />
+        </ListItem>
+        <ListItem name="LI_50920" order="42" ID="50920.100004300" title="rT2 (subgroup cannot be determined)">
+         <Property name="p_rptTxt_50920_1" order="43" propName="reportText" val="T2" />
+        </ListItem>
+        <ListItem name="LI_50922" order="44" ID="50922.100004300" title="rT3">
+         <Property name="p_rptTxt_50922_1" order="45" propName="reportText" val="T3" />
+        </ListItem>
+        <ListItem name="LI_50931" order="46" ID="50931.100004300" title="rT4">
+         <Property name="p_rptTxt_50931_1" order="47" propName="reportText" val="T4" />
+        </ListItem>
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_50937" order="48" ID="50937.100004300" title="Regional Lymph Nodes (rN)">
+      <ListField name="lf_50937_1" order="49">
+       <List name="lst_50937_2" order="50">
+        <ListItem name="LI_50945" order="51" ID="50945.100004300" title="rNX">
+         <Property name="p_rptTxt_50945_1" order="52" propName="reportText" val="NX" />
+        </ListItem>
+        <ListItem name="LI_50954" order="53" ID="50954.100004300" title="rN0">
+         <Property name="p_rptTxt_50954_1" order="54" propName="reportText" val="N0" />
+        </ListItem>
+        <ListItem name="LI_51083" order="55" ID="51083.100004300" title="rN1">
+         <Property name="p_rptTxt_51083_1" order="56" propName="reportText" val="N1" />
+        </ListItem>
+        <ListItem name="LI_51650" order="57" ID="51650.100004300" title="rN2">
+         <Property name="p_rptTxt_51650_1" order="58" propName="reportText" val="N2" />
+        </ListItem>
+        <ListItem name="LI_51100" order="59" ID="51100.100004300" title="rN3">
+         <Property name="p_rptTxt_51100_1" order="60" propName="reportText" val="N3" />
+        </ListItem>
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_50963" order="61" ID="50963.100004300" title="?Distant Metastases (pM)">
+      <Property name="p_rptTxt_50963_1" order="62" propName="reportText" val="Distant Metastases (pM)" />
+      <ListField name="lf_50963_2" order="63">
+       <List name="lst_50963_3" order="64">
+        <ListItem name="LI_51235" order="65" ID="51235.100004300" title="?Not applicable - pM cannot be determined from the submitted specimen(s)" omitWhenSelected="true">
+         <Property name="p_rptTxt_51235_1" order="66" propName="reportText" val="Not applicable - pM cannot be determined from the submitted specimen(s)" />
+        </ListItem>
+        <ListItem name="LI_50980" order="67" ID="50980.100004300" title="rM1a">
+         <Property name="p_rptTxt_50980_1" order="68" propName="reportText" val="M1a" />
+        </ListItem>
+        <ListItem name="LI_51214" order="69" ID="51214.100004300" title="rM1b">
+         <Property name="p_rptTxt_51214_1" order="70" propName="reportText" val="M1b" />
+        </ListItem>
+        <ListItem name="LI_51109" order="71" ID="51109.100004300" title="rM1c">
+         <Property name="p_rptTxt_51109_1" order="72" propName="reportText" val="M1c" />
+        </ListItem>
+       </List>
+      </ListField>
+      <ChildItems name="ch_50963_2" order="73">
+       <Question name="Q_50988" order="74" ID="50988.100004300" title="?Specify Site(s) (if applicable)" minCard="0">
+        <Property name="p_rptTxt_50988_1" order="75" propName="reportText" val="Site(s)" />
+        <ResponseField name="rf_50988_2" order="76">
+         <Response name="rsp_50988_3" order="77">
+          <string name="str_50988_4" order="78" />
+         </Response>
+        </ResponseField>
+       </Question>
+      </ChildItems>
+     </Question>
+    </ChildItems>
+   </Section>
+  </ChildItems>
+ </Body>
+ <Footer name="footer" order="79" ID="Footer..386_.STUB_sdcFDF">
+  <Property type="meta" styleClass="copyright" order="80" propName="CopyrightFooter" val="(c) 2020 College of American Pathologists.  All rights reserved.  License required for use." />
+ </Footer>
+</FormDesign>
