@@ -24,6 +24,7 @@
                         <code value="66857006"></code>
                         <display value="Hemoptysis"></display>
                     </code>
+                    <!-- and/or symptom conditions -->
                 </codeFilter>
             </data>
             <condition>
@@ -32,7 +33,14 @@
             </condition>
         </trigger>
         <condition>
-            <kind value="applicability"/>
+            <kind value="start"/>
+            <expression>
+                <language value="application/x-fhir-query"/>
+                <expression value="/Procedure?subject:Patient/{id}/&value-concept=http://snomed.org|16334891000119106&Procedure.dateTimege>=5 years"/>
+            </expression>
+        </condition>
+        <condition>
+            <kind value="stop"/>
             <expression>
                 <language value="application/x-fhir-query"/>
                 <expression value="/Procedure?subject:Patient/{id}/&value-concept=http://snomed.org|16334891000119106"/>
@@ -40,6 +48,7 @@
         </condition>
         <definitionCanonical value="ActivityDefintion/LDCTLungActDef1"/>
     </action>
+    <!-- Break into Sub PlanDefinitions 3 -->
         <action>
         <title value="PETCT"></title>
         <trigger>
