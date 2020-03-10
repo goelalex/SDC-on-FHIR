@@ -36,6 +36,7 @@
             <expression>
                 <language value="application/x-fhir-query"/>
                 <expression value="/Procedure?subject:Patient/{id}/&value-concept=http://snomed.org|16334891000119106"/>
+                <!-- specify this as a FHIRpath maybe with ".doesnotexist" put the trigger on a named event like -->
             </expression>
         </condition>
         <definitionCanonical value="ActivityDefintion/LDCTLungActDef1"/>
