@@ -10,3 +10,5 @@ John B Anyperson
 
 Practitioner:
 Luigi Maas 
+
+Everything that was posted to https://ohihesdcfhir2.azurewebsites.net/ is insde the "Posted to OH IHE SDC FHIR Server FM" with the logical id in the file name
