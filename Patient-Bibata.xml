@@ -10,7 +10,7 @@
     </text>
     <identifier>
         <system value="http://clinfhir.com/fhir/NamingSystem/identifier"/>
-        <value value="bibata.amidou@chudequebec.ca"/>
+        <value value="q201"/>
     </identifier>
     <name>
         <use value="official"/>
