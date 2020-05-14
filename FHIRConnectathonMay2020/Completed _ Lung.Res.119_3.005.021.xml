@@ -1,0 +1,88 @@
+Lung.Res.119_3.005.021.REL_sdcFDF
+
+Flat Xml response
+<response>
+	<question ID="43094.100004300" display-name="?Synchronous Tumors (required if morphologically distinct unrelated multiple primary tumors are present)>
+		<answer ID="41654.100004300" display-name="?Not applicable"/><br>
+	</question>
+	<question ID="55856.100004300" display-name="Procedure>
+		<answer ID="1689.100004300" display-name="Lobectomy"/><br>
+	</question>
+	<question ID="1693.100004300" display-name="Specimen Laterality>
+		<answer ID="1695.100004300" display-name="Left"/><br>
+	</question>
+	<question ID="54193.100004300" display-name="Tumor Site>
+		<answer ID="1698.100004300" display-name="Upper lobe of lung"/><br>
+	</question>
+	<question ID="41746.100004300" display-name="Histologic Type (Note C)>
+		<answer ID="33377.100004300" display-name="Mixed invasive mucinous and non-mucinous adenocarcinoma"/><br>
+	</question>
+	<question ID="1731.100004300" display-name="Histologic Grade (Note D)>
+		<answer ID="1736.100004300" display-name="G3: Poorly differentiated"/><br>
+	</question>
+	<question ID="43111.100004300" display-name="Total Tumor Size (size of entire tumor)#>
+		<answer ID="41814.100004300" display-name="Greatest dimension in Centimeters (cm)"/><br><answer value="4.5"/><br>
+	</question>
+	<question ID="41688.100004300" display-name="?Size of Invasive Component## (required only if invasive nonmucinous adenocarcinomas with lepidic component is present)>
+		<answer ID="41820.100004300" display-name="?Not applicable"/><br>
+	</question>
+	<question ID="41711.100004300" display-name="Tumor Focality (Note B)>
+		<answer ID="43160.100004300" display-name="Single focus"/><br>
+	</question>
+	<question ID="15671.100004300" display-name="Visceral Pleura Invasion (Note E)>
+		<answer ID="15673.100004300" display-name="Not identified"/><br>
+	</question>
+	<question ID="43724.100004300" display-name="Direct Invasion of Adjacent Structures (Note G)>
+		<answer ID="15676.100004300" display-name="No adjacent structures present"/><br>
+	</question>
+	<question ID="15684.100004300" display-name="Treatment Effect (Note I)>
+		<answer ID="30013.100004300" display-name="No known presurgical therapy"/><br>
+	</question>
+	<question ID="1795.100004300" display-name="Lymphovascular Invasion (Note F)>
+		<answer ID="1798.100004300" display-name="Cannot be determined"/><br>
+	</question>
+	<question ID="46319.100004300" display-name="Margins>
+		<answer ID="54457.100004300" display-name="All margins are uninvolved by tumor#"/><br>
+	</question>
+	<question ID="44429.100004300" display-name="Margins Examined>
+		<answer ID="55229.100004300" display-name="Bronchial"/><br><answer ID="59557.100004300" display-name="Vascular"/><br><answer ID="45099.100004300" display-name="Parenchymal"/><br><answer ID="57021.100004300" display-name="Other (specify)"/><br><answer value="stapled parenchymal"/><br>
+	</question>
+	<question ID="50088.100004300" display-name="Distance of Invasive Carcinoma from Closest Margin in Centimeters (cm)>
+		<answer ID="52813.100004300" display-name="Specify in Centimeters (cm)"/><br><answer value="0.5"/><br>
+	</question>
+	<question ID="45843.100004300" display-name="Specify Closest Margin>
+		<answer ID="41575.100004300" display-name="Other (specify)"/><br><answer value="stapled parenchymal"/><br>
+	</question>
+	<question ID="40078.100004300" display-name="?Distance of Carcinoma in Situ from Closest Margin>
+		<answer ID="49484.100004300" display-name="?Not applicable (no carcinoma in situ in specimen)"/><br>
+	</question>
+	<question ID="33448.100004300" display-name="Number of Lymph Nodes Involved>
+		<answer ID="7844.100004300" display-name="Specify number"/><br><answer value="1"/><br>
+	</question>
+	<question ID="33426.100004300" display-name="Nodal Stations Involved>
+		<answer ID="34378.100004300" display-name="12L: Lobar"/><br><answer ID="34379.100004300" display-name="13L: Segmental"/><br><answer ID="34381.100004300" display-name="Other left nodes (specify)"/><br><answer value="peribronchial"/><br>
+	</question>
+	<question ID="54482.100004300" display-name="Extranodal Extension (Note J)>
+		<answer ID="15739.100004300" display-name="Not identified"/><br>
+	</question>
+	<question ID="33444.100004300" display-name="Number of Lymph Nodes Examined>
+		<answer ID="7835.100004300" display-name="Specify number"/><br><answer value="11"/><br>
+	</question>
+	<question ID="33450.100004300" display-name="Nodal Stations Examined>
+		<answer ID="55956.100004300" display-name="Cannot be determined"/><br>
+	</question>
+	<question ID="15994.100004300" display-name="?TNM Descriptors>
+		<answer ID="2027.100004300" display-name="?Not applicable"/><br>
+	</question>
+	<question ID="42713.100004300" display-name="Primary Tumor (pT)>
+		<answer ID="46349.100004300" display-name="pT2b: Tumor > 4 cm, but <= 5 cm in greatest dimension"/><br>
+	</question>
+	<question ID="1748.100004300" display-name="Regional Lymph Nodes (pN)>
+		<answer ID="1751.100004300" display-name="pN1: Metastasis in ipsilateral peribronchial and / or ipsilateral hilar lymph nodes, and intrapulmonary nodes including involvement by direct extension"/><br>
+	</question>
+	<question ID="47348.100004300" display-name="?Distant Metastases (pM)>
+		<answer ID="15998.100004300" display-name="?Not applicable - pM cannot be determined from the submitted specimen(s)"/><br>
+	</question>
+	</response>
+
+Response xml sent to web service.
