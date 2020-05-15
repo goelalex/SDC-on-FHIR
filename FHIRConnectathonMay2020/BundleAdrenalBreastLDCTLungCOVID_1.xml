@@ -350,6 +350,51 @@
         </request>
     </entry>
     <entry>
+        <fullUrl value="urn:uuid:13097849f20938r33fjf993242"/>
+        <resource> 
+            <Organization xmlns="http://hl7.org/fhir">
+                <text> 
+                    <status value="generated"/> 
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        
+                        <p> Good Health Clinic</p> 
+                        
+                    </div> 
+                </text> 
+                <identifier> 
+                    <system value="urn:ietf:rfc:3986"/> 
+                    <value value="2.16.840.1.113883.19.5"/> 
+                </identifier> 
+                <name value="Good Health Clinic"/> 
+            </Organization> 
+        </resource>
+        <request> 
+            <method value="POST"/> 
+            <url value="Organization"/> 
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:1301149f20938r33fjf993242"/>
+        <resource> 
+            <Location> 
+                <text> 
+                    <status value="generated"/> 
+                    <div xmlns="http://www.w3.org/1999/xhtml">Good Health Clinic</div> 
+                </text> 
+                <status value="active"/> 
+                <name value="Good Health Clinic"/> 
+                <managingOrganization> 
+                    <reference value="Organization/13097849f20938r33fjf993242"/> 
+                    <display value="Good Health Clinice"/> 
+                </managingOrganization> 
+            </Location> 
+        </resource>
+        <request> 
+            <method value="POST"/> 
+            <url value="Location"/> 
+        </request>
+    </entry>
+    <entry>
         <fullUrl value="urn:uuid:13097849f20938r0ufjf993242"/>
         <resource> 
             <Provenance xmlns="http://hl7.org/fhir">
@@ -358,6 +403,9 @@
                     <display value="Bunch of SDC forms from Alex via Postman0"></display>
                 </target>
                 <recorded value="2020-05-14T16:14:25.033-04:00"></recorded>
+                <location>
+                    <reference value="Location/1301149f20938r33fjf993242"/>
+                </location>
                 <reason>
                     <coding>
                         <system value="http://terminology.hl7.org/ValueSet/v3-PurposeOfUse"></system>
@@ -372,6 +420,21 @@
                         <display value="create"></display>
                     </coding>
                 </activity>
+                <agent> 
+                    <type> 
+                        <coding> 
+                            <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/> 
+                            <code value="author"/> 
+                        </coding> 
+                    </type> 
+                    <who> 
+                        <reference value="Practitioner/f202"/> 
+                    </who> 
+                    
+                    <onBehalfOf>
+                        <reference value="Patient/f201"/>
+                    </onBehalfOf>
+                </agent> 
             </Provenance>           
         </resource>
         <request> 
