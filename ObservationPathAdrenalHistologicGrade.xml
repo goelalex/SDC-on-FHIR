@@ -2,7 +2,6 @@
 <Observation xmlns="http://hl7.org/fhir">
     <identifier>
         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF.f96d3fea-62b3-47e9-8443-f199c2f946f0.ver1.49275.100004300"/>
-        <!-- check if FormInstanceVersionURI already includes the FormID -->
     </identifier>
     <status value="final"/>
     <code>
