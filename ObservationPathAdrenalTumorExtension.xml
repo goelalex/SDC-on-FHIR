@@ -13,7 +13,6 @@
             <display value="Tumour Extension"/>
         </coding>
     </code>
-    <!--Should the code be the SDC ID for the question? Does that require a valueset?--> 
     <subject>
         <reference value="Patient/bibata.amidou@chudequebec.ca"/>
         <display value="Bibata Amidou"/>
@@ -27,7 +26,6 @@
         <code>
             <coding>
                 <system value="https://cap.org"/>
-                <!-- Should we specify that this is a answer code? -->
                 <code value="56271 "/>
                 <display value="Tumor invades into other adjacent organ(s)"/>
             </coding>
