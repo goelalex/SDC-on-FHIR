@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+    <identifier>
+        <system value="urn:system"/>
+        <value value="6754"></value>
+    </identifier>
+    <identifier>
+        <system value="OHIP"/>
+        <value value="2222222222"/>
+    </identifier>
+    <!-- change ID Ontario Healthcard Numbers -->
+    <name>
+        <family value="Rodriguez"></family>
+        <given value="Jose"></given>
+    </name>
+    <birthDate value="1954-06-15"></birthDate>
+    <gender value="male"></gender>
+</Patient>
+

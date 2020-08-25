@@ -1,0 +1,250 @@
+<Bundle xmlns="http://hl7.org/fhir">
+   <type value="transaction"></type>
+   <entry>
+      <fullUrl value="035c1f2f-aa05-45a9-82bd-32d9aa3263b7"></fullUrl>
+      <resource>
+         <Patient xmlns="http://hl7.org/fhir">
+            <identifier>
+               <system value="urn:system"></system>
+               <value value="6754"></value>
+            </identifier>
+            <name>
+               <family value="Rodriguez"></family>
+               <given value="Jose"></given>
+            </name>
+            <gender value="male"></gender>
+         </Patient>
+      </resource>
+      <request>
+         <method value="POST"></method>
+         <url value="Patient"></url>
+      </request>
+   </entry>
+   <entry>
+      <fullUrl value="31059ab0-ca84-46dd-86c3-3ead15915a06"></fullUrl>
+      <resource>
+         <Observation xmlns="http://hl7.org/fhir">
+            <identifier>
+               <system value="https://CAP.org"></system>
+               <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDFf96d3fea-62b3-47e9-8443-f199c2f946f0.ver1#2118.100004300"></value>
+            </identifier>
+            <status value="final"></status>
+            <code>
+               <coding>
+                  <system value="https://CAP.org"></system>
+                  <code value="2118.100004300"></code>
+               </coding>
+            </code>
+            <subject>
+               <reference value="Patient/035c1f2f-aa05-45a9-82bd-32d9aa3263b7"></reference>
+            </subject>
+            <valueCodeableConcept>
+               <coding>
+                  <system value="https://CAP.org"></system>
+                  <code value="2119.100004300"></code>
+                  <display value="Adrenal gland"></display>
+               </coding>
+            </valueCodeableConcept>
+            <derivedFrom>
+               <reference value="DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDFf96d3fea-62b3-47e9-8443-f199c2f946f0.ver1"></reference>
+            </derivedFrom>
+         </Observation>
+      </resource>
+      <request>
+         <method value="POST"></method>
+         <url value="Observation"></url>
+      </request>
+   </entry>
+   <entry>
+      <fullUrl value="22bee8a2-a2d8-4928-adf3-bb60b6c84ea1"></fullUrl>
+      <resource>
+         <Observation xmlns="http://hl7.org/fhir">
+            <identifier>
+               <system value="https://CAP.org"></system>
+               <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDFf96d3fea-62b3-47e9-8443-f199c2f946f0.ver1#52756.100004300"></value>
+            </identifier>
+            <status value="final"></status>
+            <code>
+               <coding>
+                  <system value="https://CAP.org"></system>
+                  <code value="52756.100004300"></code>
+                  <display value="Specimen Laterality"></display>
+               </coding>
+            </code>
+            <subject>
+               <reference value="Patient/035c1f2f-aa05-45a9-82bd-32d9aa3263b7"></reference>
+            </subject>
+            <valueCodeableConcept>
+               <coding>
+                  <system value="https://CAP.org"></system>
+                  <code value="2126.100004300"></code>
+                  <display value="Right"></display>
+               </coding>
+            </valueCodeableConcept>
+            <derivedFrom>
+               <reference value="DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDFf96d3fea-62b3-47e9-8443-f199c2f946f0.ver1"></reference>
+            </derivedFrom>
+         </Observation>
+      </resource>
+      <request>
+         <method value="POST"></method>
+         <url value="Observation"></url>
+      </request>
+   </entry>
+   <entry>
+      <fullUrl value="b289f8af-2183-413c-8c9e-f7a7026bd7aa"></fullUrl>
+      <resource>
+         <Observation xmlns="http://hl7.org/fhir">
+            <identifier>
+               <system value="https://CAP.org"></system>
+               <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDFf96d3fea-62b3-47e9-8443-f199c2f946f0.ver1#59852.100004300"></value>
+            </identifier>
+            <status value="final"></status>
+            <code>
+               <coding>
+                  <system value="https://CAP.org"></system>
+                  <code value="59852.100004300"></code>
+                  <display value="Histologic Type (Notes C through E)"></display>
+               </coding>
+            </code>
+            <subject>
+               <reference value="Patient/035c1f2f-aa05-45a9-82bd-32d9aa3263b7"></reference>
+            </subject>
+            <valueCodeableConcept>
+               <coding>
+                  <system value="https://CAP.org"></system>
+                  <code value="2117.100004300"></code>
+                  <display value="Adrenal cortical carcinoma"></display>
+               </coding>
+            </valueCodeableConcept>
+            <derivedFrom>
+               <reference value="DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDFf96d3fea-62b3-47e9-8443-f199c2f946f0.ver1"></reference>
+            </derivedFrom>
+         </Observation>
+      </resource>
+      <request>
+         <method value="POST"></method>
+         <url value="Observation"></url>
+      </request>
+   </entry>
+   <entry>
+      <fullUrl value="084d0258-12a4-428e-ae78-90d77eeb6571"></fullUrl>
+      <resource>
+         <Observation xmlns="http://hl7.org/fhir">
+            <identifier>
+               <system value="https://CAP.org"></system>
+               <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDFf96d3fea-62b3-47e9-8443-f199c2f946f0.ver1#49275.100004300"></value>
+            </identifier>
+            <status value="final"></status>
+            <code>
+               <coding>
+                  <system value="https://CAP.org"></system>
+                  <code value="49275.100004300"></code>
+                  <display value="Histologic Grade (Notes C through E)"></display>
+               </coding>
+            </code>
+            <subject>
+               <reference value="Patient/035c1f2f-aa05-45a9-82bd-32d9aa3263b7"></reference>
+            </subject>
+            <valueCodeableConcept>
+               <coding>
+                  <system value="https://CAP.org"></system>
+                  <code value="53603.100004300"></code>
+                  <display value="Low grade (&lt;= 20 mitoses / 50 high-power fields)"></display>
+               </coding>
+            </valueCodeableConcept>
+            <derivedFrom>
+               <reference value="DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDFf96d3fea-62b3-47e9-8443-f199c2f946f0.ver1"></reference>
+            </derivedFrom>
+         </Observation>
+      </resource>
+      <request>
+         <method value="POST"></method>
+         <url value="Observation"></url>
+      </request>
+   </entry>
+   <entry>
+      <fullUrl value="c62b6137-2b17-4a60-a7cd-8b0f4bb219bc"></fullUrl>
+      <resource>
+         <Observation xmlns="http://hl7.org/fhir">
+            <identifier>
+               <system value="https://CAP.org"></system>
+               <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDFf96d3fea-62b3-47e9-8443-f199c2f946f0.ver1.51265.100004300"></value>
+            </identifier>
+            <status value="final"></status>
+            <code>
+               <coding>
+                  <system value="https://CAP.org"></system>
+                  <code value="51265.100004300"></code>
+                  <display value="Tumor Extension"></display>
+               </coding>
+            </code>
+            <subject>
+               <reference value="Patient/035c1f2f-aa05-45a9-82bd-32d9aa3263b7"></reference>
+            </subject>
+            <derivedFrom>
+               <reference value="DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDFf96d3fea-62b3-47e9-8443-f199c2f946f0.ver1"></reference>
+            </derivedFrom>
+            <component>
+               <code>
+                  <coding>
+                     <system value="https://CAP.org"></system>
+                     <code value="56271.100004300"></code>
+                     <display value="Tumor invades into other adjacent organ(s)"></display>
+                  </coding>
+               </code>
+            </component>
+         </Observation>
+      </resource>
+      <request>
+         <method value="POST"></method>
+         <url value="Observation"></url>
+      </request>
+   </entry>
+   <entry>
+      <fullUrl value="93c9398b-951e-4d38-94f7-2dc40d70a109"></fullUrl>
+      <resource>
+         <Observation xmlns="http://hl7.org/fhir">
+            <identifier>
+               <system value="https://CAP.org"></system>
+               <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDFf96d3fea-62b3-47e9-8443-f199c2f946f0.ver1.53526.100004300"></value>
+            </identifier>
+            <status value="final"></status>
+            <code>
+               <coding>
+                  <system value="https://CAP.org"></system>
+                  <code value="53526.100004300"></code>
+               </coding>
+            </code>
+            <subject>
+               <reference value="Patient/035c1f2f-aa05-45a9-82bd-32d9aa3263b7"></reference>
+            </subject>
+            <derivedFrom>
+               <reference value="DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDFf96d3fea-62b3-47e9-8443-f199c2f946f0.ver1"></reference>
+            </derivedFrom>
+            <component>
+               <code>
+                  <coding>
+                     <system value="https://CAP.org"></system>
+                     <code value="56752.100004300"></code>
+                     <display value="Kidney"></display>
+                  </coding>
+               </code>
+            </component>
+            <component>
+               <code>
+                  <coding>
+                     <system value="https://CAP.org"></system>
+                     <code value="41409.100004300"></code>
+                     <display value="Liver"></display>
+                  </coding>
+               </code>
+            </component>
+         </Observation>
+      </resource>
+      <request>
+         <method value="POST"></method>
+         <url value="Observation"></url>
+      </request>
+   </entry>
+</Bundle>
