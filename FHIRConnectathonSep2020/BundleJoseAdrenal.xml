@@ -20,6 +20,7 @@
          <url value="Patient"></url>
       </request>
    </entry>
+   <!-- Add Document Reference -->
    <entry>
       <fullUrl value="31059ab0-ca84-46dd-86c3-3ead15915a06"></fullUrl>
       <resource>
