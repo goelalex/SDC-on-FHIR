@@ -96,7 +96,8 @@
         </request>
     </entry>
     <!-- Observation 1 -->
-    <entry> 
+    <entry>
+    <resource>
     <Observation xmlns="http://hl7.org/fhir">
    <identifier>
       <system value="https://CAP.org"></system>
@@ -127,6 +128,7 @@
       <reference value="DocumentReference/LungSurgCCO.357_1.0.0.DRAFT_sdcFDF0542f5b8-31e0-43c1-b7d2-eb24fd14da6a.ver1"></reference>
    </derivedFrom>
 </Observation>
+</resource>
         <request> 
             <method value="POST"/> 
             <url value="Observation"/> 
