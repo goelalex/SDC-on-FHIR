@@ -12,6 +12,7 @@
         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.f96d3fea-62b3-47e9-8443-f199c2f946f0.ver1"/>
     </masterIdentifier>
     <!-- ID for this resource appended FormID.FormInstanceVersionURI -->
+    <status value="current"/>
     <identifier>
         <system value="https://cap.org"/>
         <value value="Adrenal.Bx.Res.129"/>
