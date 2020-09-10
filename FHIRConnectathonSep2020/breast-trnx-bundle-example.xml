@@ -1,0 +1,667 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="breast-bundle-transaction"/> 
+  <type value="transaction"/> 
+  
+  <!-- Patient -->
+  <entry> 
+    <fullUrl value="http://example.org/fhir/Patient/mCODEPatientExample01"/> 
+    <resource> 
+      <Patient xmlns="http://hl7.org/fhir">
+        <id value="mCODEPatientExample01"/>
+        <meta>
+          <profile
+            value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"/>
+        </meta>
+        <identifier>
+          <use value="usual"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+            </coding>
+          </type>
+          <system value="http://hospital.example.org"/>
+          <value value="m123"/>
+        </identifier>
+        <name>
+          <family value="Cartman"/>
+          <given value="Eric"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1997-08-13"/>
+        <address>
+          <line value="28201 E. Bonanza St."/>
+          <city value="South Park"/>
+          <state value="CO"/>
+          <postalCode value="80440"/>
+          <country value="US"/>
+        </address>
+        <contact>
+          <telecom>
+            <system value="phone"/>
+            <value value="719-836-1234"/>
+            <use value="home"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="eric.cartman@southparkelementary.edu"/>
+          </telecom>
+        </contact>
+        <communication>
+          <language>
+            <coding>
+              <system value="urn:ietf:bcp:47"/>
+              <code value="en-US"/>
+            </coding>
+            <text value="English"/>
+          </language>
+        </communication>
+      </Patient>
+    </resource> 
+    <request> 
+      <method value="POST"/> 
+      <url value="Patient"/> 
+    </request> 
+  </entry> 
+  
+  <!-- Practitioner -->
+  <entry>
+    <fullUrl value="http://example.org/fhir/Practitioner/mCODEPractitionerExample01"/>
+    <resource>
+      <Practitioner xmlns="http://hl7.org/fhir">
+        <id value="mCODEPractitionerExample01" />
+        <meta>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" />
+        </meta>
+        <text>
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>
+              <b>Generated Narrative</b>
+            </p>
+            <p><b>id</b>: mCODEPractitionerExample01</p>
+            <p><b>meta</b>: </p>
+            <p><b>identifier</b>: 9988776655</p>
+            <p><b>name</b>: Dr. Horatio Gauche </p>
+            <p><b>address</b>: 567 Healthcare Drive South Park CO 80440</p>
+            <p><b>gender</b>: male</p>
+            <h3>Qualifications</h3>
+            <table class="grid">
+              <tr>
+                <td>-</td>
+                <td>
+                  <b>Code</b>
+                </td>
+              </tr>
+              <tr>
+                <td>*</td>
+                <td>
+                  <span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0360 MD}"
+                    >Doctor of Medicine</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <identifier>
+          <system value="http://hl7.org/fhir/sid/us-npi" />
+          <value value="9988776655" />
+        </identifier>
+        <name>
+          <family value="Gauche" />
+          <given value="Horatio" />
+          <prefix value="Dr." />
+        </name>
+        <address>
+          <use value="home" />
+          <line value="567 Healthcare Drive" />
+          <city value="South Park" />
+          <state value="CO" />
+          <postalCode value="80440" />
+          <country value="US" />
+        </address>
+        <gender value="male" />
+        <qualification>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0360" />
+              <version value="2.7" />
+              <code value="MD" />
+              <display value="Doctor of Medicine" />
+            </coding>
+          </code>
+        </qualification>
+      </Practitioner>
+    </resource>
+    <request> 
+      <method value="POST"/> 
+      <url value="Procedure"/> 
+    </request> 
+  </entry>
+  
+  <!-- Procedure -->
+  <entry> 
+    <fullUrl value="http://example.org/fhir/Procedure/mCODECancerRelatedSurgicalProcedureExample01"/> 
+    <resource> 
+      <Procedure xmlns="http://hl7.org/fhir">
+        <id value="mCODECancerRelatedSurgicalProcedureExample01"/>
+        <meta>
+          <profile
+            value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure"/>
+        </meta>
+        <status value="completed"/>
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="387713003"/>
+            <display value="Surgical procedure (procedure)"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="70183006"/>
+            <display value="Subcutaneous mastectomy (procedure)"/>
+          </coding>
+          <text value="Total mastectomy (including nipple-sparing and skin-sparing mastectomy)"/>
+        </code>
+        <subject>
+          <reference value="Patient/mCODEPatientExample01"/>
+        </subject>
+        <performedDateTime value="2020-08-01"/>
+        <reasonReference>
+          <reference value="Condition/mCODEPrimaryCancerConditionExample01"/>
+        </reasonReference>
+        <bodySite>
+          <!-- TODO discuss laterality extesnion(s) on body site-->
+          <extension>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="24028007"/>
+              <display value="Right (qualifier value)"/>
+            </coding>
+          </extension>
+        </bodySite>
+      </Procedure>
+    </resource> 
+    <request> 
+      <method value="POST"/> 
+      <url value="Procedure"/> 
+    </request> 
+  </entry> 
+  
+  <!-- Condition -->
+  <entry> 
+    <fullUrl value="http://example.org/fhir/Condition/BreastPrimaryCancerConditionExample"/> 
+    <resource> 
+      <Condition xmlns="http://hl7.org/fhir">
+        <id value="BreastPrimaryCancerConditionExample"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition"/>
+        </meta>
+        <extension url="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-histology-morphology-behavior">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="82711006"/>
+              <display value="Infiltrating duct carcinoma (morphologic abnormality)"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+          </coding>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <!-- Disease (disorder) -->
+            <code value="64572001"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <!-- Infiltrating duct carcinoma of breast (disorder) -->
+            <code value="408643008"/>
+          </coding>
+        </code>
+        <bodySite>
+          <extension>
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="24028007"/>
+                <display value="Right (qualifier value)"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <!-- Upper outer quadrant of  breast -->
+            <code value="76365002"/>
+            <display value="Upper outer quadrant of breast (body structure)"/>
+          </coding>
+        </bodySite>
+        <subject>
+          <reference value="Patient/mCODEPatientExample01"/>
+        </subject>
+      </Condition>
+    </resource> 
+    <request> 
+      <method value="POST"/> 
+      <url value="Condition"/> 
+    </request> 
+  </entry> 
+  
+<!-- Margins -->
+  <entry> 
+    <fullUrl value="http://example.org/fhir/Observation/invasive-carcinoma-margins"/> 
+    <resource> 
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="invasive-carcinoma-margins" />
+        <status value="final" />
+        <code>
+          <coding>
+            <system value="http://loinc.org" />
+            <code value="44672-4" />
+            <display
+              value="Invasive carcinoma uninvolved margin distance closest [Length] in Breast tumor" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mCODEPatientExample01" />
+        </subject>
+        <effectiveDateTime value="2020-08-01" />
+        <valueQuantity>
+          <value value="15" />
+          <unit value="millimeter" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="mm" />
+        </valueQuantity>
+      </Observation>
+    </resource> 
+    <request> 
+      <method value="POST"/> 
+      <url value="Observation"/> 
+    </request> 
+  </entry>  
+
+<!-- Overall Pathologic Grade Nottingham -->
+  <entry>
+    <fullUrl value="http://example.org/fhir/Observation/Nottingham-example"/>
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="Nottingham-example" />
+        <status value="final" />
+        <code>
+          <coding>
+            <system value="http://loinc.org" />
+            <code value="44648-4" />
+            <display value="Nottingham histologic grading system (staging scale)" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mCODEPatientExample01" />
+        </subject>
+        <effectiveDateTime value="2020-08-01" />
+        <performer>
+          <reference value="Practitioner/mCODEPractitionerExample01" />
+        </performer>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="369791003" />
+            <display value="Nottingham Combined Grade II: 6-7 points (finding)" />
+          </coding>
+        </valueCodeableConcept>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org" />
+              <code value="85321-8" />
+              <display value="Glandular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham"
+              />
+            </coding>
+          </code>
+          <valueInteger value="2"/>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org" />
+              <code value="44645-0" />
+              <display value="Nuclear pleomorphism in Breast tumor Qualitative by Nottingham"/>
+            </coding>
+          </code>
+          <valueInteger value="2"/>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org" />
+              <code value="85300-2" />
+              <display value="Mitotic rate [Score] in Breast cancer specimen Qualitative by Nottingham" />
+            </coding>
+          </code>
+          <valueInteger value="2"/>
+        </component>
+      </Observation>
+    </resource>
+    <request> 
+      <method value="POST"/> 
+      <url value="Observation"/> 
+    </request> 
+  </entry>
+  
+  <!-- Regional Lymph Nodes -->
+  <entry>
+    <fullUrl value="http://example.org/fhir/Observation/regional-lymph-nodes"/>
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="regional-lymph-nodes"/>
+        <status value="final"/>
+        <category> 
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+          </coding>
+          <text value="Pathology Laboratory"/>
+        </category>
+        <code>
+          <coding> 
+            <system value="http://loinc.org"/>
+            <code value="21892-5"/>
+            <display value="Lymph node involvement Cancer"/>
+          </coding>
+          <text value="Regional Lymph Nodes panel"/>
+        </code>
+        <subject>
+          <reference value="Patient/mCODEPatientExample01"/>
+        </subject>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="85343-2"/>
+              <display value="Lymph nodes with macrometastases [#] in Cancer specimen by Light microscopy"/>
+            </coding>
+            <text value="Lymph nodes with macrometastases [#] in Cancer specimen by Light microscopy"/>
+          </code>
+          <valueQuantity> 
+            <value value="0"/>
+          </valueQuantity>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="85344-0"/>
+              <display value="Lymph nodes with micrometastases [#] in Cancer specimen by Light microscopy"/>
+            </coding>
+            <text value="Lymph nodes with micrometastases [#] in Cancer specimen by Light microscopy"/>
+          </code>
+          <valueQuantity> 
+            <value value="1"/>
+          </valueQuantity>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="85352-2"/>
+              <display value="Lymph nodes with isolated tumor cells [#] in Cancer specimen by Light microscopy"/>
+            </coding>
+            <text value="Lymph nodes with isolated tumor cells [#] in Cancer specimen by Light microscopy"/>
+          </code>
+          <valueCodeableConcept> 
+            <text value="Not applicable"/>
+          </valueCodeableConcept>
+        </component>
+      </Observation>
+    </resource>
+    <request> 
+      <method value="POST"/> 
+      <url value="Observation"/> 
+    </request> 
+  </entry>
+  
+  <!-- TNM Descriptors -->
+  <entry>
+    <fullUrl value="http://example.org/fhir/Observation/tnm-descriptors"/>
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="tnm-descriptors"/>
+        <status value="final"/>
+        <category> 
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+          </coding>
+          <text value="Pathology Laboratory"/>
+        </category>
+        <!-- TODO: confirm code for question 'TNM Descriptors' or 'Presence of T/N/M descriptors' -->
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="277645005"/>
+            <display value="Additional TNM descriptors (tumor staging)"/>
+          </coding>
+          <text value="TNM Descriptors"/>
+        </code>
+        <subject>
+          <reference value="Patient/mCODEPatientExample01"/>
+        </subject>
+        <effectiveDateTime value="08-08-2020"/>
+        <valueCodeableConcept>
+          <text value="Not Applicable"/>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+    <request> 
+      <method value="POST"/> 
+      <url value="Observation"/> 
+    </request> 
+  </entry>
+  
+  <!-- pT -->
+  <entry>
+    <fullUrl value="http://example.org/fhir/Observation/mCODETNMPathologicalPrimaryTumorCategoryExample01"/>
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="mCODETNMPathologicalPrimaryTumorCategoryExample01" />
+        <meta>
+          <profile
+            value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-pathological-primary-tumor-category"
+          />
+        </meta>
+        <text>
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>
+              <b>Generated Narrative with Details</b>
+            </p>
+            <p><b>id</b>: mCODETNMPathologicalPrimaryTumorCategoryExample01</p>
+            <p><b>meta</b>: </p>
+            <p><b>status</b>: final</p>
+            <p><b>category</b>: Laboratory <span style="background: LightGoldenRodYellow"
+              >(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'laboratory' = 'Laboratory)</span></p>
+            <p><b>code</b>: Primary tumor.pathology Cancer <span style="background: LightGoldenRodYellow"
+              >(Details : {LOINC code '21899-0' = 'Primary tumor.pathology Cancer)</span></p>
+            <p><b>subject</b>: <a
+              href="Observation-mCODETNMPathologicalPrimaryTumorCategoryExample01.html"
+              >Generated Summary: id: mCODEPatientExample01; Medical record number = m123 (USUAL); Eric Cartman ; gender: male; birthDate: 1997-08-13</a></p>
+            <p><b>effective</b>: Aug 8, 2020 12:00:00 AM</p>
+            <p><b>value</b>: pT1a <span style="background: LightGoldenRodYellow"
+              >(Details : {http://cancerstaging.org code 'pT1a' = 'pT1a)</span></p>
+            
+          </div>
+        </text>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="laboratory" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org" />
+            <code value="21899-0" />
+            <display value="Primary tumor.pathology Cancer"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mCODEPatientExample01" />
+        </subject>
+        <effectiveDateTime value="2020-08-08" />
+        <valueCodeableConcept>
+          <text value="pT1a"/>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+    <request> 
+      <method value="POST"/> 
+      <url value="Observation"/> 
+    </request> 
+  </entry>
+  
+  <!-- pN -->
+  <entry>
+    <fullUrl value="http://example.org/fhir/Observation/mCODETNMPathologicalRegionalNodesCategoryExample01"/>
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="mCODETNMPathologicalRegionalNodesCategoryExample01" />
+        <meta>
+          <profile
+            value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-pathological-regional-nodes-category"
+          />
+        </meta>
+        <text>
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>
+              <b>Generated Narrative with Details</b>
+            </p>
+            <p><b>id</b>: mCODETNMPathologicalRegionalNodesCategoryExample01</p>
+            <p><b>meta</b>: </p>
+            <p><b>status</b>: final</p>
+            <p><b>category</b>: Laboratory <span style="background: LightGoldenRodYellow"
+              >(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'laboratory' = 'Laboratory)</span></p>
+            <p><b>code</b>: Regional lymph nodes.pathology [Class] Cancer <span
+              style="background: LightGoldenRodYellow"
+              >(Details : {LOINC code '21900-6' = 'Regional lymph nodes.pathology [Class] Cancer)</span></p>
+            <p><b>subject</b>: <a
+              href="Observation-mCODETNMPathologicalRegionalNodesCategoryExample01.html"
+              >Generated Summary: id: mCODEPatientExample01; Medical record number = m123 (USUAL); Eric Cartman ; gender: male; birthDate: 1997-08-13</a></p>
+            <p><b>effective</b>: Aug 8, 2020 12:00:00 AM</p>
+            <p><b>value</b>: pN1mi <span style="background: LightGoldenRodYellow"
+              >(Details : {http://cancerstaging.org code 'pN1mi' = 'pN1mi')</span></p>
+          </div>
+        </text>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="laboratory" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org" />
+            <code value="21900-6" />
+            <display value="Regional lymph nodes.pathology [Class] Cancer"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mCODEPatientExample01" />
+        </subject>
+        <effectiveDateTime value="2020-08-08" />
+        <valueCodeableConcept>
+          <text value="pN1mi"/>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+    <request> 
+      <method value="POST"/> 
+      <url value="Observation"/> 
+    </request> 
+  </entry>
+  
+  <!-- pM -->
+  <entry>
+    <fullUrl value="http://example.org/fhir/Observation/mCODETNMPathologicalDistantMetastasesCategoryExample01"/>
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="mCODETNMPathologicalDistantMetastasesCategoryExample01" />
+        <meta>
+          <profile
+            value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-pathological-distant-metastases-category"
+          />
+        </meta>
+        <text>
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>
+              <b>Generated Narrative with Details</b>
+            </p>
+            <p><b>id</b>: mCODETNMPathologicalDistantMetastasesCategoryExample01</p>
+            <p><b>meta</b>: </p>
+            <p><b>status</b>: final</p>
+            <p><b>category</b>: Laboratory <span style="background: LightGoldenRodYellow"
+              >(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'laboratory' = 'Laboratory)</span></p>
+            <p><b>code</b>: Distant metastases.pathology [Class] Cancer <span
+              style="background: LightGoldenRodYellow"
+              >(Details : {LOINC code '21901-4' = 'Distant metastases.pathology [Class] Cancer)</span></p>
+            <p><b>subject</b>: <a
+              href="Observation-mCODETNMPathologicalDistantMetastasesCategoryExample01.html"
+              >Generated Summary: id: mCODEPatientExample01; Medical record number = m123 (USUAL); Eric Cartman ; gender: male; birthDate: 1997-08-13</a></p>
+            <p><b>effective</b>: Aug 8, 2020 12:00:00 AM</p>
+            <p><b>value</b>: 17076002 <span style="background: LightGoldenRodYellow"
+              >(Details : {http://snomed.info/sct code '17076002' = '17076002)</span></p>
+            
+          </div>
+        </text>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="laboratory" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org" />
+            <code value="21901-4" />
+            <display value="Distant metastases.pathology [Class] Cancer"/>"
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mCODEPatientExample01" />
+        </subject>
+        <effectiveDateTime value="2020-08-08" />
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="17076002" />
+            <display value=" pMX category (finding)"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+    <request> 
+      <method value="POST"/> 
+      <url value="Observation"/> 
+    </request> 
+  </entry>
+</Bundle>
