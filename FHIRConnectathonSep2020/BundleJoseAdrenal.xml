@@ -31,6 +31,7 @@
                     <system value="https://cap.org"></system>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1"></value>
                 </masterIdentifier>
+                <status value="current"/> 
                 <subject>
                     <reference value="urn:uuid:2c08e319-f0af-48b3-98df-267cbd376791"></reference>
                 </subject>
