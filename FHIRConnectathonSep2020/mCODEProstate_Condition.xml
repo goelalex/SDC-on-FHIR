@@ -1,0 +1,172 @@
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="bb9200a5-60ee-4935-aa1e-b0f6761aa7d7"/>
+   <meta>
+      <lastUpdated value="2020-08-24T18:38:07.021+00:00"/>
+   </meta>
+   <type value="searchset"/>
+   <total value="1"/>
+   <link>
+      <relation value="self"/>
+      <url value="https://api.logicahealth.org/mCODEv1/open/Condition?_include=Condition%3Asubject&amp;_profile=http%3A%2F%2Fhl7.org%2Ffhir%2Fus%2Fmcode%2FStructureDefinition%2Fmcode-primary-cancer-condition&amp;clinical-status=http%3A%2F%2Fterminology.hl7.org%2FCodeSystem%2Fcondition-clinical%7Cactive&amp;code=http%3A%2F%2Fsnomed.info%2Fsct%7C93974005"/>
+   </link>
+   <entry>
+      <fullUrl value="https://api.logicahealth.org/mCODEv1/open/Condition/17303"/>
+      <resource>
+         <Condition xmlns="http://hl7.org/fhir">
+            <id value="17303"/>
+            <meta>
+               <versionId value="1"/>
+               <lastUpdated value="2020-08-20T13:33:54.000+00:00"/>
+               <source value="#QxjpdW8yT53imbE5"/>
+               <profile value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition"/>
+            </meta>
+            <extension url="http://hl7.org/fhir/StructureDefinition/condition-assertedDate">
+               <valueDateTime value="2019-04-01"/>
+            </extension>
+            <clinicalStatus>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+                  <code value="active"/>
+                  <display value="Active"/>
+               </coding>
+            </clinicalStatus>
+            <verificationStatus>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+                  <code value="confirmed"/>
+                  <display value="Confirmed"/>
+               </coding>
+            </verificationStatus>
+            <category>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="64572001"/>
+               </coding>
+            </category>
+            <code>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="93974005"/>
+                  <display value="Primary malignant neoplasm of prostate"/>
+               </coding>
+            </code>
+            <bodySite>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="41216001"/>
+                  <display value="Prostatic structure (body structure)"/>
+               </coding>
+            </bodySite>
+            <subject>
+               <reference value="Patient/17302"/>
+            </subject>
+            <stage>
+               <summary>
+                  <coding>
+                     <system value="http://cancerstaging.org"/>
+                     <code value="3C"/>
+                     <display value="IIIC"/>
+                  </coding>
+               </summary>
+            </stage>
+         </Condition>
+      </resource>
+      <search>
+         <mode value="match"/>
+      </search>
+   </entry>
+   <entry>
+      <fullUrl value="https://api.logicahealth.org/mCODEv1/open/Patient/17302"/>
+      <resource>
+         <Patient xmlns="http://hl7.org/fhir">
+            <id value="17302"/>
+            <meta>
+               <versionId value="1"/>
+               <lastUpdated value="2020-08-20T13:24:55.000+00:00"/>
+               <source value="#mcwBZhWLf9gHq0H7"/>
+               <profile value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"/>
+            </meta>
+            <text>
+               <status value="generated"/>
+               <div xmlns="http://www.w3.org/1999/xhtml">
+                  <div class="hapiHeaderText">John B. 
+                     <b>DOE </b>
+                  </div>
+                  <table class="hapiPropertyTable">
+                     <tbody>
+                        <tr>
+                           <td>Identifier</td>
+                           <td>m789</td>
+                        </tr>
+                        <tr>
+                           <td>Address</td>
+                           <td>
+                              <span>789 Main St </span>
+                              <br/>
+                              <span>Anytown </span>
+                              <span>US </span>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>Date of birth</td>
+                           <td>
+                              <span>20 January 1954</span>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </text>
+            <identifier>
+               <use value="usual"/>
+               <type>
+                  <coding>
+                     <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                     <code value="MR"/>
+                     <display value="Medical Record Number"/>
+                  </coding>
+               </type>
+               <system value="http://hospital.example.org"/>
+               <value value="m789"/>
+            </identifier>
+            <name>
+               <family value="Doe"/>
+               <given value="John"/>
+               <given value="B."/>
+            </name>
+            <gender value="male"/>
+            <birthDate value="1954-01-20"/>
+            <address>
+               <line value="789 Main St"/>
+               <city value="Anytown"/>
+               <postalCode value="67891"/>
+               <country value="US"/>
+            </address>
+            <contact>
+               <telecom>
+                  <system value="phone"/>
+                  <value value="777-777-7777"/>
+                  <use value="home"/>
+               </telecom>
+               <telecom>
+                  <system value="email"/>
+                  <value value="john.joe@example.com"/>
+               </telecom>
+            </contact>
+            <communication>
+               <language>
+                  <coding>
+                     <system value="urn:ietf:bcp:47"/>
+                     <code value="en-US"/>
+                     <display value="English (Region=United States)"/>
+                  </coding>
+                  <text value="English"/>
+               </language>
+            </communication>
+         </Patient>
+      </resource>
+      <search>
+         <mode value="include"/>
+      </search>
+   </entry>
+</Bundle>
