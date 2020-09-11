@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <url value="http://example.org/fhir/ConceptMap/BreastSurgRes_SNOMED_Example"/> 
+  <identifier> 
+    <system value="https://example.org/"/> 
+    <value value="ConceptMapBreastSurgeryBreastSurgRes_SNOMED_Example"/> 
+  </identifier> 
+  <version value="0.0.1"/> 
+  <name value=""/> 
+  <title value="Breast Surgical Resection SNOMED Concept Map Example"/> 
+  <status value="draft"/> 
+  <experimental value="true"/> 
+  <date value="2020-09-10"/> 
+  <publisher value="SDC Workgroup"/>
+  <contact> 
+    <name value="Integrating Cancer Reporting"/> 
+    <telecom> 
+      <system value="url"/> 
+      <value value="https://example.org/fhir"/> 
+    </telecom> 
+  </contact> 
+  <description value="A mapping from Breast Surgical Resection Form to SNOMED"/> 
+  <purpose value="To help implementers map from Breast Surgical Resection Form to SNOMED"/> 
+  <copyright value="Creative Commons 0"/> 
+  <sourceUri value="http://example.org/fhir/ValueSet/BreastSurgRes_SNOMED_Example"/> 
+  <targetUri value="http://snomed.info/id?fhir_vs"/>
+  <group> 
+    <source value="http://example.org/fhir/ValueSet/BreastSurgRes_SNOMED_Example"/>
+    <!-- Need to decide on how to do mappings to Breast Surgical Resection form - considering 1 ValueSet per SDC Form-->
+    <target value="http://snomed.info/sct"/>
+    <!-- To be valid mapping for codes. PoC only for Connectathon-->
+    <element> 
+        <code value="58807"/> 
+        <display value="Procedure"/>  
+      <target> 
+        <code value="387713003"/> 
+        <display value="Surgical procedure (procedure)"/> 
+        <equivalence value="equivalent"/> 
+      </target> 
+    </element>
+    <element> 
+        <code value="39079"/> 
+        <display value="Total mastectomy"/>  
+      <target> 
+        <code value="70183006"/> 
+        <display value="Subcutaneous mastectomy (procedure)"/> 
+        <equivalence value="equivalent"/> 
+      </target> 
+    </element>
+	<element> 
+        <code value="16391"/> 
+        <display value="Grade 2 (scores of 6 or 7)"/>  
+      <target> 
+        <code value="369791003"/> 
+        <display value="Nottingham Combined Grade II: 6-7 points (finding)"/> 
+        <equivalence value="equivalent"/> 
+      </target> 
+    </element>
+	<element> 
+        <code value="16280"/> 
+        <display value="Invasive carcinoma of no special type (ductal)"/>  
+      <target> 
+        <code value="82711006"/> 
+        <display value="Infiltrating duct carcinoma (morphologic abnormality)"/> 
+        <equivalence value="equivalent"/> 
+      </target> 
+    </element>
+    <!-- saving for any unmapped codes
+    <unmapped> 
+      <mode value=""/> 
+      <code value=""/> 
+      <display value=""/> 
+    </unmapped> -->  
+    </group>
+</ConceptMap> 

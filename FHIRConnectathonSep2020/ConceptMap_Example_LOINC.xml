@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <url value="http://example.org/fhir/ConceptMap/BreastSurgRes_LOINC_Example"/> 
+  <identifier> 
+    <system value="https://example.org/"/> 
+    <value value="ConceptMapBreastSurgeryBreastSurgRes_LOINC_Example"/> 
+  </identifier> 
+  <version value="0.0.1"/> 
+  <name value=""/> 
+  <title value="Breast Surgical Resection LOINC Concept Map Example"/> 
+  <status value="draft"/> 
+  <experimental value="true"/> 
+  <date value="2020-09-10"/> 
+  <publisher value="SDC Workgroup"/>
+  <contact> 
+    <name value="Integrating Cancer Reporting"/> 
+    <telecom> 
+      <system value="url"/> 
+      <value value="https://example.org/fhir"/> 
+    </telecom> 
+  </contact> 
+  <description value="A mapping from Breast Surgical Resection Form to LOINC"/> 
+  <purpose value="To help implementers map from Breast Surgical Resection Form to LOINC"/> 
+  <copyright value="Creative Commons 0"/> 
+  <sourceUri value="http://example.org/fhir/ValueSet/BreastSurgRes_LOINC_Example"/> 
+  <targetUri value="http://loinc.org/id?fhir_vs"/>
+  <group> 
+    <source value="http://example.org/fhir/ValueSet/BreastSurgRes_LOINC_Example"/>
+    <!-- Need to decide on how to do mappings to Breast Surgical Resection form - considering 1 ValueSet per SDC Form-->
+    <target value="http://loinc.org"/>
+    <!-- To be valid mapping for codes. PoC only for Connectathon-->
+    <element> 
+        <code value="38391"/> 
+        <display value="Overall Grade"/>  
+      <target> 
+        <code value="44648-4"/> 
+        <display value="Nottingham histologic grading system (staging scale)"/> 
+        <equivalence value="equivalent"/> 
+      </target> 
+    </element>
+    <element> 
+        <code value="37929"/> 
+        <display value="Primary Tumor (pT)"/>  
+      <target> 
+        <code value="21899-0"/> 
+        <display value="Primary tumor.pathology Cancer"/> 
+        <equivalence value="equivalent"/> 
+      </target> 
+    </element>
+    <!-- saving for any unmapped codes
+    <unmapped> 
+      <mode value=""/> 
+      <code value=""/> 
+      <display value=""/> 
+    </unmapped> -->  
+    </group>
+</ConceptMap> 
