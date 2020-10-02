@@ -1,0 +1,27 @@
+<Observation xmlns="http://hl7.org/fhir">
+    <identifier>
+        <system value="https://CAP.org"></system>
+        <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#59852.100004300"></value>
+    </identifier>
+    <status value="final"></status>
+    <code>
+        <coding>
+            <system value="https://CAP.org"></system>
+            <code value="59852.100004300"></code>
+            <display value="Histologic Type (Notes C through E)"></display>
+        </coding>
+    </code>
+    <subject>
+        <reference value="urn:uuid:2c08e319-f0af-48b3-98df-267cbd376791"></reference>
+    </subject>
+    <valueCodeableConcept>
+        <coding>
+            <system value="https://CAP.org"></system>
+            <code value="2117.100004300"></code>
+            <display value="Adrenal cortical carcinoma"></display>
+        </coding>
+    </valueCodeableConcept>
+    <derivedFrom>
+        <reference value="urn:uuid:edfb977c-5e0e-41a9-93a6-c2d3f80b6903"></reference>
+    </derivedFrom>
+</Observation>
