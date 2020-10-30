@@ -1,5 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
-    <type value="Message"></type>
+    <type value="message"></type>
     <!--MessageHeader-->
     <entry>
         <fullUrl value="urn:uuid:1cbdfb97-5859-48a4-8301-d50eab818i88"/>
