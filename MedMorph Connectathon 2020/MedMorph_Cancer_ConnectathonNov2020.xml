@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="bundle-eicr-document-breast-cancer"/>
+	<meta>
+		<versionId value="5"/>
+		<lastUpdated value="2020-11-01T02:29:37.000-04:00"/>
+		<profile value="http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-document-bundle"/>
+	</meta>
+	<identifier>
+		<system value="urn:ietf:rfc:3986"/>
+		<value value="urn:uuid:2be4b4e4-6df1-4cb2-a947-c70fa0eda54b"/>
+	</identifier>
+	<type value="document"/>
+	<timestamp value="2020-11-01T22:13:23Z"/>
+	<entry>
+		<fullUrl value="Composition/composition-eicr-breast-cancer"/>
+		<resource>
+			<Composition>
+				<id value="composition-eicr-breast-cancer"/>
+				<meta>
+					<versionId value="32"/>
+					<lastUpdated value="2020-11-01T11:00:43.000-04:00"/>
+					<profile value="http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition"/>
+				</meta>
+				<text>
+					<!--Example Composition resource for cancer use case -->
+				</text>
+				<extension url="http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber">
+					<valueString value="1"/>
+				</extension>
+				<identifier>
+					<value value="2eec4326-bf29-4428-8d02-a334a19cfc18"/>
+				</identifier>
+				<status value="final"/>
+				<type>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="72134-0"/>
+						<display value="Cancer Event Report"/>
+					</coding>
+				</type>
+				<subject>
+					<reference value="Patient/patient-ecr-eve-everywoman"/>
+					<display value="Eve Everywoman"/>
+				</subject>
+				<encounter>
+					<reference value="Encounter/encounter-eicr-eve-everywoman-outpatient"/>
+					<display value="Ambulatory Office Visit"/>
+				</encounter>
+				<date value="2020-11-01T22:13:23Z"/>
+				<author>
+					<reference value="PractitionerRole/practitionerrole-alex-karev"/>
+					<display value="Alex Karev, MD"/>
+				</author>
+				<title value="Cancer Event Report--Breast Cancer Example"/>
+				<section>
+					<title value="History of Present Illness Section"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="10164-2"/>
+							<display value="History of Present illness Narrative"/>
+						</coding>
+					</code>
+					<text>
+						<!-- Example History of Present Illness Section for Composition resource for cancer use case -->
+					</text>
+				</section>
+				<section>
+					<title value="Reason for Visit Section"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="29299-5"/>
+							<display value="Reason for visit Narrative"/>
+						</coding>
+					</code>
+					<text>
+						<!-- Example Reason for Visit Section for Composition resource for cancer use case -->
+					</text>
+				</section>
+				<section>
+					<title value="Problems Section"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="11450-4"/>
+							<display value="Problem list - Reported"/>
+						</coding>
+					</code>
+					<text>
+						<!-- Example Problems Section for Composition resource for cancer use case -->
+					</text>
+					<entry>
+						<extension url="http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-trigger-code-flag-extension">
+							<extension url="triggerCodeValueSet">
+								<valueOid value="urn:oid:2.16.840.1.114222.4.11.7508"/>
+							</extension>
+							<extension url="triggerCodeValueSetVersion">
+								<valueString value="19/05/2018"/>
+							</extension>
+							<extension url="triggerCode">
+								<valueCoding>
+									<system value="http://snomed.info/sct"/>
+									<code value="373083005"/>
+									<display value="Malignant neoplasm of breast upper outer quadrant"/>
+								</valueCoding>
+							</extension>	
+						</extension>
+						<reference value="Condition/condition-eicr-eve-everywoman-breast-cancer"/>
+						<display value="Malignant neoplasm of breast upper outer quadrant"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Social History Section"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="29762-2"/>
+							<display value="Social history Narrative"/>
+						</coding>
+					</code>
+					<text>
+						<!-- Example Social History Section for Composition resource for cancer use case -->
+					</text>
+					<entry>
+						<reference value="Observation/observation-odh-usual-work-eve-everywoman"/>
+						<display value="ODH Usual Work Example"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Medications Administered Section"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="29549-3"/>
+							<display value="Medication administered Narrative"/>
+						</coding>
+					</code>
+					<text>
+						<!-- Example Medications Administered Section for Composition resource for cancer use case -->
+					</text>
+					<entry>
+						<reference value="MedicationAdministration/medicationadministration-eve-everywoman-gemcitabine"/>
+						<display value="26.3 ML gemcitabine 38 MG/ML Injection"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Results Section"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="30954-2"/>
+							<display value="Relevant Dx tests/lab data"/>
+						</coding>
+					</code>
+					<text>
+						<!-- Example Results Section for Composition resource for cancer use case -->
+					</text>
+					<entry>
+						<reference value="Observation/observation-us-core-results-eve-everywoman-estrogen-progesterone-receptor-Ag"/>
+						<display value="Estrogen+Progesterone receptor Ag [Presence] in Tissue by Immune stain - Interpretation: Positive"/>
+					</entry>
+					<entry>
+						<reference value="Observation/observation-us-core-results-eve-everywoman-HER2"/>
+						<display value="HER2 [interpretation] in Tissue - Interpretation: Positive"/>
+					</entry>
+					<entry>
+						<reference value="Observation/observation-us-core-results-eve-everywoman-coronavirus"/>
+						<display value="SARS coronavirus 2 RNA [Presence] in Respiratory specimen by NAA with probe detection - Interpretation: Positive"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Plan of Treatment Section"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="18776-5"/>
+							<display value="Plan of care note"/>
+						</coding>
+					</code>
+					<text>
+						<!-- Example Plan of Treatment Section for Composition resource for cancer use case -->
+					</text>
+				</section>
+			</Composition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="Condition/condition-eicr-eve-everywoman-breast-cancer"/>
+		<resource>
+			<Condition>
+				<id value="condition-eicr-eve-everywoman-breast-cancer"/>
+				<meta>
+					<versionId value="15"/>
+					<lastUpdated value="2020-11-01T21:21:49.000-04:00"/>
+					<profile value="http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-condition"/>
+				</meta>
+				<text>
+					<!-- Example Condition resource for cancer diagnosis of "Malignant neoplasm of breast upper outer quadrant (373083005)" for cancer use case -->
+				</text>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+						<code value="problem-list-item"/>
+						<display value="Problem List Item"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="373083005"/>
+						<display value="Malignant neoplasm of breast upper outer quadrant"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="Patient/patient-ecr-eve-everywoman"/>
+					<display value="Eve Everywoman"/>
+				</subject>
+				<onsetDateTime value="2020-11-01"/>
+				<asserter>
+					<reference value="Practitioner/practitioner-us-core-alex-karev"/>
+					<display value="Alex Karev, MD"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="MedicationAdministration/medicationadministration-eve-everywoman-gemcitabine"/>
+		<resource>
+			<MedicationAdministration>
+				<id value="medicationadministration-eve-everywoman-gemcitabine"/>
+				<meta>
+					<versionId value="10"/>
+					<lastUpdated value="2020-11-01T03:11:22.000-04:00"/>
+				</meta>
+				<text>
+					<!-- Example MedicationAdministration resource for medication of Gemcitabine for cancer use case -->
+				</text>
+				<status value="completed"/>
+				<medicationCodeableConcept>
+					<coding>
+						<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+						<code value="1720960"/>
+						<display value="26.3 ML gemcitabine 38 MG/ML Injection"/>
+					</coding>
+					<text value="26.3 ML gemcitabine 38 MG/ML Injection"/>
+				</medicationCodeableConcept>
+				<subject>
+					<reference value="Patient/patient-ecr-eve-everywoman"/>
+					<display value="Eve Everywoman"/>
+				</subject>
+				<effectivePeriod>
+					<start value="2020-11-01"/>
+					<end value="2020-11-01"/>
+				</effectivePeriod>
+				<dosage>
+					<text value="Injection"/>
+					<route>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<code value="418114005"/>
+							<display value="Intravenous central route"/>
+						</coding>
+					</route>
+					<dose>
+						<value value="133.5"/>
+						<unit value="mg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mg"/>
+					</dose>
+				</dosage>
+			</MedicationAdministration>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="Patient/patient-ecr-eve-everywoman"/>
+		<resource>
+			<Patient>
+				<id value="patient-ecr-eve-everywoman"/>
+				<meta>
+					<versionId value="13"/>
+					<lastUpdated value="2020-11-01T03:45:24.000-04:00"/>
+					<profile value="http://hl7.org/fhir/us/ecr/StructureDefinition/ecr-patient"/>
+				</meta>
+				<text>
+					<!-- Example Patient resource for cancer use case -->
+				</text>
+				<extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+					<extension url="ombCategory">
+						<valueCoding>
+							<system value="urn:oid:2.16.840.1.113883.6.238"/>
+							<code value="2106-3"/>
+							<display value="White"/>
+						</valueCoding>
+					</extension>
+					<extension url="text">
+						<valueString value="White"/>
+					</extension>
+				</extension>
+				<extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+					<extension url="ombCategory">
+						<valueCoding>
+							<system value="urn:oid:2.16.840.1.113883.6.238"/>
+							<code value="2186-5"/>
+							<display value="Not Hispanic or Latino"/>
+						</valueCoding>
+					</extension>
+					<extension url="text">
+						<valueString value="Not Hispanic or Latino"/>
+					</extension>
+				</extension>
+				<extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+					<valueCode value="F"/>
+				</extension>
+				<extension url="http://hl7.org/fhir/StructureDefinition/patient-genderIdentity">
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://hl7.org/fhir/gender-identity"/>
+							<code value="female"/>
+							<display value="female"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<identifier>
+					<use value="usual"/>
+					<type>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+							<code value="MR"/>
+							<display value="Medical Record Number"/>
+						</coding>
+					</type>
+					<system value="http://hospital.smarthealthit.org"/>
+					<value value="1032702"/>
+				</identifier>
+				<active value="true"/>
+				<name>
+					<family value="Everywoman"/>
+					<given value="Eve"/>
+					<given value="L"/>
+				</name>
+				<telecom>
+					<system value="phone"/>
+					<value value="1-(404)555-1212"/>
+					<use value="home"/>
+				</telecom>
+				<telecom>
+					<system value="email"/>
+					<value value="eve.everywoman@example.com"/>
+				</telecom>
+				<gender value="female"/>
+				<birthDate value="1974-11-24"/>
+				<address>
+					<line value="5101 Peachtree St NE"/>
+					<city value="Atlanta"/>
+					<state value="GA"/>
+					<postalCode value="30302"/>
+					<country value="US"/>
+				</address>
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="Condition/condition-eicr-eve-everywoman-coronavirus"/>
+		<resource>
+			<Condition>
+				<id value="condition-eicr-eve-everywoman-coronavirus"/>
+				<meta>
+					<versionId value="2"/>
+					<lastUpdated value="2020-11-01T13:53:04.000-04:00"/>
+					<profile value="http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-condition"/>
+				</meta>
+				<text>
+					<!-- Example Condition resource for problem "Disease caused by severe acute respiratory syndrome coronavirus (840539006)" for cancer use case -->
+				</text>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+						<code value="problem-list-item"/>
+						<display value="Problem List Item"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="840539006"/>
+						<display value="Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="Patient/patient-ecr-eve-everywoman"/>
+					<display value="Eve Everywoman"/>
+				</subject>
+				<onsetDateTime value="2020-11-01"/>
+				<asserter>
+					<reference value="Practitioner/practitioner-us-core-alex-karev"/>
+					<display value="Alex Karev, MD"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="Observation/observation-odh-usual-work-eve-everywoman"/>
+		<resource>
+			<Observation>
+				<id value="observation-odh-usual-work-eve-everywoman"/>
+				<meta>
+					<versionId value="2"/>
+					<lastUpdated value="2020-11-01T10:53:14.000-04:00"/>
+					<profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork"/>
+				</meta>
+				<text>
+					<!-- Example Observation-usual work resource for occupation of "Actors" for cancer use case -->
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="21843-8"/>
+						<display value="History of Usual occupation"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="Patient/patient-ecr-eve-everywoman"/>
+					<display value="Eve Everywoman"/>
+				</subject>
+				<effectivePeriod>
+					<start value="1985-01-01"/>
+					<end value="2018-03-07"/>
+				</effectivePeriod>
+				<valueCodeableConcept>
+					<coding>
+						<system value="urn:oid:2.16.840.1.114222.4.5.314"/>
+						<code value="2700"/>
+						<display value="Actors"/>
+					</coding>
+				</valueCodeableConcept>
+				<component>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="21844-6"/>
+							<display value="History of Usual industry"/>
+						</coding>
+					</code>
+					<valueCodeableConcept>
+						<coding>
+							<system value="urn:oid:2.16.840.1.114222.4.5.315"/>
+							<code value="6570"/>
+							<display value="Motion pictures and video industries"/>
+						</coding>
+					</valueCodeableConcept>
+				</component>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="Observation/observation-us-core-results-eve-everywoman-estrogen-progesterone-receptor-Ag"/>
+		<resource>
+			<Observation>
+				<id value="observation-us-core-results-eve-everywoman-estrogen-progesterone-receptor-Ag"/>
+				<meta>
+					<versionId value="10"/>
+					<lastUpdated value="2020-11-01T02:50:13.000-04:00"/>
+					<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+				</meta>
+				<text>
+					<!-- Example Observation resource for estrogen-progesterone-receptor-Ag-presence for cancer use case -->
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<code value="laboratory"/>
+						<display value="Laboratory"/>
+					</coding>
+					<text value="Laboratory"/>
+				</category>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="10480-2"/>
+						<display value="Estrogen+Progesterone receptor Ag [Presence] in Tissue by Immune stain"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="Patient/patient-ecr-eve-everywoman"/>
+					<display value="Eve Everywoman"/>
+				</subject>
+				<effectiveDateTime value="2020-11-01"/>
+				<valueCodeableConcept>
+					<system value="http://snomed.info/sct"/>
+					<code value="10828004"/>
+					<display value="Positive"/>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="Observation/observation-us-core-results-eve-everywoman-HER2"/>
+		<resource>
+			<Observation>
+				<id value="observation-us-core-results-eve-everywoman-HER2"/>
+				<meta>
+					<versionId value="8"/>
+					<lastUpdated value="2020-11-01T03:15:42.000-04:00"/>
+					<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+				</meta>
+				<text>
+					<!-- Example Observation resource for HER2-receptor-presence for cancer use case -->
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<code value="laboratory"/>
+						<display value="Laboratory"/>
+					</coding>
+					<text value="Laboratory"/>
+				</category>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="48676-1"/>
+						<display value="HER2 [interpretation] in Tissue"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="Patient/patient-ecr-eve-everywoman"/>
+					<display value="Eve Everywoman"/>
+				</subject>
+				<effectiveDateTime value="2020-11-01"/>
+				<valueCodeableConcept>
+					<system value="http://snomed.info/sct"/>
+					<code value="10828004"/>
+					<display value="Positive"/>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="Observation/observation-us-core-results-eve-everywoman-coronavirus"/>
+		<resource>
+			<Observation>
+				<id value="observation-us-core-results-eve-everywoman-coronavirus"/>
+				<meta>
+					<versionId value="8"/>
+					<lastUpdated value="2020-11-01T03:15:42.000-04:00"/>
+					<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+				</meta>
+				<text>
+					<!-- Example Observation resource for HER2-receptor-presence for cancer use case -->
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<code value="laboratory"/>
+						<display value="Laboratory"/>
+					</coding>
+					<text value="Laboratory"/>
+				</category>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="94500-6"/>
+						<display value="SARS coronavirus 2 RNA [Presence] in Respiratory specimen by NAA with probe detection"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="Patient/patient-ecr-eve-everywoman"/>
+					<display value="Eve Everywoman"/>
+				</subject>
+				<effectiveDateTime value="2020-11-01"/>
+				<valueCodeableConcept>
+					<system value="http://snomed.info/sct"/>
+					<code value="10828004"/>
+					<display value="Positive"/>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="PractitionerRole/practitionerrole-alex-karev"/>
+		<resource>
+			<PractitionerRole>
+				<id value="practitionerrole-alex-karev"/>
+				<meta>
+					<versionId value="8"/>
+					<lastUpdated value="2020-11-01T01:24:13.000-04:00"/>
+					<profile value="http://hl7.org/fhir/us/ecr/StructureDefinition/ecr-practitionerrole"/>
+				</meta>
+				<text>
+					<!-- Example PractitionerRole resource for cancer use case -->
+				</text>
+				<identifier>
+					<system value="http://hl7.org/fhir/sid/us-npi"/>
+					<value value="1234567893"/>
+				</identifier>
+				<practitioner>
+					<reference value="Practitioner/practitioner-us-core-alex-karev"/>
+					<display value="Alex Karev, MD"/>
+				</practitioner>
+				<organization>
+					<reference value="Organization/organization-ecr-seattle-grace-hospital"/>
+					<display value="Seattle Grace Hospital"/>
+				</organization>
+				<code>
+					<coding>
+						<system value="http://nucc.org/provider-taxonomy"/>
+						<code value="207RX0202X"/>
+						<display value="Medical Oncology"/>
+					</coding>
+				</code>
+				<specialty>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="394593009"/>
+						<display value="Medical Oncology"/>
+					</coding>
+				</specialty>
+				<location>
+					<reference value="Location/location-ecr-seattle-grace-oncology-clinic"/>
+					<display value="Seattle Grace Oncology Clinic, Seattle Grace Hospital"/>
+				</location>
+				<telecom>
+					<system value="email"/>
+					<value value="Akarev@GraceOnc.com"/>
+				</telecom>
+			</PractitionerRole>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="Practitioner/practitioner-us-core-alex-karev"/>
+		<resource>
+			<Practitioner>
+				<id value="practitioner-us-core-alex-karev"/>
+				<meta>
+					<versionId value="8"/>
+					<lastUpdated value="2020-11-01T01:24:13.000-04:00"/>
+					<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+				</meta>
+				<text>
+					<!-- Example PractitionerRole resource for cancer use case -->
+				</text>
+				<identifier>
+					<system value="http://hl7.org/fhir/sid/us-npi"/>
+					<value value="1234567893"/>
+				</identifier>
+				<name>
+					<family value="Karev"/>
+					<given value="Alex"/>
+					<suffix value="M.D."/>
+				</name>
+				<telecom>
+					<system value="email"/>
+					<value value="Akarev@GraceOnc.com"/>
+				</telecom>
+				<address>
+					<line value="Seattle Grace Oncology Clinic"/>
+					<line value="999 Ellis Way"/>
+					<city value="Seattle"/>
+					<state value="WA"/>
+					<postalCode value="98101"/>
+					<country value="US"/>
+				</address>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="Encounter/encounter-eicr-eve-everywoman-outpatient"/>
+		<resource>
+			<Encounter>
+				<id value="encounter-eicr-eve-everywoman-outpatient"/>
+				<meta>
+					<versionId value="3"/>
+					<lastUpdated value="2020-11-01T22:32:46.000-04:00"/>
+					<profile value="http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-encounter"/>
+				</meta>
+				<text>
+					<!-- Example Encounter resource for cancer use case -->
+				</text>
+				<identifier>
+					<system value="http://hospital.smarthealthit.org"/>
+					<value value="9937012"/>
+				</identifier>
+				<status value="finished"/>
+				<class>
+					<system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+					<code value="AMB"/>
+					<display value="ambulatory"/>
+				</class>
+				<type>
+					<coding>
+						<system value="http://www.ama-assn.org/go/cpt"/>
+						<code value="99201"/>
+					</coding>
+					<text value="Office Visit"/>
+				</type>
+				<subject>
+					<reference value="Patient/patient-ecr-eve-everywoman"/>
+					<display value="Eve Everywoman"/>
+				</subject>
+				<participant>
+					<type>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+							<code value="ATND"/>
+							<display value="attender"/>
+						</coding>
+					</type>
+					<individual>
+						<reference value="PractitionerRole/practitionerrole-alex-karev"/>
+						<display value="Alex Karev, MD"/>
+					</individual>
+				</participant>
+				<period>
+					<start value="2020-11-01T10:00:00-05:00"/>
+					<end value="2020-11-01T11:15:00-05:00"/>
+				</period>
+				<diagnosis>
+					<extension url="http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-trigger-code-flag-extension">
+						<extension url="triggerCodeValueSet">
+							<valueOid value="urn:oid:2.16.840.1.114222.4.11.7508"/>
+						</extension>
+						<extension url="triggerCodeValueSetVersion">
+							<valueString value="12/12/2018"/>
+						</extension>
+						<extension url="triggerCode">
+							<valueCoding>
+								<system value="http://snomed.info/sct"/>
+								<code value="373083005"/>
+								<display value="Malignant neoplasm of breast upper outer quadrant"/>
+							</valueCoding>
+						</extension>
+					</extension>
+					<condition>
+						<reference value="Condition/condition-eicr-eve-everywoman-breast-cancer"/>
+					</condition>
+				</diagnosis>
+				<location>
+					<location>
+						<reference value="Location/location-ecr-seattle-grace-oncology-clinic"/>
+						<display value="Seattle Grace Oncology Clinic, Seattle Grace Hospital, 999 Ellis Way, Seattle, WA 98101"/>
+					</location>
+				</location>
+				<serviceProvider>
+					<reference value="Organization/organization-ecr-seattle-grace-hospital"/>
+					<display value="Seattle Grace Hospital, 999 Ellis Way, Seattle, WA 98101"/>
+				</serviceProvider>
+			</Encounter>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="Organization/organization-ecr-acme-laboratory"/>
+		<resource>
+			<Organization>
+				<id value="organization-ecr-acme-laboratory"/>
+				<meta>
+					<versionId value="11"/>
+					<lastUpdated value="2020-11-01T16:12:36.000-04:00"/>
+					<profile value="http://hl7.org/fhir/us/ecr/StructureDefinition/ecr-organization"/>
+				</meta>
+				<text>
+					<!-- Example Organization resource for Acme_Labs for cancer use case -->
+				</text>
+				<identifier>
+					<system value="http://hl7.org.fhir/sid/us-npi"/>
+					<value value="1144221999"/>
+				</identifier>
+				<active value="true"/>
+				<type>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+						<code value="OUTLAB"/>
+						<display value="outpatient laboratory"/>
+					</coding>
+				</type>
+				<name value="Acme_Labs"/>
+				<telecom>
+					<system value="phone"/>
+					<value value="+1-555-555-4444"/>
+				</telecom>
+				<telecom>
+					<system value="email"/>
+					<value value="mail@acme-labs.com"/>
+				</telecom>
+				<address>
+					<line value="7777 Laboratory Drive"/>
+					<city value="Ann Arbor"/>
+					<state value="MI"/>
+					<postalCode value="99999"/>
+				</address>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="Organization/organization-ecr-seattle-grace-hospital"/>
+		<resource>
+			<Organization>
+				<id value="organization-ecr-seattle-grace-hospital"/>
+				<meta>
+					<versionId value="16"/>
+					<lastUpdated value="2020-11-01T03:15:41.000-04:00"/>
+					<profile value="http://hl7.org/fhir/us/ecr/StructureDefinition/ecr-organization"/>
+				</meta>
+				<text>
+					<!-- Example Organization resource for Seattle Grace Hospital for cancer use case -->
+				</text>
+				<identifier>
+					<system value="http://hl7.org.fhir/sid/us-npi"/>
+					<value value="1590101014"/>
+				</identifier>
+				<active value="true"/>
+				<type>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+						<code value="OF"/>
+						<display value="Outpatient facility"/>
+					</coding>
+				</type>
+				<name value="Seattle Grace Hospital"/>
+				<telecom>
+					<system value="phone"/>
+					<value value="+1-206-555-3900"/>
+				</telecom>
+				<address>
+					<line value="999 Ellis Way"/>
+					<city value="Seattle"/>
+					<state value="WA"/>
+					<postalCode value="98101"/>
+				</address>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="Location/location-ecr-seattle-grace-oncology-clinic"/>
+		<resource>
+			<Location>
+				<id value="location-ecr-seattle-grace-oncology-clinic"/>
+				<meta>
+					<versionId value="12"/>
+					<lastUpdated value="2020-11-01T02:28:50.000-04:00"/>
+					<profile value="http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-location"/>
+				</meta>
+				<text>
+					<!-- Example Location resource for Seattle Grace Oncology Clinic for cancer use case -->
+				</text>
+				<status value="active"/>
+				<name value="Seattle Grace Oncology Clinic, Seattle Grace Hospital"/>
+				<type>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+						<code value="HOSP"/>
+						<display value="Hospital"/>
+					</coding>
+				</type>
+				<telecom>
+					<system value="phone"/>
+					<value value="+1-206-555-3900"/>
+				</telecom>
+				<address>
+					<line value="Seattle Grace Oncology Clinic"/>
+					<line value="999 Ellis Way"/>
+					<city value="Seattle"/>
+					<state value="WA"/>
+					<postalCode value="98101"/>
+					<country value="US"/>
+				</address>
+				<managingOrganization>
+					<reference value="Organization/organization-ecr-seattle-grace-hospital"/>
+				</managingOrganization>
+			</Location>
+		</resource>
+	</entry>
+</Bundle>
