@@ -22,9 +22,31 @@
       "value": "eCCDiagnosticReport0"
     }
   ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "LP7839-6",
+          "system": "http://loinc.org",
+          "display": "Pathology"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "60568-3",
+        "system": "http://loinc.org",
+        "display": "Pathology Synoptic report"
+      }
+    ]
+  },
   "subject": {
     "reference": "q201"
   },
+  "effectiveDateTime": "2021-01-14",
   "performer": [
     {
       "reference": "pathpract1"

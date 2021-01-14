@@ -1,9 +1,0 @@
-{
-  "resourceType": "DiagnosticReport",
-  "id": "eCCDiagnosticReport",
-  "meta": {
-    "profile": [
-      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note"
-    ]
-  }
-}
