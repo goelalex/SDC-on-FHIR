@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2019-07-25T14:32:16.281Z"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Bibata Amidou</div>
+    </text>
+    <identifier>
+        <system value="http://clinfhir.com/fhir/NamingSystem/identifier"/>
+        <value value="q201"/>
+    </identifier>
+    <name>
+        <use value="official"/>
+        <text value="Bibata Amidou"/>
+        <family value="Amidou"/>
+        <given value="Bibata"/>
+    </name>
+    <telecom>
+        <use value="home"/>
+    </telecom>
+    <telecom>
+        <system value="phone"/>
+        <value value="(03) 5555 6789"/>
+        <use value="work"/>
+        <rank value="1"/>
+    </telecom>
+    <gender value="female"/>
+    <birthDate value="2000-07-25"/>
+    <address>
+        <use value="home"/>
+        <type value="both"/>
+        <text value="3300 Washtenaw St Ann Harbor, Washtenaw, MI  48104"/>
+        <line value="3300 Washtenaw"/>
+        <city value="Ann Harbor"/>
+        <district value="Washtenaw"/>
+        <state value="MI"/>
+        <postalCode value="48104"/>
+        <period>
+            <start value="2017-12-25"/>
+        </period>
+    </address>
+</Patient>

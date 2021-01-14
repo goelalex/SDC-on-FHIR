@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <identifier>
+        <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF.f96d3fea-62b3-47e9-8443-f199c2f946f0.ver1.49275.100004300"/>
+    </identifier>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="https://CAP.org"/>
+            <code value="49275.100004300"/>
+            <display value="Histologic Grade (Notes C through E)"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/bibata.amidou@chudequebec.ca"/>
+        <display value="Bibata Amidou"/>
+    </subject>
+    <issued value="2018-12-24T09:43:41+11:00"/>
+    <performer>
+        <reference value="Practitioner/f202"/>
+        <display value="Luigi Maas"/>
+    </performer>
+    <valueCodeableConcept>
+            <coding>
+                <system value="https://CAP.org"/>
+                <code value="53603.100004300"/>
+                <display value="Low grade (less than 20 mitoses/50 high-power fields)"/>
+            </coding>
+    </valueCodeableConcept>
+    <derivedFrom>
+        <reference
+            value="DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF.f96d3fea-62b3-47e9-8443-f199c2f946f0.ver1I"/>
+        <!-- referencing Document Reference to SDC Form -->
+    </derivedFrom>
+</Observation>
