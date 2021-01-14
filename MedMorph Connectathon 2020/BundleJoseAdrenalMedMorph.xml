@@ -45,6 +45,7 @@
         </request>
     </entry>
     <!--Encounter-->
+    <!--This Encounter makes more sense as a ServiceRequest, would a procedure be needed here?-->
     <entry>
         <fullUrl value="urn:uuid:2c08e319-f0af-48b3-98df-267cbd376926"></fullUrl>
         <resource>
