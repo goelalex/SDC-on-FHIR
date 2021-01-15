@@ -32,15 +32,15 @@
         </code>
         <valueString value="Tumor invades into other adjacent organ(s)"/>
     </component>
-    <derivedFrom>
-        <reference
-            value="DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI"/>
-        <!-- referencing Document Reference to SDC Form -->
-    </derivedFrom>
     <hasMember>
         <reference
             value="Observation/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI.56271"/>
         <!-- referencing any child questions of this observations - creating members to parents can be optional due to complexity -->
     </hasMember>
+    <derivedFrom>
+        <reference
+            value="DocumentReference/Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI"/>
+        <!-- referencing Document Reference to SDC Form -->
+    </derivedFrom>
 </Observation>
 
