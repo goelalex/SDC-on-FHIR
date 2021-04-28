@@ -12,9 +12,9 @@
       "type": {
         "coding": [
           {
-            "code": "MR",
+            "code": "ACSN",
             "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "display": "Medical Record Number"
+            "display": "Accession ID"
           }
         ]
       },
@@ -44,12 +44,14 @@
     ]
   },
   "subject": {
-    "reference": "q201"
+    "reference": "q201",
+    "display": "Bibata Amadou"
   },
   "effectiveDateTime": "2021-01-14",
   "performer": [
     {
-      "reference": "pathpract1"
+      "reference": "pathpract1",
+      "display": "Luigi Maas"
     }
   ],
   "result": [
@@ -64,6 +66,11 @@
     },
     {
       "reference": "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF1.FormInstanceVersionURI.56271"
+    }
+  ],
+  "presentedForm": [
+    {
+      "url": "http://test.org/pathology/eCCDiagnosticReport0"
     }
   ]
 }
